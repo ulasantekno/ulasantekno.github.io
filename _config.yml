@@ -36,7 +36,7 @@ stylesheets:
 
 # Footer & Cache Busting
 footer_contact: true
-build_timestamp: "1774638086"
+build_timestamp: "1774639707"
 
 # SEO defaults
 defaults:
