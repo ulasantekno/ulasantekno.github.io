@@ -4,6 +4,7 @@ title: "UlasanTekno - Cerdas Memilih Teknologi"
 description: "Review gadget dan panduan belanja teknologi terbaik 2026"
 ---
 
+![UlasanTekno Hero Banner](/assets/hero-banner.jpg)
 <div class="featured-section">
   <h2 class="section-title">🔍 Ulasan & Rekomendasi Terbaru</h2>
   <p class="section-description">Cari gadget impianmu dengan harga terbaik</p>

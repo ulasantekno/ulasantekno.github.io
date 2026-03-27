@@ -44,3 +44,7 @@ defaults:
       twitter_card: summary_large_image
 
 # Open Graph and Twitter Cards
+
+# SEO Images
+og_image: /assets/hero-banner.jpg
+twitter_image: /assets/hero-banner.jpg
