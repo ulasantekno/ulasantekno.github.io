@@ -1,4 +1,4 @@
-# robots.txt for AI Tools Guide
+# robots.txt for UlasanTekno
 # https://anansetiawan40-oss.github.io/
 
 User-agent: *
