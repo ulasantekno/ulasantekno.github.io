@@ -27,18 +27,5 @@ header_links:
     url: /about.html
   - title: "📢 Disclaimer"
     url: /disclaimer.html
-
-# Custom CSS
-stylesheets:
-  - /assets/css/custom.css
-
-# Footer settings (Matching personal blog style)
-footer_contact: true
-build_timestamp: "1774637472"
-
-# SEO defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/hero-banner.jpg
+  - title: "📬 Contact"
+    url: /contact.html

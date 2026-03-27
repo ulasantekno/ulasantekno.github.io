@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "📬 Contact"
+title: "Contact"
 description: "Hubungi kami untuk pertanyaan, kerjasama, atau sekadar menyapa"
 ---
 
