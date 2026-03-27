@@ -5,10 +5,6 @@ title: "UlasanTekno - Home"
 
 <div class="hero-container">
   <img src="/assets/hero-banner.jpg" alt="UlasanTekno Hero Banner" class="hero-main-img">
-  <div class="hero-overlay">
-    <h1 class="hero-text-title">ULASAN TEKNO</h1>
-    <p class="hero-text-subtitle">Review Gadget & Tips Teknologi Terpercaya</p>
-  </div>
 </div>
 
 <div class="featured-section">

@@ -1055,35 +1055,8 @@ Beberapa link di **UlasanTekno** adalah link afiliasi. Jika Anda membeli melalui
   margin: 0 !important;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
 
-.hero-text-title {
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin: 0;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-}
 
-.hero-text-subtitle {
-  font-size: 1.1rem;
-  margin-top: 10px;
-  font-weight: 500;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
 
 @media (max-width: 600px) {
-  .hero-text-title { font-size: 1.5rem; }
-  .hero-text-subtitle { font-size: 0.8rem; }
 }
