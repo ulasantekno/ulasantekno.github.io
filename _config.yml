@@ -2,7 +2,7 @@
 title: "UlasanTekno"
 email: "admin@ulasantekno.id"
 description: "Review gadget terbaru, aksesoris, dan tips teknologi terbaik 2026. Dapatkan rekomendasi produk terbaik dengan harga pas di kantong!"
-baseurl: "/ulasantekno" # Adjusting for GitHub Project Page
+baseurl: "" # Adjusting for GitHub Project Page
 url: "https://ulasantekno.github.io"
 github_username: "ulasantekno"
 author: "Anan Setiawan"
@@ -22,11 +22,11 @@ show_excerpts: true
 show_header: true
 header_links:
   - title: "🏠 Home"
-    url: /ulasantekno/
+    url: /
   - title: "📖 About"
-    url: /ulasantekno/about.html
+    url: /about.html
   - title: "📢 Disclaimer"
-    url: /ulasantekno/disclaimer.html
+    url: /disclaimer.html
 
 # Custom CSS
 stylesheets:
