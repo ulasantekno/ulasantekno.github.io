@@ -1,20 +1,22 @@
-<header class="page-header" role="banner">
-  <div class="header-content">
-    <h1 class="project-name">
-      <a href="{{ site.url }}" class="header-link">
-        {{ site.title | default: "UlasanTekno" }}
+<meta name="impact-site-verification" value="b3787605-2737-4957-b0ad-620d5fe53fe8" />
+<header class="page-header" id="draggable-header" role="banner">
+  
+  <!-- Blog Title as Home Link - COMPACT -->
+  <h1 class="project-name">
+    <a href="{{ site.url }}" style="color: inherit; text-decoration: none;">
+      {{ site.title | default: site.github.repository_name }}
+    </a>
+  </h1>
+  <h2 class="project-tagline">
+    {{ site.description | default: site.github.project_tagline }}
+  </h2>
+  
+  <!-- Compact Navigation Menu - All buttons aligned -->
+  <nav class="site-nav">
+    {% for link in site.header_links %}
+      <a href="{{ link.url }}" class="btn{% if page.url == link.url %} active{% endif %}">
+        {{ link.title }}
       </a>
-    </h1>
-    <h2 class="project-tagline">
-      {{ site.description }}
-    </h2>
-    
-    <nav class="site-nav">
-      {% for link in site.header_links %}
-        <a href="{{ link.url }}" class="btn{% if page.url == link.url %} active{% endif %}">
-          {{ link.title }}
-        </a>
-      {% endfor %}
-    </nav>
-  </div>
+    {% endfor %}
+  </nav>
 </header>
