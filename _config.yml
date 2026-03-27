@@ -25,26 +25,11 @@ header_links:
     url: /
   - title: "📖 About"
     url: /about.html
+  - title: "📚 Archive"
+    url: /archive.html
+  - title: "📬 Contact"
+    url: /contact.html
   - title: "📢 Disclaimer"
     url: /disclaimer.html
-
-# Custom CSS
-stylesheets:
-  - /assets/css/custom.css
-
-# Footer contact
-footer_contact: true
-
-# SEO defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      keywords: "ulasan gadget, review teknologi, affiliate laptop, ulasantekno, gadget murah 2026"
-      twitter_card: summary_large_image
-
-# Open Graph and Twitter Cards
-
-# SEO Images
-og_image: /assets/hero-banner.jpg
-twitter_image: /assets/hero-banner.jpg
+  - title: "🛡️ Privacy"
+    url: /privacy-policy.html

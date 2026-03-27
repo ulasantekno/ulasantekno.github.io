@@ -2,7 +2,7 @@
 * { box-sizing: border-box; }
 body { 
   margin: 0; padding: 0; 
-  padding-top: 140px; 
+  padding-top: 160px; /* INCREASED for better clearance */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #f4f7f6; 
   color: #333;
@@ -29,41 +29,49 @@ body {
 }
 .project-tagline { margin: 2px 0 8px; font-size: 0.8rem; color: rgba(255,255,255,0.9); }
 
-/* Navigation - FORCED HORIZONTAL */
+/* Navigation - HORIZONTAL WITH SCROLL */
 .site-nav { 
   display: flex; 
   justify-content: center; 
   gap: 6px; 
-  flex-wrap: nowrap; /* FORCE NO WRAP */
-  overflow-x: auto; /* ALLOW SCROLL IF TOO MANY ITEMS */
-  padding: 5px 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 5px 10px;
   -webkit-overflow-scrolling: touch;
 }
-
-/* Hide scrollbar for a cleaner look */
 .site-nav::-webkit-scrollbar { display: none; }
 
 .site-nav .btn {
-  padding: 5px 10px;
+  padding: 6px 12px;
   background: rgba(255,255,255,0.2);
   color: #ffffff !important;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 11px;
   font-weight: 600;
   border: 1px solid rgba(255,255,255,0.3);
   transition: 0.2s;
-  white-space: nowrap; /* PREVENT TEXT WRAPPING INSIDE BUTTON */
-  flex-shrink: 0; /* PREVENT BUTTONS FROM SQUISHING */
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .site-nav .btn:hover, .site-nav .btn.active { background: #ffffff !important; color: #159957 !important; }
 
 /* Desktop Adjustments */
 @media (min-width: 769px) {
-  body { padding-top: 130px; }
+  body { padding-top: 150px; }
   .header-link { font-size: 2rem; }
-  .site-nav .btn { font-size: 13px; padding: 6px 14px; }
+  .site-nav .btn { font-size: 13px; padding: 7px 15px; }
   .page-header { padding: 15px 10px; }
+}
+
+/* ================= CONTENT SPACING FIX ================= */
+.content-wrapper, .post, article {
+  margin-top: 20px !important; /* Extra space from the body padding */
+}
+
+/* Post page specific fix to avoid header overlap */
+.post-header {
+  padding-top: 20px;
 }
 
 /* ================= ARTICLE CARDS ================= */
