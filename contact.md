@@ -1,19 +1,31 @@
 ---
 layout: default
-title: "📬 Hubungi Kami"
+title: "📬 Contact"
+description: "Hubungi kami untuk pertanyaan, kerjasama, atau sekadar menyapa"
 ---
 
-# Hubungi UlasanTekno 📬
+# Hubungi Kami 📬
 
-Punya pertanyaan seputar gadget, ingin konsultasi sebelum beli laptop, atau tertarik untuk bekerja sama? Tim kami siap membantu Anda!
+Punya pertanyaan seputar AI tools, ingin konsultasi, atau tertarik untuk berkolaborasi? Kami sangat senang mendengar dari Anda!
 
-Silakan hubungi kami melalui:
+Silakan hubungi kami melalui salah satu saluran di bawah ini:
 
-- **Email:** admin@ulasantekno.id
-- **Telegram:** @anansfm (Owner)
-- **Instagram:** @ulasantekno (Coming Soon)
+### ✉️ Email
+Untuk pertanyaan umum atau kerjasama bisnis:
+**[ansefm15@gmail.com](mailto:ansefm15@gmail.com)**
 
-Kami biasanya merespons dalam waktu 1x24 jam. Terima kasih!
+### 💬 Telegram
+Respon lebih cepat untuk tanya jawab santai:
+**[@anansfm](https://t.me/anansfm)**
+
+### 📸 Instagram
+Update harian dan tips singkat:
+**[@anansetiaone26](https://instagram.com/anansetiaone26)**
+
+---
+
+### ⏱️ Waktu Respon
+Kami biasanya merespons semua pesan dalam waktu **1x24 jam** pada hari kerja. Terima kasih atas ketertarikan Anda pada **UlasanTekno**!
 
 ---
 [Kembali ke Beranda](/)
