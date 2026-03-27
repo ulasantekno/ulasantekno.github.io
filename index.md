@@ -1,24 +1,21 @@
 ---
 layout: default
-title: UlasanTekno - Home
+title: "UlasanTekno - Cerdas Memilih Teknologi"
+description: "Review gadget dan panduan belanja teknologi terbaik 2026"
 ---
 
-# Selamat Datang di UlasanTekno! 🚀
+<div class="featured-section">
+  <h2 class="section-title">🔍 Ulasan & Rekomendasi Terbaru</h2>
+  <p class="section-description">Cari gadget impianmu dengan harga terbaik</p>
+</div>
 
-Tempat terbaik untuk mendapatkan **ulasan jujur** seputar gadget, aksesoris, dan tren teknologi terbaru di tahun 2026.
+![UlasanTekno Hero Banner](/assets/hero-banner.jpg)
 
----
+{% include article-cards.html %}
 
-## 📌 Navigasi Cepat
-[Tentang Kami](./about.md) | [Kebijakan Affiliate](./disclaimer.md)
-
----
-
-## 📰 Artikel Terbaru
-
-### [🔥 5 Rekomendasi Laptop 5 Jutaan Terbaik 2026: Performa Kencang, Harga Pas!](./2026-03-27-laptop-5-jutaan-terbaik.md)
-*Mencari laptop produktivitas dengan budget terbatas? Simak pilihan terbaik kami untuk tahun ini.*
-
----
-
-© 2026 UlasanTekno - Cerdas Memilih Teknologi
+<div class="categories-section">
+  <h2 class="section-title">🗂️ Kategori Utama</h2>
+  <div class="category-grid">
+    <p>Segera hadir: Review Gadget | Tips Tekno | Affiliate Picks</p>
+  </div>
+</div>

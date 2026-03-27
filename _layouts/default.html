@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+<meta name="impact-site-verification" value="b3787605-2737-4957-b0ad-620d5fe53fe8" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!-- Custom CSS with cache busting -->
+    {% for css in site.stylesheets %}
+      <link rel="stylesheet" href="{{ css | relative_url }}?v={{ site.build_timestamp }}">
+    {% endfor %}
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      {% include header.html %}
+      
+      <main class="content-wrapper">
+        {{ content }}
+      </main>
+
+      <footer class="custom-footer">
+        <div class="footer-container">
+          
+          <div class="footer-brand">
+            <h2>🚀 AI Tools Guide</h2>
+            <p>Review AI tools yang praktis, jujur, dan relevan untuk creator & bisnis kecil di Indonesia.</p>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/archive.html">Archive</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-social">
+            <h3>Follow</h3>
+            <div class="social-icons">
+              <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">💻</a>
+              <a href="https://facebook.com/clluygtrckt" target="_blank" title="Facebook">📘</a>
+              <a href="https://x.com/anansfm15" target="_blank" title="Twitter/X">🐦</a>
+              <a href="https://instagram.com/anansetiaone26" target="_blank" title="Instagram">📸</a>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2026 AI Tools Guide. All rights reserved. • Hosted on GitHub Pages</p>
+        </div>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

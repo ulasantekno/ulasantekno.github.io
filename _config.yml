@@ -1,9 +1,50 @@
-title: UlasanTekno
-email: admin@ulasantekno.id
-description: >-
-  Review gadget terbaru, aksesoris, dan tips teknologi terbaik 2026.
-  Dapatkan rekomendasi produk terbaik dengan harga pas di kantong!
-baseurl: "/ulasantekno"
+# Site settings
+title: "UlasanTekno"
+email: "admin@ulasantekno.id"
+description: "Review gadget terbaru, aksesoris, dan tips teknologi terbaik 2026. Dapatkan rekomendasi produk terbaik dengan harga pas di kantong!"
+baseurl: "/ulasantekno" # Adjusting for GitHub Project Page
 url: "https://ulasantekno.github.io"
+github_username: "ulasantekno"
+author: "Anan Setiawan"
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-cayman
-remote_theme: jekyll/jekyll-theme-cayman
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Theme settings
+show_excerpts: true
+
+# Navigation
+show_header: true
+header_links:
+  - title: "🏠 Home"
+    url: /ulasantekno/
+  - title: "📖 About"
+    url: /ulasantekno/about.html
+  - title: "📢 Disclaimer"
+    url: /ulasantekno/disclaimer.html
+
+# Custom CSS
+stylesheets:
+  - /assets/css/custom.css
+
+# Footer contact
+footer_contact: true
+
+# SEO defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/hero-banner.jpg
+      keywords: "ulasan gadget, review teknologi, affiliate laptop, ulasantekno, gadget murah 2026"
+      og_image: /assets/hero-banner.jpg
+      twitter_card: summary_large_image
+
+# Open Graph and Twitter Cards
+og_image: /assets/hero-banner.jpg
+twitter_image: /assets/hero-banner.jpg

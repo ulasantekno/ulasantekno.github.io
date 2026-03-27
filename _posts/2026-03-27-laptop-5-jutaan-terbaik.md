@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 5 Rekomendasi Laptop 5 Jutaan Terbaik 2026
 ---
 

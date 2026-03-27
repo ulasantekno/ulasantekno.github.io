@@ -1,0 +1,15 @@
+# robots.txt for AI Tools Guide
+# https://anansetiawan40-oss.github.io/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://anansetiawan40-oss.github.io/sitemap.xml
+
+# Crawl-delay (optional, polite crawling)
+Crawl-delay: 1
+
+# Disallow admin/private paths (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
