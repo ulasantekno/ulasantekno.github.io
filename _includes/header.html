@@ -1,20 +1,20 @@
 <header class="page-header" role="banner">
-  <!-- Blog Title -->
-  <h1 class="project-name">
-    <a href="{{ site.url }}">
-      {{ site.title | default: "UlasanTekno" }}
-    </a>
-  </h1>
-  <h2 class="project-tagline">
-    {{ site.description }}
-  </h2>
-  
-  <!-- Fixed Navigation Menu -->
-  <nav class="site-nav">
-    {% for link in site.header_links %}
-      <a href="{{ link.url }}" class="btn{% if page.url == link.url %} active{% endif %}">
-        {{ link.title }}
+  <div class="header-content">
+    <h1 class="project-name">
+      <a href="{{ site.url }}" class="header-link">
+        {{ site.title | default: "UlasanTekno" }}
       </a>
-    {% endfor %}
-  </nav>
+    </h1>
+    <h2 class="project-tagline">
+      {{ site.description }}
+    </h2>
+    
+    <nav class="site-nav">
+      {% for link in site.header_links %}
+        <a href="{{ link.url }}" class="btn{% if page.url == link.url %} active{% endif %}">
+          {{ link.title }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
 </header>
