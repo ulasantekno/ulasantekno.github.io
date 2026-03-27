@@ -40,11 +40,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/hero-banner.jpg
       keywords: "ulasan gadget, review teknologi, affiliate laptop, ulasantekno, gadget murah 2026"
-      og_image: /assets/hero-banner.jpg
       twitter_card: summary_large_image
 
 # Open Graph and Twitter Cards
-og_image: /assets/hero-banner.jpg
-twitter_image: /assets/hero-banner.jpg
