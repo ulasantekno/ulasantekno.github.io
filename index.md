@@ -11,7 +11,7 @@ title: "UlasanTekno - Home"
 
 <div class="featured-section">
   <h2 class="section-title">🔍 Ulasan & Rekomendasi Terbaru</h2>
-  <p class="section-description">Temukan gadget impianmu dengan ulasan jujur dan terpercaya.</p>
+  
 </div>
 
 {% include article-cards.html %}
