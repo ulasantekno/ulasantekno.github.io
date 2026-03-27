@@ -1081,3 +1081,32 @@ Beberapa link di **UlasanTekno** adalah link afiliasi. Jika Anda membeli melalui
   object-fit: contain !important; /* Ensure the whole image is visible without cropping */
   margin: 0 !important;
 }
+
+/* ================= THE FINAL PERFECT CENTERING FIX ================= */
+.hero-container {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  aspect-ratio: 16 / 9 !important;
+  background-color: #fcfcfc !important; /* Soft white to match image */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.hero-main-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important; /* NO cropping, keep ratio */
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* Ensure no other styles override the centering */
+.hero-container img {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
