@@ -1060,3 +1060,24 @@ Beberapa link di **UlasanTekno** adalah link afiliasi. Jika Anda membeli melalui
 
 @media (max-width: 600px) {
 }
+
+/* ================= FINAL HERO BANNER FIX ================= */
+.hero-container {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto 30px !important; /* CENTERING */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  aspect-ratio: 16 / 9 !important; /* FORCED 16:9 */
+  background-color: #ffffff; /* White bg matches the user image */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-main-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important; /* Ensure the whole image is visible without cropping */
+  margin: 0 !important;
+}
