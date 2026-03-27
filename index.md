@@ -3,9 +3,11 @@ layout: default
 title: "UlasanTekno - Home"
 ---
 
+<!-- 
 <div class="hero-container">
   <img src="/assets/hero-banner.jpg" alt="UlasanTekno Hero Banner" class="hero-main-img">
 </div>
+-->
 
 <div class="featured-section">
   <h2 class="section-title">🔍 Ulasan & Rekomendasi Terbaru</h2>
