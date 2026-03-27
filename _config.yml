@@ -1,0 +1,9 @@
+title: UlasanTekno
+email: admin@ulasantekno.id
+description: >-
+  Review gadget terbaru, aksesoris, dan tips teknologi terbaik 2026.
+  Dapatkan rekomendasi produk terbaik dengan harga pas di kantong!
+baseurl: "/ulasantekno"
+url: "https://ulasantekno.github.io"
+theme: jekyll-theme-cayman
+remote_theme: jekyll/jekyll-theme-cayman
