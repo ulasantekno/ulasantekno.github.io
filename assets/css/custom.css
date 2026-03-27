@@ -4,7 +4,7 @@ body {
   margin: 0; padding: 0; 
   padding-top: 150px; 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #f4f7f6; /* Back to original soft background */
+  background-color: #f4f7f6; 
   color: #333;
   overflow-x: hidden;
 }
@@ -79,31 +79,68 @@ body {
 .article-title { margin: 0 0 10px; font-size: 1.25rem; color: #155799; line-height: 1.3; font-weight: 700; }
 .article-excerpt { font-size: 0.95rem; color: #555; line-height: 1.6; }
 
-/* ================= FOOTER (FIXED ALIGNMENT) ================= */
+/* ================= FOOTER (FIXED ALIGNMENT - ALWAYS SIDE) ================= */
 .custom-footer { 
   background: #1a1a2e; 
   color: #ffffff; 
-  padding: 50px 20px; 
+  padding: 60px 20px 40px; 
   margin-top: 60px;
 }
 .footer-container {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Horizontal layout */
+  justify-content: space-between; /* Space out items */
   flex-wrap: wrap;
-  gap: 30px;
-  text-align: left; /* Left align text */
+  gap: 40px;
+  text-align: left; /* Force left alignment for all sections */
 }
-.footer-brand, .footer-links, .footer-social { flex: 1; min-width: 250px; }
-.footer-links ul { list-style: none; padding: 0; }
-.footer-links li { margin-bottom: 10px; }
-.footer-links a { color: #b0b7c3; text-decoration: none; }
-.footer-links a:hover { color: #fff; }
-.footer-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: #b0b7c3; }
+.footer-brand, .footer-links, .footer-social { 
+  flex: 1; 
+  min-width: 250px;
+  text-align: left; /* Extra insurance for left alignment */
+}
+.footer-brand h2, .footer-links h3, .footer-social h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+.footer-links ul { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 12px; }
+.footer-links a { 
+  color: #b0b7c3; 
+  text-decoration: none; 
+  transition: color 0.3s;
+}
+.footer-links a:hover { color: #ffffff; padding-left: 5px; }
+
+.footer-bottom { 
+  text-align: center; 
+  margin-top: 50px; 
+  padding-top: 25px; 
+  border-top: 1px solid rgba(255,255,255,0.1); 
+  font-size: 0.85rem; 
+  color: #b0b7c3; 
+}
+
+/* Social icons alignment */
+.social-icons { display: flex; gap: 15px; justify-content: flex-start; }
+.social-icons a { 
+  font-size: 1.5rem; 
+  text-decoration: none; 
+  color: #ffffff;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.social-icons a:hover { opacity: 1; transform: scale(1.1); }
 
 @media (max-width: 768px) {
-  .footer-container { text-align: center; justify-content: center; }
+  .footer-container { 
+    flex-direction: column; /* Stack vertically but stay left */
+    text-align: left; 
+    gap: 30px;
+  }
 }
 
 /* ================= UTILS ================= */
