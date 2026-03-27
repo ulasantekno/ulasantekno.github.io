@@ -25,11 +25,5 @@ header_links:
     url: /
   - title: "📖 About"
     url: /about.html
-  - title: "📚 Archive"
-    url: /archive.html
-  - title: "📬 Contact"
-    url: /contact.html
   - title: "📢 Disclaimer"
     url: /disclaimer.html
-  - title: "🛡️ Privacy"
-    url: /privacy-policy.html
