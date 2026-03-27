@@ -989,17 +989,48 @@ article li img {
   }
 }
 
-/* Force reasonable image sizes on the restored CSS */
-img { 
-  max-height: 350px !important; 
-  width: auto !important; 
-  margin-left: auto !important; 
-  margin-right: auto !important; 
-  object-fit: contain !important;
+/* ================= THE ULTIMATE SMALL IMAGE FIX ================= */
+/* This ensures no image is "Gede" (Giant) on any screen */
+
+img {
+  max-width: 90% !important; /* Never full width */
+  max-height: 250px !important; /* Strictly limit height */
+  width: auto !important;
+  height: auto !important;
+  display: block !important;
+  margin: 10px auto !important;
+  object-fit: contain !important; /* Ensure image isn't cropped or stretched */
+  border-radius: 12px;
 }
-.article-image { 
-  max-height: none !important; 
-  width: 100% !important; 
-  height: 100% !important; 
-  object-fit: cover !important; 
+
+/* Fix thumbnails in cards so they don't break the layout */
+.article-image-wrapper img {
+  max-height: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+  max-width: 100% !important;
 }
+
+/* Fix Hero Banner on Home specifically */
+img[alt*="Banner"] {
+  max-height: 180px !important;
+}
+
+/* Remove the draggable script from header.html again */
+sed -i '/<script>/,/<\/script>/d' _includes/header.html
+
+# 7. Add Disclaimer Page back (it was in target_repo before reset)
+cat <<EOF > disclaimer.md
+---
+layout: default
+title: Disclaimer Affiliate
+---
+
+# Disclaimer Affiliate 📢
+
+Beberapa link di **UlasanTekno** adalah link afiliasi. Jika Anda membeli melalui link tersebut, kami mungkin mendapat komisi tanpa biaya tambahan bagi Anda. Ini membantu kami terus memberikan ulasan jujur dan gratis.
+
+---
+[Kembali ke Beranda](/)

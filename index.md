@@ -1,12 +1,11 @@
 ---
 layout: default
-title: "UlasanTekno - Cerdas Memilih Teknologi"
-description: "Review gadget dan panduan belanja teknologi terbaik 2026"
+title: "UlasanTekno - Home"
 ---
 
 <div class="featured-section">
   <h2 class="section-title">🔍 Ulasan & Rekomendasi Terbaru</h2>
-  <p class="section-description">Cari gadget impianmu dengan harga terbaik</p>
+  <p class="section-description">Temukan gadget impianmu dengan ulasan jujur dan terpercaya.</p>
 </div>
 
 ![UlasanTekno Hero Banner](/assets/hero-banner.jpg)
@@ -18,7 +17,7 @@ description: "Review gadget dan panduan belanja teknologi terbaik 2026"
   <div class="category-grid">
     <a href="/archive.html" class="category-card">
       <span class="category-icon">📱</span>
-      <span class="category-name">Review Gadget</span>
+      <span class="category-name">Gadget</span>
     </a>
     <a href="/archive.html" class="category-card">
       <span class="category-icon">🎧</span>

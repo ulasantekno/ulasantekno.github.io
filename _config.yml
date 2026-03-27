@@ -18,7 +18,7 @@ plugins:
 # Theme settings
 show_excerpts: true
 
-# Navigation (Simplified as requested)
+# Navigation (Requested: 4 buttons)
 show_header: true
 header_links:
   - title: "🏠 Home"
@@ -29,3 +29,18 @@ header_links:
     url: /disclaimer.html
   - title: "📬 Contact"
     url: /contact.html
+
+# Custom CSS
+stylesheets:
+  - /assets/css/custom.css
+
+# Footer & Cache Busting
+footer_contact: true
+build_timestamp: "1774638086"
+
+# SEO defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/hero-banner.jpg
