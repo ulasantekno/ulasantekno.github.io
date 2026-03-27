@@ -14,4 +14,4 @@ Komisi ini membantu kami untuk terus menjalankan blog ini dan menyediakan konten
 Terima kasih atas dukungan Anda!
 
 ---
-[Kembali ke Beranda](./index.md)
+[Kembali ke Beranda](/)

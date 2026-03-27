@@ -13,4 +13,4 @@ Di era digital yang berkembang pesat ini, memilih gadget yang tepat bisa menjadi
 Membantu masyarakat Indonesia menemukan solusi teknologi terbaik yang sesuai dengan anggaran dan kebutuhan mereka.
 
 ---
-[Kembali ke Beranda](./index.md)
+[Kembali ke Beranda](/)
