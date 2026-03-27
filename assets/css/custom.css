@@ -988,3 +988,30 @@ article li img {
     font-size: 1em;
   }
 }
+
+/* Additional coolness for category cards */
+.category-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+  background: white;
+  border-color: #0366d6;
+  box-shadow: 0 10px 15px -3px rgba(3, 102, 214, 0.2);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.category-icon {
+  font-size: 2.5em;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  margin-bottom: 12px;
+}
+
+.category-name {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: -0.01em;
+}
