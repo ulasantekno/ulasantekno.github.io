@@ -36,28 +36,34 @@ body {
 }
 .site-nav .btn:hover, .site-nav .btn.active { background: white; color: #159957; }
 
-/* ================= IMAGES (STRICT SIZING) ================= */
-/* Main fix for "gambar gede" issue */
+/* ================= AGGRESSIVE IMAGE SIZING ================= */
+/* This is to fix "Gambar Masih Besar" definitively */
+
+/* General rule for ALL images */
 img { 
-  max-width: 100%; 
-  height: auto; 
-  border-radius: 8px; 
-  display: block;
-  margin: 15px auto;
+  max-width: 100% !important; 
+  height: auto !important; 
+  display: block !important;
+  margin: 15px auto !important;
+  border-radius: 8px;
 }
 
-/* Specifically target the hero banner on homepage */
-p > img[alt*="Hero Banner"] {
-  max-height: 250px; /* Reduced height */
-  width: auto;
-  object-fit: contain;
+/* Homepage Hero Image - FORCE COMPACT */
+p > img[alt*="Hero Banner"], 
+.homepage-hero img,
+img[src*="hero-banner"] {
+  max-height: 200px !important; /* VERY SMALL */
+  width: auto !important;
+  object-fit: contain !important;
 }
 
-/* Specifically target images inside post pages */
-.post img {
-  max-height: 350px; /* Reduced height for article images */
-  width: auto;
-  object-fit: contain;
+/* Post Page Images - FORCE COMPACT */
+.post-image img,
+.post-content img,
+article img {
+  max-height: 250px !important; /* VERY SMALL */
+  width: auto !important;
+  object-fit: contain !important;
 }
 
 /* ================= ARTICLE CARDS ================= */
@@ -81,7 +87,8 @@ p > img[alt*="Hero Banner"] {
   border: 1px solid #eee;
 }
 .article-image-wrapper { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; }
-.article-image { width: 100%; height: 100%; object-fit: cover; }
+.article-image { width: 100% !important; height: 100% !important; object-fit: cover !important; max-height: none !important; margin: 0 !important; }
+
 .article-content { padding: 12px 15px; }
 .article-title { margin: 0 0 5px; font-size: 1.1rem; color: #155799; line-height: 1.3; }
 .article-excerpt { font-size: 0.85rem; color: #555; line-height: 1.4; margin-bottom: 0; }
