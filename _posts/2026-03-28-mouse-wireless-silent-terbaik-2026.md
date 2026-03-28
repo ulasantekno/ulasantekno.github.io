@@ -10,7 +10,7 @@ Mouse wireless dengan fitur *silent click* kini sudah menjadi standar wajib bagi
 Berikut adalah 5 mouse wireless silent terbaik pilihan **UlasanTekno**:
 
 ### 1. Logitech M221 Silent (Legenda yang Tak Tertandingi)
-![Logitech M221](/assets/images/products/logitech-m221.jpg)
+![Logitech M221](/assets/images/products/logitech-m221.png)
 Logitech M221 tetap menjadi raja di kelasnya. Dengan teknologi *SilentTouch*, suara klik berkurang lebih dari 90% namun tetap memberikan sensasi klik yang mantap. Baterainya pun sangat awet hingga 18 bulan!
 - 👉 **[Cek Harga Terbaru di Shopee](https://s.shopee.co.id/2qQBpmQLbj)**
 
@@ -19,7 +19,7 @@ Bagi Anda yang memiliki budget terbatas, Robot M220 adalah solusinya. Meskipun h
 - 👉 **[Cek Harga Terbaru di Shopee](https://s.shopee.co.id/50UgPlI6DA)**
 
 ### 3. Ugreen Wireless Mouse Silent 4000 DPI (Presisi Tinggi)
-![Ugreen Mouse](/assets/images/products/ugreen-mouse.jpg)
+![Ugreen Mouse](/assets/images/products/ugreen-mouse.png)
 Ugreen menawarkan mouse dengan sensitivitas yang bisa diatur hingga 4000 DPI. Sangat pas bagi Anda yang butuh mouse senyap namun tetap butuh akurasi tinggi untuk desain grafis atau kerja cepat.
 - 👉 **[Cek Harga Terbaru di Shopee](https://s.shopee.co.id/5Ao6c4HSsD)**
 
