@@ -1,5 +1,6 @@
 <div class="article-grid">
-  {% for post in site.posts limit:6 %}
+  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+  {% for post in sorted_posts limit:10 %}
   <div class="article-card">
     <div class="article-image-wrapper">
     {% if post.image %}
@@ -27,7 +28,7 @@
           {% if post.categories %}
             {{ post.categories | first }}
           {% else %}
-            AI Tools
+            Review
           {% endif %}
         </span>
       </div>
