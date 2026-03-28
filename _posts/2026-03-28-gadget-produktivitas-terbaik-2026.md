@@ -1,9 +1,11 @@
 ---
+date: 2026-03-28 14:00:00 +0700
 layout: post
 title: "5 Gadget Esensial Produktivitas 2026: Kerja Makin Nyaman & Satset!"
 description: "Ingin setup kerja lebih efisien dan estetik? Simak rekomendasi gadget produktivitas terbaik 2026 mulai dari keyboard hingga charger GaN mungil."
 image: /assets/images/posts/gadget-produktivitas-2026.png
 ---
+date: 2026-03-28 14:00:00 +0700
 
 Memasuki pertengahan tahun 2026, tren kerja fleksibel (WFA) dan setup minimalis semakin digandrungi. Untuk mendukung performa harian Anda, pemilihan gadget yang tepat bukan lagi sekadar gaya, melainkan kebutuhan.
 
@@ -30,6 +32,7 @@ Lupakan adaptor charger bawaan yang besar. Charger berteknologi GaN dari Anker i
 - 👉 **[Cek Harga di Shopee](https://s.shopee.co.id/gLgVa7trj)**
 
 ---
+date: 2026-03-28 14:00:00 +0700
 
 **Kesimpulan:**
 Investasi pada gadget kecil namun berkualitas bisa memberikan dampak besar pada kenyamanan kerja Anda. Manakah yang paling Anda butuhkan saat ini?
@@ -37,4 +40,5 @@ Investasi pada gadget kecil namun berkualitas bisa memberikan dampak besar pada 
 Jangan lupa bagikan ulasan ini ke teman kerja Anda!
 
 ---
+date: 2026-03-28 14:00:00 +0700
 [Kembali ke Beranda](/)

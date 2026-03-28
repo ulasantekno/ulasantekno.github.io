@@ -1,9 +1,11 @@
 ---
+date: 2026-03-28 17:00:00 +0700
 layout: post
 title: "Gadget Smart Home Murah 2026: Ubah Rumah Jadi Canggih Cuma 100 Ribuan!"
 description: "Mulai bangun rumah pintar tanpa kuras kantong. Cek rekomendasi lampu pintar, CCTV, dan smart plug terbaik di bawah 200 ribu rupiah."
 image: /assets/images/posts/smart-home-murah-2026.png
 ---
+date: 2026-03-28 17:00:00 +0700
 
 Punya rumah canggih layaknya film sci-fi kini bukan lagi mimpi mahal. Di tahun 2026, ekosistem *Smart Home* di Indonesia sudah sangat berkembang dan harganya semakin terjangkau bagi siapa saja.
 
@@ -30,6 +32,7 @@ Jaga kelembapan udara ruangan Anda tetap ideal secara otomatis. Bisa diatur ting
 - 👉 **[Cek Harga Terbaru di Shopee](https://s.shopee.co.id/6fcuOMn2fv)**
 
 ---
+date: 2026-03-28 17:00:00 +0700
 
 **Kesimpulan:**
 Membangun rumah pintar tidak harus dimulai dengan renovasi besar. Mulailah dari barang kecil seperti lampu atau smart plug, dan rasakan kenyamanan teknologi masa kini.
@@ -37,4 +40,5 @@ Membangun rumah pintar tidak harus dimulai dengan renovasi besar. Mulailah dari 
 Sudah siap mengubah rumah Anda menjadi lebih cerdas? Bagikan artikel ini ke keluarga Anda!
 
 ---
+date: 2026-03-28 17:00:00 +0700
 [Kembali ke Beranda](/)

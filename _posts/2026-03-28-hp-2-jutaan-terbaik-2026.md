@@ -1,9 +1,11 @@
 ---
+date: 2026-03-28 15:00:00 +0700
 layout: post
 title: "5 HP 2 Jutaan Terbaik 2026: Spek Dewa, Kamera Jernih & Baterai Badak!"
 description: "Cari HP 2 jutaan dengan performa gaming kencang dan kamera 108MP? Ini dia daftar smartphone terbaik 2026 yang wajib Anda lirik."
 image: /assets/images/posts/hp-2-jutaan-terbaik-2026.png
 ---
+date: 2026-03-28 15:00:00 +0700
 
 Pasar smartphone kelas menengah (mid-range) di tahun 2026 semakin panas! Dengan budget hanya 2 jutaan rupiah, Anda kini sudah bisa mendapatkan spesifikasi yang dulunya hanya ada di HP flagship, mulai dari layar AMOLED 120Hz hingga pengisian daya super cepat.
 
@@ -37,6 +39,7 @@ Itel mengguncang pasar dengan S26 Ultra yang membawa layar 144Hz 1.5K AMOLED—s
 - 👉 **[Cek Harga di Shopee](https://s.shopee.co.id/1gEEOiWovg)**
 
 ---
+date: 2026-03-28 15:00:00 +0700
 
 **Kesimpulan:**
  
@@ -48,4 +51,5 @@ Semua HP di atas memiliki keunggulan masing-masing. Jika Anda butuh baterai, pil
 Mana yang jadi incaran Anda? Bagikan pendapat Anda di kolom komentar!
 
 ---
+date: 2026-03-28 15:00:00 +0700
 [Kembali ke Beranda](/)

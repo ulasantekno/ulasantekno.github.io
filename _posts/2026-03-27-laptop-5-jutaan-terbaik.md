@@ -1,9 +1,11 @@
 ---
+date: 2026-03-27 10:00:00 +0700
 layout: post
 title: "5 Rekomendasi Laptop 5 Jutaan Terbaik 2026"
 description: "Daftar laptop budget 5 jutaan dengan performa terbaik untuk produktivitas dan kuliah di tahun 2026."
 image: /assets/images/posts/laptop-5-jutaan-terbaik-2026.png
 ---
+date: 2026-03-27 10:00:00 +0700
 
 Mencari laptop di rentang harga 5 jutaan di tahun 2026 kini semakin menarik. Dengan perkembangan teknologi prosesor yang semakin efisien, Anda sudah bisa mendapatkan laptop yang sangat layak untuk produktivitas harian, kuliah, hingga desain grafis ringan.
 
@@ -20,4 +22,5 @@ Berikut adalah 5 pilihan terbaik versi **UlasanTekno**:
 *(Artikel ini akan terus diperbarui seiring munculnya produk baru!)*
 
 ---
+date: 2026-03-27 10:00:00 +0700
 [Kembali ke Beranda](/)

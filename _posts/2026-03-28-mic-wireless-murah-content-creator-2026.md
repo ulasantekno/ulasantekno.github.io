@@ -1,9 +1,11 @@
 ---
+date: 2026-03-28 18:00:00 +0700
 layout: post
 title: "5 Mic Wireless Murah Terbaik 2026: Suara Jernih Modal 100 Ribuan!"
 description: "Mau jadi content creator tapi budget terbatas? Cek rekomendasi mic wireless murah terbaik 2026 yang bikin suara vlog Anda jadi profesional."
 image: /assets/images/posts/mic-wireless-murah-2026.png
 ---
+date: 2026-03-28 18:00:00 +0700
 
 Kualitas audio adalah kunci utama dari konten yang viral. Di tahun 2026, Anda tidak perlu lagi membeli peralatan mahal seharga jutaan rupiah hanya untuk mendapatkan suara yang jernih.
 
@@ -32,6 +34,7 @@ Bagi Anda yang mengutamakan keamanan purna jual, Robot RS10 adalah pilihan terba
 - 👉 **[Cek Harga Terbaru di Shopee](https://s.shopee.co.id/900pVqJsRQ)**
 
 ---
+date: 2026-03-28 18:00:00 +0700
 
 **Kesimpulan:**
 Untuk pemula, **TNW N9** adalah pilihan paling aman dari segi performa. Namun, jika Anda butuh nama besar dengan kualitas yang sudah teruji bertahun-tahun, **Boya BY-V** adalah investasi yang sangat layak.
@@ -39,4 +42,5 @@ Untuk pemula, **TNW N9** adalah pilihan paling aman dari segi performa. Namun, j
 Jangan biarkan suara "kresek-kresek" menghalangi Anda untuk mulai berkarya. Pilih mic favorit Anda sekarang!
 
 ---
+date: 2026-03-28 18:00:00 +0700
 [Kembali ke Beranda](/)
