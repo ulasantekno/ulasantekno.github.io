@@ -27,6 +27,8 @@ Ugreen menawarkan mouse dengan sensitivitas yang bisa diatur hingga 4000 DPI. Sa
 Mouse dari Baseus ini sangat keren karena mendukung dua jenis koneksi: Bluetooth dan 2.4GHz USB. Anda bisa menghubungkannya ke laptop dan tablet sekaligus dan berpindah perangkat dengan mudah.
 - 👉 **[Cek Harga Terbaru di Shopee](https://s.shopee.co.id/4frq19JMt8)**
 
+ 
+> **Baca Juga:** [Cara Bikin Meja Estetik dengan Aksesoris di Bawah 100 Ribu](/2026/03/28/aksesoris-desk-setup-murah-2026.html)
 ### 5. Rexus Wireless Mouse QB35 (Estetik & Pastel)
 Rexus QB35 hadir dengan pilihan warna-warna pastel yang sangat estetik. Mouse ini sangat populer di kalangan creator yang ingin meja kerjanya terlihat lebih "Instagrammable" namun tetap fungsional.
 - 👉 **[Cek Harga Terbaru di Shopee](https://s.shopee.co.id/4qBGDSIjYB)**
