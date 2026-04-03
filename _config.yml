@@ -46,3 +46,10 @@ defaults:
     values:
       image: /assets/hero-banner.jpg
 google_site_verification: VWcpWP2iU3zH7j04cC9yYAbOQlcsDkbBrHXDKVUTp5E
+
+# Analytics (choose one)
+analytics: none
+# analytics: ga4
+# ga4_id: "G-XXXXXXXXXX"
+# analytics: cloudflare
+# cloudflare_id: "your-token"

@@ -1,0 +1,23 @@
+{% comment %}
+Analytics snippet for UlasanTekno.
+Choose one analytics provider in _config.yml:
+- analytics: ga4
+- analytics: cloudflare
+- analytics: none (default)
+{% endcomment %}
+
+{% if site.analytics == "ga4" and site.ga4_id %}
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.ga4_id }}');
+</script>
+{% endif %}
+
+{% if site.analytics == "cloudflare" and site.cloudflare_id %}
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{ site.cloudflare_id }}"}'></script>
+{% endif %}
