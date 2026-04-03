@@ -48,8 +48,7 @@ defaults:
 google_site_verification: VWcpWP2iU3zH7j04cC9yYAbOQlcsDkbBrHXDKVUTp5E
 
 # Analytics (choose one)
-analytics: none
-# analytics: ga4
-# ga4_id: "G-XXXXXXXXXX"
+analytics: ga4
+ga4_id: "G-7RCYFCN7WC"
 # analytics: cloudflare
 # cloudflare_id: "your-token"
