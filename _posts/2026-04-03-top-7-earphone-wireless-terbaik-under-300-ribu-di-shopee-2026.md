@@ -3,7 +3,7 @@ date: 2026-04-03 12:55:00 +0700
 layout: post
 title: "Top 7 Earphone Wireless Terbaik under 300 Ribu di Shopee 2026"
 description: "Daftar rekomendasi earphone wireless terbaik dengan harga di bawah 300 ribu rupiah di Shopee tahun 2026, lengkap dengan link pembelian."
-image: /assets/images/posts/earphone-wireless-under-300-ribu-2026.png
+image: /assets/images/posts/tws-murah-terbaik-2026.png
 ---
 
 Halo, Sobat Tech! 🎧
@@ -25,7 +25,7 @@ Earphone ini punya baterai yang *bikin betah* – sampai 40 jam pemakaian! Denga
 Kamu yang sering bepergian jauh, kerja remote, atau malas ngecas tiap hari.
 
 **Link Shopee:**  
-https://s.shopee.co.id/gLqpBZ45i
+[Beli Baseus Bowie H1i di Shopee](https://s.shopee.co.id/gLqpBZ45i)
 
 ## 2. QCY T13 – Legendary Budget King
 
@@ -36,7 +36,7 @@ Sejak dulu, QCY T13 selalu jadi favorit buat yang cari kualitas suara bagus deng
 Pemula yang pengen coba earphone wireless tanpa keluar banyak duit, atau buat cadangan sehari-hari.
 
 **Link Shopee:**  
-https://s.shopee.co.id/qfH1UYQkl
+[Beli QCY T13 di Shopee](https://s.shopee.co.id/qfH1UYQkl)
 
 ## 3. Haylou GT1 Pro – Minimalis & Nyaman
 
@@ -47,7 +47,7 @@ Desainnya compact dan nyaman dipakai lama. Haylou GT1 Pro punya latency rendah (
 Kamu yang suka desain simpel, suka gaming mobile, atau sering olahraga ringan.
 
 **Link Shopee:**  
-https://s.shopee.co.id/Lj0QZaKlg
+[Beli Haylou GT1 Pro di Shopee](https://s.shopee.co.id/Lj0QZaKlg)
 
 ## 4. Xiaomi Redmi Buds 3 Lite – Brand Terpercaya
 
@@ -58,7 +58,7 @@ Bawa bendera Xiaomi yang udah terkenal kualitasnya. Redmi Buds 3 Lite punya driv
 Penggemar brand Xiaomi, atau yang pengen punya earphone dari brand ternama dengan harga terjangkau.
 
 **Link Shopee:**  
-https://s.shopee.co.id/W2QcsZhQj
+[Beli Xiaomi Redmi Buds 3 Lite di Shopee](https://s.shopee.co.id/W2QcsZhQj)
 
 ## 5. JBL Tune 115TWS – Suara JBL Khas
 
@@ -69,7 +69,7 @@ Meski harganya nempel di batas 300 ribu, JBL Tune 115TWS menawarkan kualitas sua
 Audiophile pemula yang mau coba “rasa” JBL, atau yang prioritasnya kualitas suara.
 
 **Link Shopee:**  
-https://s.shopee.co.id/16A1xbb
+[Beli JBL Tune 115TWS di Shopee](https://s.shopee.co.id/16A1xbb)
 
 ## 6. Realme TechLife Buds T100 – Fitur Lengkap
 
@@ -80,7 +80,7 @@ Dari realme yang lagi gencar-gencarnya di segment budget. Buds T100 punya ANC (A
 Kamu yang sering di tempat ramai dan butuh fokus, atau suka customize setting suara.
 
 **Link Shopee:**  
-https://s.shopee.co.id/7VCAxlzJ2K
+[Beli Realme TechLife Buds T100 di Shopee](https://s.shopee.co.id/7VCAxlzJ2K)
 
 ## 7. Oppo Enco Air 2 – Clear & Balanced
 
@@ -91,7 +91,7 @@ Oppo Enco Air 2 punya suara yang seimbang – nggak terlalu bassy, nggak terlalu
 Yang suka suara natural, sering ganti-ganti device, atau demen aesthetic gadget.
 
 **Link Shopee:**  
-https://s.shopee.co.id/7KsklSzwNJ
+[Beli Oppo Enco Air 2 di Shopee](https://s.shopee.co.id/7KsklSzwNJ)
 
 ---
 
@@ -99,7 +99,8 @@ https://s.shopee.co.id/7KsklSzwNJ
 
 Jangan lupa, sebelum beli, cek dulu review dan rating di Shopee ya. Kadang ada diskon flash sale atau voucher yang bisa bikin harga semakin murah!
 
-**Klik link di atas untuk cek harga terbaru di Shopee!** 🛒
+**Klik link di atas untuk cek harga terbaru di Shopee!** 🛒  
+(Semua link di atas sudah bisa diklik langsung)
 
 *Artikel ini ditulis dengan gaya rekomendasi jujur berdasarkan popularitas produk, rating, dan jumlah penjualan di Shopee. Link yang digunakan adalah link produk asli dan bisa langsung diakses.*
 
