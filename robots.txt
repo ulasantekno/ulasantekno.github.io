@@ -8,4 +8,4 @@ Allow: /
 Sitemap: https://ulasantekno.github.io/sitemap.xml
 
 # Crawl-delay
-Crawl-delay: 1
+Crawl-delay: 0.5
