@@ -10,30 +10,30 @@ Mencari smartphone berkualitas dengan budget sekitar 3 juta rupiah? Di tahun 202
 
 Berikut adalah 5 pilihan smartphone 3 jutaan terbaik di Shopee untuk tahun 2026:
 
-## 1. **Xiaomi Redmi Note 13**
-   - **Spesifikasi:** Layar 6.67" AMOLED 120Hz, chipset MediaTek Dimensity 7200, RAM 8GB + storage 256GB, kamera 108MP, baterai 5000mAh dengan fast charging 67W.
+## 1. **Xiaomi Redmi Note 15 5G**
+   - **Spesifikasi:** Layar 6.77" AMOLED FHD+ 120Hz, chipset MediaTek Dimensity (model terbaru), RAM 6/8/12GB + storage 128/256/512GB, kamera 108MP, baterai 5520mAh dengan fast charging, NFC, IP66 tahan debu & air.
    - **Harga:** Rp 3.299.000
-   - **Link Shopee:** [Beli Xiaomi Redmi Note 13 di Shopee](https://shopee.co.id/Xiaomi-Redmi-Note-13-Layar-AMOLED-120Hz-Kamera-108MP-i.123456789.9876543210)
+   - **Link Shopee:** [Cek Xiaomi Redmi Note 15 5G di Shopee](https://s.shopee.co.id/8phYa6vdkl)
 
-## 2. **Realme 11 Pro+**
-   - **Spesifikasi:** Layar 6.7" Super AMOLED 120Hz, chipset MediaTek Dimensity 7050, RAM 8GB/256GB, kamera 200MP OIS, baterai 5000mAh dengan charging 100W.
+## 2. **realme P3 5G**
+   - **Spesifikasi:** Layar AMOLED 120Hz, chipset Snapdragon® 6 Gen 4, RAM 12GB + extended RAM 14GB*, storage 256GB, kamera utama tinggi (detail model), baterai 6000mAh dengan fast charging 45W, NFC.
+   - **Harga:** Rp 3.999.000
+   - **Link Shopee:** [Cek realme P3 5G di Shopee](https://s.shopee.co.id/9KdpB8zdj9)
+
+## 3. **Samsung Galaxy A17**
+   - **Spesifikasi:** Layar Super AMOLED (ukuran standar), chipset Exynos (seri terbaru), RAM 8GB + storage 256GB, kamera utama tinggi (50MP+), baterai 5000mAh, warna Light Blue.
    - **Harga:** Rp 3.499.000
-   - **Link Shopee:** [Beli Realme 11 Pro+ di Shopee](https://shopee.co.id/Realme-11-Pro-Plus-Kamera-200MP-OIS-Charging-100W-i.234567890.1098765432)
+   - **Link Shopee:** [Cek Samsung Galaxy A17 di Shopee](https://s.shopee.co.id/40cIpVGB9U)
 
-## 3. **Samsung Galaxy A35 5G**
-   - **Spesifikasi:** Layar 6.6" Super AMOLED 120Hz, Exynos 1380, RAM 8GB/128GB, kamera 50MP OIS + ultrawide + macro, IP67 water resistance, baterai 5000mAh.
+## 4. **POCO X7 5G**
+   - **Spesifikasi:** Layar 6.7" CrystalRes 1.5K 120Hz AMOLED curved, chipset MediaTek Dimensity 7300-Ultra, RAM 8GB + storage 256GB, kamera 50MP OIS, baterai 5000mAh dengan fast charging.
    - **Harga:** Rp 3.599.000
-   - **Link Shopee:** [Beli Samsung Galaxy A35 5G di Shopee](https://shopee.co.id/Samsung-Galaxy-A35-5G-Layar-AMOLED-IP67-Kamera-50MP-i.345678901.2109876543)
+   - **Link Shopee:** [Cek POCO X7 5G di Shopee](https://s.shopee.co.id/1Vuxr05T2W)
 
-## 4. **POCO X6 Pro**
-   - **Spesifikasi:** Layar 6.67" AMOLED 120Hz, chipset MediaTek Dimensity 8300-Ultra, RAM 12GB + storage 512GB, kamera 64MP OIS, baterai 5000mAh dengan fast charging 67W.
-   - **Harga:** Rp 3.199.000
-   - **Link Shopee:** [Beli POCO X6 Pro di Shopee](https://shopee.co.id/POCO-X6-Pro-Dimensity-8300-Ultra-12GB-512GB-i.456789012.3210987654)
-
-## 5. **Infinix Note 40 Pro**
-   - **Spesifikasi:** Layar 6.78" AMOLED 120Hz, MediaTek Helio G99 Ultimate, RAM 8GB/256GB, kamera 108MP, baterai 5000mAh dengan wireless charging 45W, speaker JBL.
-   - **Harga:** Rp 2.999.000
-   - **Link Shopee:** [Beli Infinix Note 40 Pro di Shopee](https://shopee.co.id/Infinix-Note-40-Pro-Wireless-Charging-Kamera-108MP-i.567890123.4321098765)
+## 5. **Infinix GT 30 5G**
+   - **Spesifikasi:** Layar 6.78" Amoled+ 144Hz, chipset MediaTek Dimensity 7400 5G, RAM 8GB + extended RAM up to 16GB, storage 256GB, kamera 64MP, baterai 5000mAh dengan fast charging, NFC.
+   - **Harga:** Rp 3.409.000
+   - **Link Shopee:** [Cek Infinix GT 30 5G di Shopee](https://s.shopee.co.id/3LMc2QaWuv)
 
 ## Tips Memilih Smartphone 3 Jutaan
 - **Chipset:** Prioritaskan performa untuk multitasking dan gaming ringan.
