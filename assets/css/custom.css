@@ -377,7 +377,7 @@ article li {
 
 /* Ensure main content doesn't overlap with fixed header - MINIMAL */
 body {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 /* ALL content sections must clear the fixed header */
@@ -391,7 +391,7 @@ article,
 .page-content,
 section,
 .entry-content {
-  margin-top: 65px !important;
+  margin-top: 85px !important;
   padding-top: 0 !important;
 }
 
@@ -408,18 +408,18 @@ section,
 /* Mobile responsive header spacing - MINIMAL */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 60px;
+    padding-top: 80px;
   }
 }
 
 @media screen and (max-width: 480px) {
   body {
-    padding-top: 60px;
+    padding-top: 85px;
   }
 }
 
 main, .main-content, .page-content, .content-wrapper {
-  margin-top: 65px !important;
+  margin-top: 85px !important;
 }
 
 /* Hero spacing from fixed header */
