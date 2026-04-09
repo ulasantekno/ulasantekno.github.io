@@ -50,9 +50,11 @@
   text-decoration: none;
 }
 
-/* Hide tagline for minimal look */
+/* Tagline compact */
 .project-tagline {
-  display: none;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  font-size: 0.7em;
 }
 
 /* Mobile responsive - PERFECT 3-BUTTON FIT */
