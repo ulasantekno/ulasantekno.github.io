@@ -2,7 +2,7 @@
 date: 2026-04-03 14:30:00 +0700
 layout: post
 title: "5 Gadget Mix Trending di Shopee 2026 – Power Bank, Tablet, Smart Bulb, Gaming Mouse, Fitness Tracker"
-description: "Daftar gadget campuran yang sedang tren di Shopee 2026, dari power bank fast charging, tablet murah, smart bulb RGB, gaming mouse wireless, hingga fitness tracker."
+description: "Daftar gadget trending di Shopee 2026: power bank, tablet, smart bulb, gaming mouse, fitness tracker dengan harga terjangkau."
 image: /assets/images/posts/gadget-produktivitas-2026.png
 ---
 
