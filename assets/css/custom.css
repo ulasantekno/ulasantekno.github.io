@@ -11,15 +11,15 @@
 
 .site-nav .btn {
   display: inline-block;
-  padding: 5px 12px;
+  padding: 4px 10px;
   background-color: #0366d6;
   color: white;
   text-decoration: none;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   transition: all 0.2s ease;
-  min-width: 80px;
+  min-width: 70px;
   text-align: center;
   flex: 0 0 auto;
 }
@@ -35,14 +35,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* Blog title as home link - COMPACT */
+/* Blog title as home link - MINIMAL */
 .project-name {
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 
 .project-name a {
   transition: color 0.3s;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 .project-name a:hover {
@@ -50,9 +50,9 @@
   text-decoration: none;
 }
 
+/* Hide tagline for minimal look */
 .project-tagline {
-  margin-top: 3px;
-  font-size: 0.9em;
+  display: none;
 }
 
 /* Mobile responsive - PERFECT 3-BUTTON FIT */
@@ -352,10 +352,10 @@ article li {
   }
 }
 
-/* Fix header background solid - prevents overlap look */
+/* Fix header background solid - MINIMAL */
 .page-header {
   background-color: #159957 !important;
-  padding: 10px 20px;
+  padding: 6px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -373,9 +373,9 @@ article li {
   cursor: grabbing;
 }
 
-/* Ensure main content doesn't overlap with fixed header */
+/* Ensure main content doesn't overlap with fixed header - MINIMAL */
 body {
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 /* ALL content sections must clear the fixed header */
@@ -389,7 +389,7 @@ article,
 .page-content,
 section,
 .entry-content {
-  margin-top: 130px !important;
+  margin-top: 65px !important;
   padding-top: 0 !important;
 }
 
@@ -403,21 +403,21 @@ section,
   padding-top: 0 !important;
 }
 
-/* Mobile responsive header spacing */
+/* Mobile responsive header spacing - MINIMAL */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 120px;
+    padding-top: 60px;
   }
 }
 
 @media screen and (max-width: 480px) {
   body {
-    padding-top: 130px;
+    padding-top: 60px;
   }
 }
 
 main, .main-content, .page-content, .content-wrapper {
-  margin-top: 130px !important;
+  margin-top: 65px !important;
 }
 
 /* Hero spacing from fixed header */
@@ -427,7 +427,7 @@ main, .main-content, .page-content, .content-wrapper {
 
 /* Fix article page header spacing */
 .article-content, article {
-  padding-top: 80px !important;
+  padding-top: 40px !important;
 }
 
 /* Better spacing for all content */
