@@ -57,41 +57,46 @@ def find_markdown_files():
         'changefreq': 'daily'
     })
     
-    # 2. Blog posts
+    # 2. Blog posts - FIX: Use Jekyll default URL format /:year/:month/:day/:title.html
     if os.path.exists(POSTS_DIR):
-        for filename in os.listdir(POSTS_DIR):
+        for filename in sorted(os.listdir(POSTS_DIR)):
             if filename.endswith('.md'):
                 filepath = os.path.join(POSTS_DIR, filename)
-                slug = filename[11:-3]  # Remove date and .md
-                urls.append({
-                    'loc': f'{BASE_URL}/posts/{slug}/',
-                    'lastmod': get_lastmod(filepath),
-                    'priority': '0.8',
-                    'changefreq': 'monthly'
-                })
+                
+                # Extract date from filename: YYYY-MM-DD-title.md
+                match = re.match(r'(\d{4})-(\d{2})-(\d{2})-(.+)\.md', filename)
+                if match:
+                    year = match.group(1)
+                    month = match.group(2)
+                    day = match.group(3)
+                    title = match.group(4)
+                    
+                    # Jekyll default permalink: /:year/:month/:day/:title.html
+                    post_url = f'{BASE_URL}/{year}/{month}/{day}/{title}.html'
+                    
+                    urls.append({
+                        'loc': post_url,
+                        'lastmod': get_lastmod(filepath),
+                        'priority': '0.9',
+                        'changefreq': 'weekly'
+                    })
     
-    # 3. Static pages (root directory)
-    for page in STATIC_PAGES:
-        if os.path.exists(page):
-            slug = page[:-3]  # Remove .md
-            if slug == 'index':
-                continue  # Already added
+    # 3. Static pages (root directory .html files)
+    static_html_pages = [
+        {'file': 'about.html', 'priority': '0.8'},
+        {'file': 'contact.html', 'priority': '0.7'},
+        {'file': 'disclaimer.html', 'priority': '0.7'},
+        {'file': 'privacy-policy.html', 'priority': '0.7'},
+        {'file': 'archive.html', 'priority': '0.6'},
+    ]
+    
+    for page in static_html_pages:
+        if os.path.exists(page['file']):
             urls.append({
-                'loc': f'{BASE_URL}/{slug}/',
-                'lastmod': get_lastmod(page),
-                'priority': '0.6',
+                'loc': f'{BASE_URL}/{page["file"]}',
+                'lastmod': get_lastmod(page['file']),
+                'priority': page['priority'],
                 'changefreq': 'monthly'
-            })
-    
-    # 4. Archive/category pages (jika ada)
-    archive_pages = ['archive.html', 'categories.html', 'tags.html']
-    for page in archive_pages:
-        if os.path.exists(page):
-            urls.append({
-                'loc': f'{BASE_URL}/{page}',
-                'lastmod': datetime.now().strftime('%Y-%m-%d'),
-                'priority': '0.4',
-                'changefreq': 'weekly'
             })
     
     return urls
