@@ -25,7 +25,7 @@ Redmi Note 15 hadir dengan baterai monster **6000mAh** yang bisa tahan seharian 
 
 **Harga:** Rp2.599.000 | **Cocok untuk:** Pengguna yang butuh baterai awet dan kamera bagus
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/40cTzpPhom)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/40cTzpPhom)**
 
 ## 2. Samsung Galaxy A16
 Pilihan paling aman untuk kamu yang ingin HP awet bertahun-tahun. Samsung menjamin update software yang panjang, ditambah build quality khas Samsung yang solid.
@@ -38,7 +38,7 @@ Pilihan paling aman untuk kamu yang ingin HP awet bertahun-tahun. Samsung menjam
 
 **Harga:** Rp2.759.000 | **Cocok untuk:** Pengguna yang prioritaskan kestabilan dan update software jangka panjang
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/9zth8vipia)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/9zth8vipia)**
 
 ## 3. Realme 12 5G
 Salah satu HP 2 jutaan yang sudah mendukung **jaringan 5G**! Dengan kamera **108MP** dan kapasitas storage **256GB**, kamu tidak perlu khawatir kehabisan ruang.
@@ -51,7 +51,7 @@ Salah satu HP 2 jutaan yang sudah mendukung **jaringan 5G**! Dengan kamera **108
 
 **Harga:** Rp2.979.900 | **Cocok untuk:** Pengguna yang ingin HP 5G dengan storage besar
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/3B3N0TrRg1)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/3B3N0TrRg1)**
 
 ## 4. Vivo Y29
 Baterai **6500mAh** yang bisa tahan hingga **3 hari**! Vivo Y29 juga punya desain marmer eksklusif yang bikin HP-mu tampil beda.
@@ -64,7 +64,7 @@ Baterai **6500mAh** yang bisa tahan hingga **3 hari**! Vivo Y29 juga punya desai
 
 **Harga:** Rp2.999.000 | **Cocok untuk:** Pengguna outdoor yang butuh HP tangguh dengan baterai super awet
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/10ysQah2v4)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/10ysQah2v4)**
 
 ## 5. OPPO A60 NFC
 OPPO A60 menghadirkan pengalaman ColorOS yang halus dan stabil, dengan opsi storage **256GB** untuk kamu yang butuh ruang besar. Fitur **NFC** sudah termasuk!
@@ -78,7 +78,7 @@ OPPO A60 menghadirkan pengalaman ColorOS yang halus dan stabil, dengan opsi stor
 
 **Harga:** Rp2.999.000 | **Cocok untuk:** Pengguna yang suka ekosistem OPPO dan butuh NFC
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/50V1C1Xlzz)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/50V1C1Xlzz)**
 
 ## 6. Infinix Note 40 Pro
 HP dengan fitur **premium di harga terjangkau**! Layar **AMOLED lengkung** (curved) dan fast charging **70W** yang bisa isi baterai super cepat.
@@ -91,7 +91,7 @@ HP dengan fitur **premium di harga terjangkau**! Layar **AMOLED lengkung** (curv
 
 **Harga:** Rp2.540.000 | **Cocok untuk:** Pengguna yang mau fitur flagship di harga mid-range
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/5q48BdlYSU)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/5q48BdlYSU)**
 
 ## 7. POCO M6 Pro
 POCO M6 Pro membawa layar **AMOLED 120Hz** dan kamera **64MP dengan OIS** untuk hasil foto dan video yang stabil. Fast charging **67W** memastikan kamu tidak lama menunggu.
@@ -104,7 +104,7 @@ POCO M6 Pro membawa layar **AMOLED 120Hz** dan kamera **64MP dengan OIS** untuk 
 
 **Harga:** Rp2.650.000 | **Cocok untuk:** Pengguna yang butuh kamera stabil (OIS) dan layar AMOLED
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/LjBddTuwn)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/LjBddTuwn)**
 
 ## 8. Xiaomi Redmi Note 13
 Redmi Note 13 menawarkan kamera **108MP** dengan harga paling kompetitif di daftar ini. Dengan opsi **256GB storage**, kamu bisa menyimpan ribuan foto tanpa khawatir.
@@ -117,7 +117,7 @@ Redmi Note 13 menawarkan kamera **108MP** dengan harga paling kompetitif di daft
 
 **Harga:** Rp2.699.900 | **Cocok untuk:** Budget-conscious yang mau kamera 108MP dengan storage besar
 
-🛒 **Beli Sekarang di Shopee →**(https://s.shopee.co.id/9UxQYXggep)
+🛒 **[Beli Sekarang di Shopee →](https://s.shopee.co.id/9UxQYXggep)**
 
 ---
 
