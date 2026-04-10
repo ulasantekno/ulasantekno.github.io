@@ -1,11 +1,11 @@
 # robots.txt for UlasanTekno
-# Domain: https://ulasantekno.github.io/
+# Domain: https://ulasanteknoid.my.id/
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://ulasantekno.github.io/sitemap.xml
+Sitemap: https://ulasanteknoid.my.id/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 0.5
