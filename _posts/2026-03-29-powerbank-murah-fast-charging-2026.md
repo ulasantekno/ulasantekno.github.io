@@ -4,6 +4,7 @@ title: "Stop Beli Powerbank Mahal! Ini 5 Powerbank 100 Ribuan yang Support Fast 
 date: 2026-03-29 19:00:00 +0700
 description: "Mau beli powerbank tapi bingung yang mana? Jangan tertipu harga mahal. Simak 5 rekomendasi powerbank 100 ribuan yang sudah support fast charging."
 image: /assets/images/posts/powerbank-murah-terbaik-2026.png
+category: "Gadget"
 ---
 
 Kebutuhan akan daya cadangan untuk smartphone kini sudah menjadi hal wajib, terutama bagi Anda yang aktif bermobilitas. Namun, banyak orang yang masih salah kaprah dan mengira powerbank berkualitas harus selalu mahal.

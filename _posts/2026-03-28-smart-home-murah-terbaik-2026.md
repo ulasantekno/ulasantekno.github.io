@@ -4,6 +4,7 @@ layout: post
 title: "Gadget Smart Home Murah 2026: Ubah Rumah Jadi Canggih Cuma 100 Ribuan!"
 description: "Mulai bangun rumah pintar tanpa kuras kantong. Cek rekomendasi lampu pintar, CCTV, dan smart plug terbaik di bawah 200 ribu rupiah."
 image: /assets/images/posts/smart-home-murah-2026.png
+category: "Smart Home"
 ---
 date: 2026-03-28 17:00:00 +0700
 

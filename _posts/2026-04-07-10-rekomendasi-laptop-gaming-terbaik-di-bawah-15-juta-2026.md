@@ -4,6 +4,7 @@ layout: post
 title: "10 Rekomendasi Laptop Gaming Terbaik dengan Performa Tinggi 2026"
 description: "Daftar laptop gaming terbaik dengan harga kompetitif di Shopee tahun 2026, cocok untuk gaming AAA, esports, dan produktivitas."
 image: /assets/images/posts/laptop-gaming-bawah-15-juta-2026.jpg
+category: "Gaming"
 ---
 
 Di tahun 2026, pasar laptop gaming semakin kompetitif dengan penawaran spesifikasi mumpuni untuk bermain game AAA, kompetitif esports, serta mendukung kebutuhan produktivitas seperti desain dan rendering. Artikel ini merangkum 10 laptop gaming terbaik yang bisa didapatkan dengan harga yang masuk akal di Shopee.

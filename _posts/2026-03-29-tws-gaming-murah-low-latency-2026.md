@@ -4,6 +4,7 @@ title: "Review Jujur TWS Gaming Latency Rendah 100 Ribuan: Anti Delay Pas Mabar!
 date: 2026-03-29 21:00:00 +0700
 description: "Mau mabar tapi keganggu suara delay? Cek rekomendasi TWS gaming murah terbaik 2026 yang punya fitur low latency dan desain LED super keren."
 image: /assets/images/posts/tws-gaming-murah-2026.png
+category: "Audio"
 ---
 
 Bagi para pemain *Mobile Legends*, *PUBG*, atau *Free Fire*, suara langkah kaki dan tembakan yang akurat adalah kunci kemenangan. Sayangnya, banyak TWS murah yang memiliki *delay* (latency) tinggi, sehingga suara yang terdengar tidak sesuai dengan kejadian di layar.

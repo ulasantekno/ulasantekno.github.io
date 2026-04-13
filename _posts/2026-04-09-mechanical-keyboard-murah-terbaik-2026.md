@@ -4,6 +4,7 @@ layout: post
 title: "5 Mechanical Keyboard Murah Terbaik di Shopee 2026"
 description: "Rekomendasi mechanical keyboard murah terbaik di Shopee 2026 dengan fitur hot-swappable, RGB, dan build quality mantap untuk gaming dan produktivitas."
 image: /assets/images/posts/gadget-produktivitas-2026.png
+category: "Gaming"
 ---
 
 Mechanical keyboard bukan cuma buat gamer — buat kamu yang kerja seharian di depan komputer, keyboard mekanikal bisa bikin pengalaman mengetik jadi jauh lebih nyaman dan satisfying. Di tahun 2026, ada banyak pilihan mechanical keyboard murah di Shopee yang punya kualitas mumpuni tanpa harus merogoh kocek dalam.

@@ -4,6 +4,7 @@ layout: post
 title: "7 Rekomendasi Earphone TWS Terbaik 2026 - Harga Mulai 80 Ribuan!"
 description: "Rekomendasi earphone TWS terbaik 2026 di Shopee. Dari Philips, Huawei, Xiaomi, hingga Goojodoq harga murah!"
 image: /assets/images/posts/tws-murah-terbaik-2026.png
+category: "Audio"
 ---
 
 Mau dengerin musik, nonton YouTube, atau WFH-an tapi nggak mau ribet sama kabel? Earphone TWS (True Wireless Stereo) adalah solusinya! Di 2026 ini, pilihan TWS makin beragam dengan harga yang semakin terjangkau.

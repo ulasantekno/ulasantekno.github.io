@@ -4,6 +4,7 @@ layout: post
 title: "5 Mouse Wireless Terbaik & Paling Senyap 2026: Kerja Nyaman Tanpa Suara!"
 description: "Ingin bekerja di kafe atau perpustakaan tanpa mengganggu orang lain? Ini dia rekomendasi mouse wireless silent click terbaik tahun 2026."
 image: /assets/images/posts/mouse-wireless-silent-2026.png
+category: "Gadget"
 ---
 date: 2026-03-28 16:00:00 +0700
 

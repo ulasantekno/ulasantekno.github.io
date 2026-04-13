@@ -4,6 +4,7 @@ layout: post
 title: "5 Rekomendasi Smartphone 4 Jutaan Terbaik 2026 (Dibawah 5 Juta)"
 description: "Daftar smartphone terbaik dengan harga sekitar 4 juta rupiah di Shopee tahun 2026, performa tinggi untuk gaming, fotografi, dan produktivitas."
 image: /assets/images/posts/hp-4-jutaan-terbaik-2026.png
+category: "Gadget"
 ---
 
 Mencari smartphone dengan performa premium namun masih terjangkau di kisaran 4 juta rupiah? Di tahun 2026, kamu bisa mendapatkan chipset flagship-level, kamera yang lebih canggih, dan fitur premium lainnya di bawah 5 juta.

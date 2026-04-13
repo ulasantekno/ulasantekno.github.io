@@ -4,6 +4,7 @@ layout: post
 title: "5 Mic Wireless Murah Terbaik 2026: Suara Jernih Modal 100 Ribuan!"
 description: "Mau jadi content creator tapi budget terbatas? Cek rekomendasi mic wireless murah terbaik 2026 yang bikin suara vlog Anda jadi profesional."
 image: /assets/images/posts/mic-wireless-murah-2026.png
+category: "Gadget"
 ---
 date: 2026-03-28 18:00:00 +0700
 

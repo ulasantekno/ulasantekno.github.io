@@ -4,6 +4,7 @@ layout: post
 title: "8 HP 2 Jutaan Terbaik 2026: Update Terbaru & Paling Worth It!"
 description: "Daftar lengkap 8 HP 2 jutaan terbaik 2026 dengan baterai besar, kamera 108MP, layar AMOLED, dan fast charging. Rekomendasi terbaru untuk semua kebutuhan!"
 image: /assets/images/posts/hp-2-jutaan-terbaik-2026.png
+category: "Gadget"
 ---
 
 Mau beli HP 2 jutaan tapi bingung pilih yang mana? Di tahun 2026, persaingan HP mid-range semakin sengit dan kamu bisa mendapatkan spesifikasi wah dengan budget terjangkau. Dari baterai 6000mAh hingga kamera 108MP, semua ada di kisaran harga 2-3 jutaan.

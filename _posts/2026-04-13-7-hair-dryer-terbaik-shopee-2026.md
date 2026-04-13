@@ -4,6 +4,7 @@ layout: post
 title: "7 Hair Dryer Terbaik di Shopee 2026 - Harga Mulai 96 Ribuan!"
 description: "Rekomendasi 7 hair dryer terbaik 2026 di Shopee dari Philips, SAMONO, BRAVHOM, hingga Onlife. Ada yang beli 1 gratis 1!"
 image: /assets/images/posts/hair-dryer-terbaik-2026.png
+category: "Beauty Tech"
 ---
 
 Punya rambut susah diatur, lepek, atau kering karena salah pakai hair dryer? Pengering rambut yang tepat bisa bikin rambut halus, berkilau, dan gampang ditata — tanpa bikin rusak.

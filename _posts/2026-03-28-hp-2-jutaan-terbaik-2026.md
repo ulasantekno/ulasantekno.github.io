@@ -4,6 +4,7 @@ layout: post
 title: "5 HP 2 Jutaan Terbaik 2026: Spek Dewa, Kamera Jernih & Baterai Badak!"
 description: "Cari HP 2 jutaan dengan performa gaming kencang dan kamera 108MP? Ini dia daftar smartphone terbaik 2026 yang wajib Anda lirik."
 image: /assets/images/posts/hp-2-jutaan-terbaik-2026.png
+category: "Gadget"
 ---
 date: 2026-03-28 15:00:00 +0700
 

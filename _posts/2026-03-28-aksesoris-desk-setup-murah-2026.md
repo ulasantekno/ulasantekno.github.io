@@ -4,6 +4,7 @@ title: "5 Aksesoris Meja Kerja (Desk Setup) di Bawah 100 Ribu: Meja Estetik Gak 
 date: 2026-03-28 19:00:00 +0700
 description: "Ingin punya setup meja kerja yang rapi dan estetik ala Pinterest? Ini dia 5 aksesoris murah di bawah 100 ribu yang wajib Anda miliki."
 image: /assets/images/posts/desk-setup-estetik-2026.png
+category: "Smart Home"
 ---
 
 Memiliki meja kerja yang rapi dan nyaman adalah kunci untuk meningkatkan produktivitas dan semangat kerja. Kabar baiknya, Anda tidak perlu mengeluarkan jutaan rupiah untuk membuat setup meja yang estetik dan fungsional di tahun 2026.

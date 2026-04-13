@@ -4,6 +4,7 @@ layout: post
 title: "5 Rekomendasi TWS Murah Terbaik 2026: Harga di Bawah 200 Ribu!"
 description: "Bingung cari TWS berkualitas dengan budget pelajar? Simak daftar TWS murah terbaik tahun 2026 yang sudah kami uji kualitas audionya."
 image: /assets/images/posts/tws-murah-terbaik-2026.png
+category: "Audio"
 ---
 date: 2026-03-27 12:00:00 +0700
 

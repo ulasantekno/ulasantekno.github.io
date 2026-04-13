@@ -4,6 +4,7 @@ layout: post
 title: "5 Gadget Esensial Produktivitas 2026: Kerja Makin Nyaman & Satset!"
 description: "Ingin setup kerja lebih efisien dan estetik? Simak rekomendasi gadget produktivitas terbaik 2026 mulai dari keyboard hingga charger GaN mungil."
 image: /assets/images/posts/gadget-produktivitas-2026.png
+category: "Lifestyle"
 ---
 date: 2026-03-28 14:00:00 +0700
 

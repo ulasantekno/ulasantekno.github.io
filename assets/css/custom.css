@@ -1112,3 +1112,143 @@ Beberapa link di **UlasanTekno** adalah link afiliasi. Jika Anda membeli melalui
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/* ===== Category Pages ===== */
+.kategori-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 2px solid #e94560;
+}
+
+.kategori-header h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.kategori-header p {
+  color: #999;
+  font-size: 1em;
+}
+
+/* Post Card Grid */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.post-card {
+  background: #1a1a2e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(233, 69, 96, 0.2);
+}
+
+.post-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+}
+
+.post-card-content {
+  padding: 16px 20px;
+}
+
+.post-card-content h2 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.post-card-content h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.post-card-content h2 a:hover {
+  color: #e94560;
+}
+
+.post-date {
+  color: #888;
+  font-size: 0.85em;
+  margin-bottom: 8px;
+}
+
+.post-desc {
+  color: #bbb;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more {
+  color: #e94560;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  color: #ff6b6b;
+}
+
+/* Category nav dropdown */
+.category-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.category-nav .dropdown {
+  display: none;
+  position: absolute;
+  background: #16213e;
+  border-radius: 8px;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  padding: 8px 0;
+}
+
+.category-nav:hover .dropdown {
+  display: block;
+}
+
+.category-nav .dropdown a {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.category-nav .dropdown a:hover {
+  background: #e94560;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card-image {
+    height: 160px;
+  }
+}

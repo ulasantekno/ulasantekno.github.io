@@ -4,6 +4,7 @@ layout: post
 title: "5 Rekomendasi Smartwatch Under 500 Ribu Terbaik 2026"
 description: "Daftar smartwatch murah under 500 ribu dengan fitur lengkap untuk monitoring kesehatan dan notifikasi di tahun 2026."
 image: /assets/images/posts/gadget-produktivitas-2026.png
+category: "Gadget"
 ---
 
 Smartwatch atau jam tangan pintar kini bukan lagi barang mewah. Dengan budget di bawah 500 ribu rupiah, kamu sudah bisa mendapatkan wearable yang dilengkapi dengan monitor detak jantung, notifikasi smartphone, tracking olahraga, dan desain yang stylish.

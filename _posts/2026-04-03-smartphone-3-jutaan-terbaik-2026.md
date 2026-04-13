@@ -4,6 +4,7 @@ layout: post
 title: "5 Rekomendasi Smartphone 3 Jutaan Terbaik 2026"
 description: "Daftar smartphone terbaik dengan harga sekitar 3 juta rupiah di Shopee tahun 2026, cocok untuk sehari-hari, gaming, dan fotografi."
 image: /assets/images/posts/hp-2-jutaan-terbaik-2026.png
+category: "Gadget"
 ---
 
 Mencari smartphone berkualitas dengan budget sekitar 3 juta rupiah? Di tahun 2026, kamu bisa mendapatkan performa yang solid, kamera yang memadai, dan baterai tahan lama di kisaran harga ini.

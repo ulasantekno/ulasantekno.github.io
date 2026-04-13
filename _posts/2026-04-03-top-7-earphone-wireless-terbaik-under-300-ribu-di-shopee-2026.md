@@ -4,6 +4,7 @@ layout: post
 title: "Top 7 Earphone Wireless Terbaik under 300 Ribu di Shopee 2026"
 description: "Daftar rekomendasi earphone wireless terbaik dengan harga di bawah 300 ribu rupiah di Shopee tahun 2026, lengkap dengan link pembelian."
 image: /assets/images/posts/tws-murah-terbaik-2026.png
+category: "Audio"
 ---
 
 Halo, Sobat Tech! 🎧

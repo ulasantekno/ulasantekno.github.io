@@ -4,6 +4,7 @@ layout: post
 title: "5 Rekomendasi Laptop 5 Jutaan Terbaik 2026"
 description: "Daftar laptop budget 5 jutaan dengan performa terbaik untuk produktivitas dan kuliah di tahun 2026."
 image: /assets/images/posts/laptop-5-jutaan-terbaik-2026.png
+category: "Gadget"
 ---
 date: 2026-03-27 10:00:00 +0700
 

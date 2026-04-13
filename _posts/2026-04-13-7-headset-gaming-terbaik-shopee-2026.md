@@ -4,6 +4,7 @@ layout: post
 title: "7 Headset Gaming Terbaik di Shopee 2026 - Harga Mulai 147 Ribuan!"
 description: "Rekomendasi 7 headset gaming terbaik 2026 di Shopee dari OLIKE, dbE, Fantech, Rexus, hingga Onikuma. Harga mulai 147 ribu, ada noise cancelling & RGB!"
 image: /assets/images/posts/headset-gaming-terbaik-2026.png
+category: "Gaming"
 ---
 
 Mau main game tapi suara mic jelek atau bass lemah? Headset gaming yang tepat bisa bikin pengalaman mabar jadi jauh lebih seru — mulai dari suara langkah musuh yang jelas sampai komunikasi tim yang mulus tanpa noise.
