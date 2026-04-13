@@ -19,13 +19,29 @@ title: "UlasanTekno - Home"
 <div class="categories-section">
   <h2 class="section-title">🗂️ Kategori Utama</h2>
   <div class="category-grid">
-    <a href="/archive.html" class="category-card">
+    <a href="/kategori/gadget.html" class="category-card">
       <span class="category-icon">📱</span>
       <span class="category-name">Gadget</span>
     </a>
-    <a href="/archive.html" class="category-card">
-      <span class="category-icon">🎧</span>
-      <span class="category-name">Aksesoris</span>
+    <a href="/kategori/audio.html" class="category-card">
+      <span class="category-icon">🎵</span>
+      <span class="category-name">Audio</span>
+    </a>
+    <a href="/kategori/gaming.html" class="category-card">
+      <span class="category-icon">🎮</span>
+      <span class="category-name">Gaming</span>
+    </a>
+    <a href="/kategori/smart-home.html" class="category-card">
+      <span class="category-icon">🏠</span>
+      <span class="category-name">Smart Home</span>
+    </a>
+    <a href="/kategori/beauty-tech.html" class="category-card">
+      <span class="category-icon">💇</span>
+      <span class="category-name">Beauty Tech</span>
+    </a>
+    <a href="/kategori/lifestyle.html" class="category-card">
+      <span class="category-icon">✨</span>
+      <span class="category-name">Lifestyle</span>
     </a>
   </div>
 </div>
