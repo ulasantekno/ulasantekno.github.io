@@ -5,6 +5,7 @@ title: "8 Proyektor Mini Terbaik di Shopee 2026 - Harga Mulai 249 Ribuan!"
 description: "Rekomendasi 8 proyektor mini portable terbaik 2026 di Shopee. Ada yang support 4K, Android built-in, WiFi, dan Bluetooth! Cocok buat home theater di kamar."
 image: /assets/images/posts/proyektor-mini-terbaik-2026.png
 category: "Gadget"
+share_text: "Mau nonton Netflix layar 100 inci di kamar tapi budget terbatas? 😱 Gue baru nulis rekomendasi 8 proyektor mini terbaik di Shopee 2026 — harganya mulai 249 ribu doang! Ada yang built-in Android, WiFi 6, sampe support 4K 🎬✨"
 ---
 
 Mau nonton film layar gede di kamar tapi nggak mau beli TV mahal? Proyektor mini portable solusinya! Ukurannya kecil, harganya terjangkau, tapi bisa nampilin layar sampai 100 inci. Cocok banget buat nonton Netflix, main game, atau presentasi.
