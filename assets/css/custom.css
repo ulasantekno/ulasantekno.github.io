@@ -1252,3 +1252,73 @@ Beberapa link di **UlasanTekno** adalah link afiliasi. Jika Anda membeli melalui
     height: 160px;
   }
 }
+
+/* Share Buttons */
+.share-buttons {
+  margin: 30px 0 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.share-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.share-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: all 0.2s ease;
+  color: white !important;
+}
+
+.threads-btn {
+  background: linear-gradient(135deg, #000000 0%, #333333 100%);
+}
+
+.threads-btn:hover {
+  background: linear-gradient(135deg, #333333 0%, #555555 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.twitter-btn {
+  background: linear-gradient(135deg, #1DA1F2 0%, #0d8ecf 100%);
+}
+
+.twitter-btn:hover {
+  background: linear-gradient(135deg, #0d8ecf 0%, #0a7bb8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29,161,242,0.4);
+}
+
+/* Mobile share buttons */
+@media screen and (max-width: 480px) {
+  .share-btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .share-btn {
+    width: 80%;
+    justify-content: center;
+  }
+}
