@@ -30,19 +30,6 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="share-buttons">
-    <p class="share-title">📢 Share artikel ini:</p>
-    {% if page.share_text %}
-    {% assign share_caption = page.share_text %}
-    {% else %}
-    {% assign share_caption = page.title %}
-    {% endif %}
-    <div class="share-btn-group">
-      <a href="https://www.threads.net/intent/post?text={{ share_caption | uri_escape }}%0A{{ page.url | prepend: site.url | uri_escape }}%0A%23UlasanTekno%20%23ShopeeHaul" target="_blank" rel="noopener" class="share-btn threads-btn">🧵 Post ke Threads</a>
-      <a href="https://twitter.com/intent/tweet?text={{ share_caption | uri_escape }}%0A{{ page.url | prepend: site.url | uri_escape }}%0A%23UlasanTekno%20%23ShopeeHaul" target="_blank" rel="noopener" class="share-btn twitter-btn">🐦 Post ke Twitter</a>
-    </div>
-  </div>
-
   <footer class="post-footer">
     <a href="/" class="back-link">← Kembali ke Home</a>
   </footer>
