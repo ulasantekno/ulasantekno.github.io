@@ -11,6 +11,9 @@ keywords: "ulasan gadget, review teknologi, affiliate shopee, tws murah 2026, la
 # Permalink (tanpa category biar URL konsisten)
 permalink: /:year/:month/:day/:title.html
 
+# Show future posts
+future: true
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
