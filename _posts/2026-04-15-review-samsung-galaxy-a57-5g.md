@@ -3,7 +3,7 @@ date: 2026-04-15 10:00:00 +0700
 layout: post
 title: "Review Samsung Galaxy A57 5G: Upgrade Signifikan dari A56, Worth It?"
 description: "Review lengkap Samsung Galaxy A57 5G 2026. Exynos 1680, IP68, 5000 mAh, Super AMOLED+ 120Hz. Harga mulai Rp6,9 jutaan di Shopee."
-image: /assets/images/posts/review-samsung-galaxy-a56-5g.png
+image: /assets/images/posts/review-samsung-galaxy-a57-5g.png
 ---
 
 Samsung resmi meluncurkan **Galaxy A57 5G** pada April 2026 sebagai penerus Galaxy A56 yang cukup sukses tahun lalu. Dengan harga Rp6,9 - 7,4 jutaan, HP ini hadir dengan sejumlah upgrade signifikan yang patut dipertimbangkan.
