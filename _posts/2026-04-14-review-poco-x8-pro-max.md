@@ -100,6 +100,8 @@ POCO X8 Pro Max dilengkapi sistem kamera yang capable. Hasil foto tajam, warna n
 
 Buat yang prioritas kamera, mungkin ada HP lain yang lebih fokus di fotografi (kayak Samsung atau iPhone). Tapi buat HP gaming dengan harga segini, kamera POCO X8 Pro Max udah sangat capable.
 
+> 📸 **Cek hasil kamera POCO X8 Pro di lapangan:** [Review Kamera POCO X8 Pro (TikTok)](https://vt.tiktok.com/ZSHG3ScRu/)
+
 ## Software - HyperOS
 
 POCO X8 Pro Max jalan di HyperOS berbasis Android terbaru. Interface bersih, smooth, dan ringan. Fitur-fitur gaming khas POCO juga ada:
