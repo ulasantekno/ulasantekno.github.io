@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "category": "Lifestyle",
+    "count": 6,
+    "source": "affiliate-links.json"
+  },
+  "products": [
+    {
+      "id": "mi-lcd-tablet-13.5",
+      "name": "Mi LCD Writing Tablet 13.5",
+      "price": 219000,
+      "category": "Lifestyle",
+      "subcategory": "Gadget",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/808kuAJLk4"
+    },
+    {
+      "id": "xiaomi-high-capacity-pen",
+      "name": "Xiaomi High Capacity Pen",
+      "price": 49000,
+      "category": "Lifestyle",
+      "subcategory": "Stationery",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3LMvLUjj50"
+    },
+    {
+      "id": "xiaomi-polarized-sunglasses",
+      "name": "Xiaomi Polarized Fitover Sunglasses",
+      "price": 229000,
+      "category": "Lifestyle",
+      "subcategory": "Eyewear",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCUJ1OVDg"
+    },
+    {
+      "id": "xiaomi-electric-scooter-6",
+      "name": "Xiaomi Electric Scooter 6 Series 12-inch",
+      "price": 5499000,
+      "category": "Lifestyle",
+      "subcategory": "Electric Scooter",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3B3V90a1X0"
+    },
+    {
+      "id": "xiaomi-insulated-kettle",
+      "name": "Xiaomi Insulated Kettle 1.8L Stainless 316L",
+      "price": 319000,
+      "category": "Lifestyle",
+      "subcategory": "Kitchen",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCUK1fWvd"
+    },
+    {
+      "id": "xiaomi-rice-cooker",
+      "name": "Xiaomi Multifunctional Rice Cooker 30min Fast",
+      "price": 629000,
+      "category": "Lifestyle",
+      "subcategory": "Kitchen",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4Aw2Lr2qji"
+    }
+  ]
+}

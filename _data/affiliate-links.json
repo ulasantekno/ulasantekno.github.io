@@ -1,0 +1,913 @@
+{
+  "_meta": {
+    "description": "Database link affiliate untuk ulasanteknoid.my.id",
+    "last_updated": "2026-04-15",
+    "platforms": [
+      "shopee",
+      "tiktok_shop",
+      "tokopedia"
+    ]
+  },
+  "products": [
+    {
+      "id": "tnw-k20-mic",
+      "name": "TNW K20 USB Kondensor Mikrofon Wireless Desktop Microphone With RGB Light",
+      "price": 399000,
+      "category": "Audio",
+      "subcategory": "Microphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/qfZn274bT"
+    },
+    {
+      "id": "cabletime-mic-condenser",
+      "name": "CABLETIME Mic Condenser Audio Microphone Arm Set For Recording Live Streaming",
+      "price": 318900,
+      "category": "Audio",
+      "subcategory": "Microphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2LUNZmJMj2"
+    },
+    {
+      "id": "basike-mic-gaming",
+      "name": "BASIKE Mikrofon Gaming Esports Omnidirectional DSP Dual-Core Profesional",
+      "price": 298000,
+      "category": "Audio",
+      "subcategory": "Microphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9ztohrXgd2"
+    },
+    {
+      "id": "azko-havit-gk52",
+      "name": "AZKO Havit Live Microphone GK52 - Hitam",
+      "price": 219900,
+      "category": "Audio",
+      "subcategory": "Microphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5L7z9HULar"
+    },
+    {
+      "id": "fifine-am8-bundling",
+      "name": "FIFINE AM8 Bundling Dynamic Microphone USB XLR + Boom Arm Stand BM38 RGB",
+      "price": 1507792,
+      "category": "Audio",
+      "subcategory": "Microphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5VRPLZhjDx"
+    },
+    {
+      "id": "fifine-am8-usb",
+      "name": "Fifine AM8 USB Microphone RGB for Live Recording Studio",
+      "price": 796952,
+      "category": "Audio",
+      "subcategory": "Microphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/AADEu8tAgb"
+    },
+    {
+      "id": "samsung-a57-5g-256gb",
+      "name": "Samsung Galaxy A57 5G 8/256GB - Awesome Lilac",
+      "price": 7449000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9UxY8p2pk6"
+    },
+    {
+      "id": "samsung-a57-5g-128gb",
+      "name": "Samsung Galaxy A57 5G 8/128GB - Awesome Gray",
+      "price": 6949000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6VJwZIsKB6"
+    },
+    {
+      "id": "iqoo-15r-256gb",
+      "name": "vivo iQOO 15R 8/256GB - Snapdragon 8 Gen 5",
+      "price": 7299000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9paObgcjJN"
+    },
+    {
+      "id": "poco-x8-pro-max",
+      "name": "POCO X8 Pro Max - Dimensity 9500s",
+      "price": 5199000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2BAvZUzzsX"
+    },
+    {
+      "id": "xiaomi-watch-s4",
+      "name": "Xiaomi Watch S4 41mm/46mm",
+      "price": 1999000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6L0Wv7u5ZX"
+    },
+    {
+      "id": "poco-c85",
+      "name": "POCO C85 (6/128GB)(8/256GB) 6000mAh 33W",
+      "price": 2049000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9fGytFNOUs"
+    },
+    {
+      "id": "xiaomi-air-purifier-4-compact",
+      "name": "Xiaomi Smart Air Purifier 4 Compact",
+      "price": 1099000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/60NgWVAsyu"
+    },
+    {
+      "id": "xiaomi-magnetic-pb-10000-stand",
+      "name": "Xiaomi Magnetic Power Bank 10000mAh with Built-in Stand 33W",
+      "price": 559000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9AKiIJch6c"
+    },
+    {
+      "id": "mi-lcd-tablet-13.5",
+      "name": "Mi LCD Writing Tablet 13.5",
+      "price": 219000,
+      "category": "Lifestyle",
+      "subcategory": "Gadget",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/808kuAJLk4"
+    },
+    {
+      "id": "xiaomi-pb-33w-10000-pocket-pro",
+      "name": "Xiaomi Power Bank 33W 10000mAh Pocket Edition Pro",
+      "price": 269000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6fdNJhy1ki"
+    },
+    {
+      "id": "xiaomi-pet-air-purifier",
+      "name": "Xiaomi Smart Pet Care Air Purifier",
+      "price": 439000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8fORhNUPoE"
+    },
+    {
+      "id": "xiaomi-ultrathin-pb-5000-15w",
+      "name": "Xiaomi UltraThin Magnetic Power Bank 5000 15W",
+      "price": 999000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCUJE8fF4"
+    },
+    {
+      "id": "xiaomi-openwear-stereo-pro",
+      "name": "Xiaomi OpenWear Stereo Pro",
+      "price": 999000,
+      "category": "Audio",
+      "subcategory": "Earphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8fORhMdpBD"
+    },
+    {
+      "id": "xiaomi-67w-pb-10000-cable",
+      "name": "Xiaomi 67W Power Bank 10000mAh (Integrated Cable)",
+      "price": 449000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/30k4wwdGHK"
+    },
+    {
+      "id": "poco-c71",
+      "name": "POCO C71 (4+4GB/128GB) 6.88\" 120Hz 5200mAh",
+      "price": 1599000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9AKiIGtiYH"
+    },
+    {
+      "id": "xiaomi-165w-pb-10000-cable",
+      "name": "Xiaomi 165W Power Bank 10000mAh Integrated Cable",
+      "price": 599000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5L7zjDhyti"
+    },
+    {
+      "id": "xiaomi-buds-5",
+      "name": "Xiaomi Buds 5 aptX Lossless Hi-Res Audio",
+      "price": 1239000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3VgLXqOhRk"
+    },
+    {
+      "id": "xiaomi-earphone-basic",
+      "name": "Xiaomi In-Ear Headphones Basic",
+      "price": 79000,
+      "category": "Audio",
+      "subcategory": "Earphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6fdNJedAiH"
+    },
+    {
+      "id": "xiaomi-50w-wireless-stand-pro",
+      "name": "Xiaomi 50W Wireless Charging Stand Pro",
+      "price": 399000,
+      "category": "Gadget",
+      "subcategory": "Charger",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8fORhKBPoz"
+    },
+    {
+      "id": "xiaomi-hair-dryer-h101",
+      "name": "Xiaomi Compact Hair Dryer H101",
+      "price": 249000,
+      "category": "Beauty Tech",
+      "subcategory": "Hair Dryer",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9paP5SjBjj"
+    },
+    {
+      "id": "redmi-pad-se-8.7",
+      "name": "Xiaomi Redmi Pad SE 8.7 (4/128GB) 90Hz 6650mAh",
+      "price": 1699000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3B3V9CoUgE"
+    },
+    {
+      "id": "xiaomi-smart-band-9-pro",
+      "name": "Xiaomi Smart Band 9 Pro 1.74\" 150 Sports",
+      "price": 1029000,
+      "category": "Gadget",
+      "subcategory": "Smartband",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4LFSXLMGaD"
+    },
+    {
+      "id": "xiaomi-67w-pb-20000-cable",
+      "name": "Xiaomi 67W Power Bank 20000mAh (Integrated Cable)",
+      "price": 549000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/20rXl38wcN"
+    },
+    {
+      "id": "xiaomi-high-capacity-pen",
+      "name": "Xiaomi High Capacity Pen",
+      "price": 49000,
+      "category": "Lifestyle",
+      "subcategory": "Stationery",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3LMvLUjj50"
+    },
+    {
+      "id": "xiaomi-focus-pen",
+      "name": "Xiaomi Focus Pen 8192-level 120Hz",
+      "price": 999000,
+      "category": "Gadget",
+      "subcategory": "Stylus",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7fVuVS7VQL"
+    },
+    {
+      "id": "xiaomi-pb-10000-cable",
+      "name": "Xiaomi Power Bank 10000mAh Integrated Cable",
+      "price": 269000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6pwnVuk0N8"
+    },
+    {
+      "id": "xiaomi-33w-magnetic-pb-10000",
+      "name": "Xiaomi 33W Magnetic Power Bank 10000mAh (Integrated Cable)",
+      "price": 399000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6fdNJajwYn"
+    },
+    {
+      "id": "xiaomi-espresso-machine",
+      "name": "Xiaomi Semi-automatic Espresso Coffee Machine 20 Bar",
+      "price": 1549000,
+      "category": "Smart Home",
+      "subcategory": "Coffee Machine",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4Aw2KzYYun"
+    },
+    {
+      "id": "redmi-buds-6-pro",
+      "name": "Xiaomi Redmi Buds 6 Pro LDAC 55dB ANC",
+      "price": 749000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2qQekXHmEP"
+    },
+    {
+      "id": "redmi-buds-8-pro",
+      "name": "Xiaomi Redmi Buds 8 Pro ANC 55dB Dolby Audio",
+      "price": 999000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7AZduSrQsq"
+    },
+    {
+      "id": "xiaomi-20w-adapter-type-c",
+      "name": "Xiaomi 20W Fast Charging Adapter (Type-C)",
+      "price": 109000,
+      "category": "Gadget",
+      "subcategory": "Charger",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3VgLXijOPT"
+    },
+    {
+      "id": "xiaomi-33w-combo-type-a",
+      "name": "Xiaomi 33W Charging Combo Type A",
+      "price": 149000,
+      "category": "Gadget",
+      "subcategory": "Charger",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2VnoLsRGmv"
+    },
+    {
+      "id": "xiaomi-33w-pb-10000-cable",
+      "name": "Xiaomi 33W Power Bank 10000mAh (Integrated Cable)",
+      "price": 319000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9UxYgjaQg7"
+    },
+    {
+      "id": "redmi-buds-6",
+      "name": "Xiaomi Redmi Buds 6 Dual-Driver 49dB ANC",
+      "price": 549000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2qQekT63XR"
+    },
+    {
+      "id": "redmi-watch-5-active",
+      "name": "Xiaomi Redmi Watch 5 Active 2.0\" LCD 140 Sports 5ATM",
+      "price": 599000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7AZduQTptT"
+    },
+    {
+      "id": "xiaomi-33w-nano-adapter",
+      "name": "Xiaomi 33W Nano Power Adapter (USB-C) GaN",
+      "price": 169000,
+      "category": "Gadget",
+      "subcategory": "Charger",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4qBj88GaC0"
+    },
+    {
+      "id": "redmi-watch-5",
+      "name": "Xiaomi Redmi Watch 5 AMOLED 2.07\" 24 Days Battery",
+      "price": 1099000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/40cc8axPe9"
+    },
+    {
+      "id": "xiaomi-polarized-sunglasses",
+      "name": "Xiaomi Polarized Fitover Sunglasses",
+      "price": 229000,
+      "category": "Lifestyle",
+      "subcategory": "Eyewear",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCUJ1OVDg"
+    },
+    {
+      "id": "xiaomi-67w-combo-type-a",
+      "name": "Xiaomi 67W HyperCharge Combo Type A",
+      "price": 219000,
+      "category": "Gadget",
+      "subcategory": "Charger",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3VgLXfFfXe"
+    },
+    {
+      "id": "xiaomi-33w-pb-20000",
+      "name": "Xiaomi 33W Power Bank 20000mAh Integrated Cable",
+      "price": 379000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/BPtZX6MOQ"
+    },
+    {
+      "id": "xiaomi-pb-20000-cable",
+      "name": "Xiaomi Power Bank 20000mAh Integrated Cable",
+      "price": 339000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3LMvLLaRBW"
+    },
+    {
+      "id": "xiaomi-smart-band-10",
+      "name": "Xiaomi Smart Band 10 1.72\" AMOLED 150 Sports 21 Days",
+      "price": 599000,
+      "category": "Gadget",
+      "subcategory": "Smartband",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4Aw2Ks98S3"
+    },
+    {
+      "id": "xiaomi-90w-combo-type-a",
+      "name": "Xiaomi 90W HyperCharge Combo Type-A",
+      "price": 259000,
+      "category": "Gadget",
+      "subcategory": "Charger",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2BAxxBut7b"
+    },
+    {
+      "id": "redmi-watch-5-lite",
+      "name": "Xiaomi Redmi Watch 5 Lite 1.96\" AMOLED GNSS 18 Days",
+      "price": 699000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2VnoLnZc8W"
+    },
+    {
+      "id": "xiaomi-electric-scooter-6",
+      "name": "Xiaomi Electric Scooter 6 Series 12-inch",
+      "price": 5499000,
+      "category": "Lifestyle",
+      "subcategory": "Electric Scooter",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3B3V90a1X0"
+    },
+    {
+      "id": "xiaomi-pb-22.5w-10000-lite",
+      "name": "Xiaomi Power Bank 22.5W 10000mAh Lite",
+      "price": 149000,
+      "category": "Gadget",
+      "subcategory": "Powerbank",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5fkq7b6E6M"
+    },
+    {
+      "id": "xiaomi-watch-s1-strap",
+      "name": "Xiaomi Watch S1 Active Strap",
+      "price": 139000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch Accessory",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/10z0Z10kwE"
+    },
+    {
+      "id": "xiaomi-smart-band-9-active",
+      "name": "Xiaomi Smart Band 9 Active 60Hz 50 Sports 18 Days",
+      "price": 319000,
+      "category": "Gadget",
+      "subcategory": "Smartband",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9paP5F22iF"
+    },
+    {
+      "id": "xiaomi-tag",
+      "name": "Xiaomi Tag Apple Find My & Google Find Hub IP67",
+      "price": 199000,
+      "category": "Gadget",
+      "subcategory": "Tracker",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3fzlju5ReZ"
+    },
+    {
+      "id": "redmi-buds-8-lite",
+      "name": "Xiaomi Redmi Buds 8 Lite ANC 42dB 36 Hours",
+      "price": 319000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/1gEhMCiWk9"
+    },
+    {
+      "id": "xiaomi-earphone-type-c",
+      "name": "Xiaomi Earphone Type-C IP54",
+      "price": 79000,
+      "category": "Audio",
+      "subcategory": "Earphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/10z0YyTk0n"
+    },
+    {
+      "id": "redmi-buds-6-play",
+      "name": "Xiaomi Redmi Buds 6 Play BT5.4 36 Hours",
+      "price": 149000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5VRPvEqKv4"
+    },
+    {
+      "id": "redmi-buds-8-active",
+      "name": "Xiaomi Redmi Buds 8 Active 14.2mm Titanium 37 Hours",
+      "price": 239000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/40cc8TaBZo"
+    },
+    {
+      "id": "redmi-note-15-4g",
+      "name": "Xiaomi Redmi Note 15 (6/128GB)(8/256GB) 6000mAh 108MP",
+      "price": 2699000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7ppLPmUl2Y"
+    },
+    {
+      "id": "poco-m7",
+      "name": "POCO M7 (8/256GB) 7000mAh 144Hz 50MP",
+      "price": 2749000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/BPuHgeQ7h"
+    },
+    {
+      "id": "xiaomi-projector-l1",
+      "name": "Xiaomi Smart Projector L1 Series FHD Google TV",
+      "price": 2799000,
+      "category": "Smart Home",
+      "subcategory": "Projector",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6VJxpJpqJb"
+    },
+    {
+      "id": "xiaomi-monitor-g27qi",
+      "name": "Xiaomi Gaming Monitor G27Qi 2K 180Hz IPS",
+      "price": 2799000,
+      "category": "Gadget",
+      "subcategory": "Monitor",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8V52CzMuy0"
+    },
+    {
+      "id": "xiaomi-buds-5-pro-wifi",
+      "name": "Xiaomi Buds 5 Pro Wi-Fi Lossless Audio",
+      "price": 2889000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6L0Xd08p9R"
+    },
+    {
+      "id": "xiaomi-google-tv-a43",
+      "name": "Xiaomi Google TV A 43 2026 FHD",
+      "price": 2899000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4VYtRcr7if"
+    },
+    {
+      "id": "redmi-pad-2-play",
+      "name": "Xiaomi Redmi Pad 2 Play Bundle (4/128GB) 11\" 2.5K",
+      "price": 2999000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4VYtRcG4Nd"
+    },
+    {
+      "id": "xiaomi-air-purifier-4-pro",
+      "name": "Xiaomi Smart Air Purifier 4 Pro OLED",
+      "price": 2999000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5AoaEpwPjN"
+    },
+    {
+      "id": "poco-m7-pro-5g",
+      "name": "POCO M7 Pro 5G (8/256GB) Dimensity 7025-Ultra",
+      "price": 2999000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2qQfSXVLJw"
+    },
+    {
+      "id": "xiaomi-watch-2-pro-bt",
+      "name": "Xiaomi Watch 2 Pro Bluetooth WearOS Snapdragon W5+",
+      "price": 3199000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/AADGC0jUOX"
+    },
+    {
+      "id": "redmi-note-15-5g",
+      "name": "Xiaomi Redmi Note 15 5G (6/128GB)(12/512GB) 108MP",
+      "price": 3299000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/70GEQBZcBK"
+    },
+    {
+      "id": "xiaomi-monitor-4k-a27ui",
+      "name": "Xiaomi 4K Monitor A27Ui IPS USB-C 90W",
+      "price": 3499000,
+      "category": "Gadget",
+      "subcategory": "Monitor",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/qfb4qZEhk"
+    },
+    {
+      "id": "xiaomi-tv-a-pro-43",
+      "name": "Xiaomi TV A Pro 43 2026 4K QLED HDR10+",
+      "price": 3599000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/LjKTvF0Go"
+    },
+    {
+      "id": "poco-x7-5g",
+      "name": "POCO X7 5G Dimensity 7300-Ultra CrystalRes 1.5K",
+      "price": 3599000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/qfb4pt5wq"
+    },
+    {
+      "id": "xiaomi-monitor-g34wqi",
+      "name": "Xiaomi Curved Gaming Monitor G34WQi 34\" UWQHD 180Hz",
+      "price": 3999000,
+      "category": "Gadget",
+      "subcategory": "Monitor",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/808kvFIgRE"
+    },
+    {
+      "id": "redmi-pad-2-pro",
+      "name": "Redmi Pad 2 Pro 12.1\" 2.5K 12000mAh Snapdragon 7s Gen 4",
+      "price": 4499000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2BAxyWBscK"
+    },
+    {
+      "id": "xiaomi-vacuum-g30-max",
+      "name": "Xiaomi Vacuum Cleaner G30 Max 280AW 90min",
+      "price": 4999000,
+      "category": "Smart Home",
+      "subcategory": "Vacuum",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5VRpwdYaMz"
+    },
+    {
+      "id": "poco-x8-pro-series",
+      "name": "POCO X8 Pro Series (X8 Pro Max / X8 Pro)",
+      "price": 5199000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/BPtaoAP0F"
+    },
+    {
+      "id": "poco-x7-pro-5g",
+      "name": "POCO X7 Pro 5G Dimensity 8400-Ultra 6000mAh",
+      "price": 5199000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/60NgXWVygl"
+    },
+    {
+      "id": "xiaomi-pad-7",
+      "name": "Xiaomi Pad 7 (8/256GB) SD7+ Gen 3 11.2\" 3.2K 144Hz",
+      "price": 5499000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6fdNKjyutf"
+    },
+    {
+      "id": "poco-f7",
+      "name": "POCO F7 (12/512GB) Snapdragon 8s Gen 4 6500mAh IP68",
+      "price": 5999000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6pwnX2Hw1Y"
+    },
+    {
+      "id": "redmi-note-15-pro-plus",
+      "name": "Xiaomi Redmi Note 15 Pro+ 5G 200MP 6500mAh 100W IP69K",
+      "price": 5999000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6pwnX2Hw1Y"
+    },
+    {
+      "id": "poco-pad-x1",
+      "name": "POCO Pad X1 (8/512GB) 3.2K 144Hz SD7+ Gen 3 8850mAh",
+      "price": 7297000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/BPtakuuRA"
+    },
+    {
+      "id": "xiaomi-tv-a-pro-65",
+      "name": "Xiaomi TV A Pro 65 2026 4K QLED 120Hz HDR10+",
+      "price": 7499000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8fORiMcMM3"
+    },
+    {
+      "id": "poco-f7-pro",
+      "name": "POCO F7 Pro (12/512GB) SD8 Gen 3 6000mAh 2K 120Hz",
+      "price": 7499000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/901I6yHdSa"
+    },
+    {
+      "id": "xiaomi-pad-8-series",
+      "name": "Xiaomi Pad 8 Series (Pad 8 / Pad 8 Pro) SD8 9200mAh",
+      "price": 7499000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9UxYhsvNqE"
+    },
+    {
+      "id": "xiaomi-15t-series",
+      "name": "Xiaomi 15T / 15T Pro (12/512GB) Leica Dimensity 8400",
+      "price": 7999000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4VYskgme24"
+    },
+    {
+      "id": "xiaomi-robot-vacuum-5",
+      "name": "Xiaomi Robot Vacuum 5 DToF 20000Pa ultra-tipis",
+      "price": 9399000,
+      "category": "Smart Home",
+      "subcategory": "Robot Vacuum",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3fzll9LV5R"
+    },
+    {
+      "id": "poco-f7-ultra",
+      "name": "POCO F7 Ultra SD8 Elite 120W 2K AMOLED",
+      "price": 9599000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/AADFV5brC5"
+    },
+    {
+      "id": "xiaomi-tv-a-pro-75",
+      "name": "Xiaomi TV A Pro 75 2026 4K QLED 120Hz",
+      "price": 11999000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCUKBUcFY"
+    },
+    {
+      "id": "xiaomi-17-leica",
+      "name": "Xiaomi 17 (12/256GB)(12/512GB) Leica SD8 Elite Gen 5",
+      "price": 14999000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/1LbqyqW1aD"
+    },
+    {
+      "id": "xiaomi-mijia-fridge-510l",
+      "name": "Xiaomi Mijia Refrigerator Cross Door 510L Smart",
+      "price": 7999000,
+      "category": "Smart Home",
+      "subcategory": "Appliance",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9paP6P3tTv"
+    },
+    {
+      "id": "xiaomi-buds-5-pro",
+      "name": "Xiaomi Buds 5 Pro Triple Drivers HARMAN AudioEFX",
+      "price": 2599000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/qfaNrI5AW"
+    },
+    {
+      "id": "xiaomi-outdoor-camera-cw100",
+      "name": "Xiaomi Outdoor Camera CW100 Dual 3MP IP66",
+      "price": 699000,
+      "category": "Smart Home",
+      "subcategory": "Camera",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9AKiJ7LFMC"
+    },
+    {
+      "id": "redmi-pad-2-series",
+      "name": "Xiaomi Redmi Pad 2 Series 11\" 2.5K 9000mAh",
+      "price": 2499000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9Ke8VPKsXY"
+    },
+    {
+      "id": "xiaomi-insulated-kettle",
+      "name": "Xiaomi Insulated Kettle 1.8L Stainless 316L",
+      "price": 319000,
+      "category": "Lifestyle",
+      "subcategory": "Kitchen",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCUK1fWvd"
+    },
+    {
+      "id": "xiaomi-type-c-hub-5in1",
+      "name": "Xiaomi 5 in 1 Type-C Hub",
+      "price": 409000,
+      "category": "Gadget",
+      "subcategory": "Accessory",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4Aw2LswxFA"
+    },
+    {
+      "id": "xiaomi-tv-box-s-3rd",
+      "name": "Xiaomi TV Box S 3rd Gen 4K Dolby Vision Atmos WiFi 6",
+      "price": 899000,
+      "category": "Smart Home",
+      "subcategory": "TV Box",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5fkq8dVvuq"
+    },
+    {
+      "id": "xiaomi-air-purifier-4-lite",
+      "name": "Xiaomi Smart Air Purifier 4 Lite 360° WiFi 43m²",
+      "price": 1699000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/qfaNjjzgE"
+    },
+    {
+      "id": "xiaomi-rice-cooker",
+      "name": "Xiaomi Multifunctional Rice Cooker 30min Fast",
+      "price": 629000,
+      "category": "Lifestyle",
+      "subcategory": "Kitchen",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4Aw2Lr2qji"
+    },
+    {
+      "id": "xiaomi-robot-vacuum-e5-acc",
+      "name": "Xiaomi Robot Vacuum E5 Accessories",
+      "price": 49000,
+      "category": "Smart Home",
+      "subcategory": "Vacuum Accessory",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4fsIwleBvT"
+    }
+  ]
+}

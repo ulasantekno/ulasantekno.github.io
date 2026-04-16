@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "category": "Smart Home",
+    "count": 16,
+    "source": "affiliate-links.json"
+  },
+  "products": [
+    {
+      "id": "xiaomi-air-purifier-4-compact",
+      "name": "Xiaomi Smart Air Purifier 4 Compact",
+      "price": 1099000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/60NgWVAsyu"
+    },
+    {
+      "id": "xiaomi-pet-air-purifier",
+      "name": "Xiaomi Smart Pet Care Air Purifier",
+      "price": 439000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8fORhNUPoE"
+    },
+    {
+      "id": "xiaomi-espresso-machine",
+      "name": "Xiaomi Semi-automatic Espresso Coffee Machine 20 Bar",
+      "price": 1549000,
+      "category": "Smart Home",
+      "subcategory": "Coffee Machine",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4Aw2KzYYun"
+    },
+    {
+      "id": "xiaomi-projector-l1",
+      "name": "Xiaomi Smart Projector L1 Series FHD Google TV",
+      "price": 2799000,
+      "category": "Smart Home",
+      "subcategory": "Projector",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6VJxpJpqJb"
+    },
+    {
+      "id": "xiaomi-google-tv-a43",
+      "name": "Xiaomi Google TV A 43 2026 FHD",
+      "price": 2899000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4VYtRcr7if"
+    },
+    {
+      "id": "xiaomi-air-purifier-4-pro",
+      "name": "Xiaomi Smart Air Purifier 4 Pro OLED",
+      "price": 2999000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5AoaEpwPjN"
+    },
+    {
+      "id": "xiaomi-tv-a-pro-43",
+      "name": "Xiaomi TV A Pro 43 2026 4K QLED HDR10+",
+      "price": 3599000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/LjKTvF0Go"
+    },
+    {
+      "id": "xiaomi-vacuum-g30-max",
+      "name": "Xiaomi Vacuum Cleaner G30 Max 280AW 90min",
+      "price": 4999000,
+      "category": "Smart Home",
+      "subcategory": "Vacuum",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5VRpwdYaMz"
+    },
+    {
+      "id": "xiaomi-tv-a-pro-65",
+      "name": "Xiaomi TV A Pro 65 2026 4K QLED 120Hz HDR10+",
+      "price": 7499000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8fORiMcMM3"
+    },
+    {
+      "id": "xiaomi-robot-vacuum-5",
+      "name": "Xiaomi Robot Vacuum 5 DToF 20000Pa ultra-tipis",
+      "price": 9399000,
+      "category": "Smart Home",
+      "subcategory": "Robot Vacuum",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3fzll9LV5R"
+    },
+    {
+      "id": "xiaomi-tv-a-pro-75",
+      "name": "Xiaomi TV A Pro 75 2026 4K QLED 120Hz",
+      "price": 11999000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCUKBUcFY"
+    },
+    {
+      "id": "xiaomi-mijia-fridge-510l",
+      "name": "Xiaomi Mijia Refrigerator Cross Door 510L Smart",
+      "price": 7999000,
+      "category": "Smart Home",
+      "subcategory": "Appliance",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9paP6P3tTv"
+    },
+    {
+      "id": "xiaomi-outdoor-camera-cw100",
+      "name": "Xiaomi Outdoor Camera CW100 Dual 3MP IP66",
+      "price": 699000,
+      "category": "Smart Home",
+      "subcategory": "Camera",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9AKiJ7LFMC"
+    },
+    {
+      "id": "xiaomi-tv-box-s-3rd",
+      "name": "Xiaomi TV Box S 3rd Gen 4K Dolby Vision Atmos WiFi 6",
+      "price": 899000,
+      "category": "Smart Home",
+      "subcategory": "TV Box",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5fkq8dVvuq"
+    },
+    {
+      "id": "xiaomi-air-purifier-4-lite",
+      "name": "Xiaomi Smart Air Purifier 4 Lite 360° WiFi 43m²",
+      "price": 1699000,
+      "category": "Smart Home",
+      "subcategory": "Air Purifier",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/qfaNjjzgE"
+    },
+    {
+      "id": "xiaomi-robot-vacuum-e5-acc",
+      "name": "Xiaomi Robot Vacuum E5 Accessories",
+      "price": 49000,
+      "category": "Smart Home",
+      "subcategory": "Vacuum Accessory",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4fsIwleBvT"
+    }
+  ]
+}

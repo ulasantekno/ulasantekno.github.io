@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "category": "Beauty Tech",
+    "count": 1,
+    "source": "affiliate-links.json"
+  },
+  "products": [
+    {
+      "id": "xiaomi-hair-dryer-h101",
+      "name": "Xiaomi Compact Hair Dryer H101",
+      "price": 249000,
+      "category": "Beauty Tech",
+      "subcategory": "Hair Dryer",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9paP5SjBjj"
+    }
+  ]
+}
