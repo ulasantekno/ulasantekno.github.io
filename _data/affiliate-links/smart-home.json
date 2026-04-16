@@ -1,7 +1,7 @@
 {
   "_meta": {
     "category": "Smart Home",
-    "count": 16,
+    "count": 27,
     "source": "affiliate-links.json"
   },
   "products": [
@@ -148,6 +148,105 @@
       "subcategory": "Vacuum Accessory",
       "platform": "shopee",
       "link": "https://s.shopee.co.id/4fsIwleBvT"
+    },
+    {
+      "id": "samsung-mesin-cuci-front-load-7kg-hygiene-steam-dr",
+      "name": "Samsung Mesin Cuci Front Load 7Kg | Hygiene Steam | Drum Clean | WW70FG3M05TWSE",
+      "price": 3819000,
+      "category": "Smart Home",
+      "subcategory": "Washing Machine",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2BAzY5nqIGCek"
+    },
+    {
+      "id": "samsung-50-crystal-uhd-4k-ue100f-4k-smart-tv-ua50u",
+      "name": "Samsung 50\" Crystal UHD 4K UE100F 4K Smart TV | UA50UE100FKXXD",
+      "price": 4629000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6L0YViqf6vCek"
+    },
+    {
+      "id": "samsung-43-fhd-f6000-tv-hdr-ots-lite-one-ui-tizen-",
+      "name": "Samsung 43\" FHD F6000 TV | HDR | OTS Lite | One UI Tizen | UA43F6000FKXXD",
+      "price": 4599000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5fkriVF3qjCek"
+    },
+    {
+      "id": "samsung-kulkas-2-pintu-kapasitas-234-liter-rt22far",
+      "name": "Samsung Kulkas 2 Pintu Kapasitas 234 Liter RT22FARBDSA/SE METAL GRAPHITE",
+      "price": 4695800,
+      "category": "Smart Home",
+      "subcategory": "Fridge",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9AKjsvMLsvCek"
+    },
+    {
+      "id": "samsung-smart-tv-43-qled-4k-qef1-q4-ai-processor-s",
+      "name": "Samsung Smart TV 43\" QLED 4K QEF1 | Q4 AI Processor | Samsung Knox Security | QA43QEF1AKXXD",
+      "price": 4724600,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4VYuKLFe0CCek"
+    },
+    {
+      "id": "samsung-50-crystal-uhd-4k-u8000f-smart-tv-crystal-",
+      "name": "Samsung 50\" Crystal UHD 4K U8000F Smart TV | Crystal Processor 4K | SmartThings | UA50U8000FKXXD",
+      "price": 4749000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2LUPkM1pEmCek"
+    },
+    {
+      "id": "online-exclusive-samsung-kulkas-2-pintu-dengan-coo",
+      "name": "[ONLINE EXCLUSIVE] Samsung Kulkas 2 Pintu dengan Coolpack 12 Jam 255L - RT25FARBDB1/SE",
+      "price": 5649000,
+      "category": "Smart Home",
+      "subcategory": "Fridge",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6VJyi01yL6Cek"
+    },
+    {
+      "id": "samsung-kulkas-2-pintu-rt25farbdsa-metal-graphite",
+      "name": "Samsung Kulkas 2 Pintu RT25FARBDSA - Metal Graphite",
+      "price": 5549000,
+      "category": "Smart Home",
+      "subcategory": "Fridge",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6Ah8JNd37ZCek"
+    },
+    {
+      "id": "samsung-smart-tv-50-qled-4k-q7f-q4-ai-processor-sa",
+      "name": "Samsung Smart TV 50\" QLED 4K Q7F | Q4 AI Processor | Samsung Knox Security | QA50Q7FAAKXXD",
+      "price": 6399000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8fOTHwA81rCek"
+    },
+    {
+      "id": "samsung-55-crystal-uhd-4k-u8000f-smart-tv-crystal-",
+      "name": "Samsung 55\" Crystal UHD 4K U8000F Smart TV | Crystal Processor 4K | SmartThings | UA55U8000FKXXD",
+      "price": 6449000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4fsKWZL9dSCek"
+    },
+    {
+      "id": "samsung-65-crystal-uhd-4k-ue100f-4k-smart-tv",
+      "name": "Samsung 65\" Crystal UHD 4K UE100F 4K Smart TV",
+      "price": 7899000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8KlctFvPkvCek"
     }
   ]
 }
