@@ -1,8 +1,7 @@
 {
   "_meta": {
     "category": "Smart Home",
-    "count": 27,
-    "source": "affiliate-links.json"
+    "count": 34
   },
   "products": [
     {
@@ -247,6 +246,69 @@
       "subcategory": "Smart TV",
       "platform": "shopee",
       "link": "https://s.shopee.co.id/8KlctFvPkvCek"
+    },
+    {
+      "id": "samsung-32-hd-he50e-tv-hdr-ots-lite-one-ui-tizen-s",
+      "name": "Samsung 32\" HD HE50E TV | HDR | OTS Lite | One UI Tizen | Slim Design | UA32HE50EFKLXD",
+      "price": 2459000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9fH0U9f63dCek"
+    },
+    {
+      "id": "samsung-mesin-cuci-top-loading-7-5kg-eco-tub-clean",
+      "name": "Samsung Mesin Cuci Top Loading 7.5Kg | Eco Tub Clean | WA75H4200SG/SE",
+      "price": 2539000,
+      "category": "Smart Home",
+      "subcategory": "Washing Machine",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/901JgutFCNCek"
+    },
+    {
+      "id": "samsung-mesin-cuci-top-loading-9kg-eco-tub-clean-w",
+      "name": "Samsung Mesin Cuci Top Loading 9Kg | Eco Tub Clean | WA90H4200SG/SE",
+      "price": 2889000,
+      "category": "Smart Home",
+      "subcategory": "Washing Machine",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2VnpwwAcGyCek"
+    },
+    {
+      "id": "samsung-mesin-cuci-top-loading-8kg-eco-tub-clean-w",
+      "name": "Samsung Mesin Cuci Top Loading 8Kg | Eco Tub Clean | WA80H4200SW/SE",
+      "price": 3400000,
+      "category": "Smart Home",
+      "subcategory": "Washing Machine",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8V535x7123Cek"
+    },
+    {
+      "id": "samsung-rt19m300bgs-kulkas-2-pintu-grey-silver",
+      "name": "Samsung RT19M300BGS Kulkas 2 Pintu - Grey Silver",
+      "price": 3509000,
+      "category": "Smart Home",
+      "subcategory": "Fridge",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/808mV1KWnKCek"
+    },
+    {
+      "id": "samsung-kulkas-2-pintu-203l-rt20farwdsa-se-metal-g",
+      "name": "Samsung Kulkas 2 Pintu 203L RT20FARWDSA/SE - Metal Graphite",
+      "price": 3649800,
+      "category": "Smart Home",
+      "subcategory": "Fridge",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5L81K7AoQFCek"
+    },
+    {
+      "id": "samsung-43-crystal-uhd-4k-u8000f-smart-tv-crystal-",
+      "name": "Samsung 43\" Crystal UHD 4K U8000F Smart TV | Crystal Processor 4K | SmartThings | UA43U8000FKXXD",
+      "price": 3679000,
+      "category": "Smart Home",
+      "subcategory": "Smart TV",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2LUPkar9z4Cek"
     }
   ]
 }

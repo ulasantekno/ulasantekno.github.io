@@ -1,8 +1,7 @@
 {
   "_meta": {
     "category": "Gadget",
-    "count": 98,
-    "source": "affiliate-links.json"
+    "count": 116
   },
   "products": [
     {
@@ -886,6 +885,168 @@
       "subcategory": "Smartphone",
       "platform": "shopee",
       "link": "https://s.shopee.co.id/1qY997w8sF"
+    },
+    {
+      "id": "samsung-galaxy-fit-3-pink-gold",
+      "name": "Samsung Galaxy Fit 3 - Pink Gold",
+      "price": 859000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/6pwp72yWl4Cek"
+    },
+    {
+      "id": "samsung-galaxy-fit-3-gray",
+      "name": "Samsung Galaxy Fit 3 - Gray",
+      "price": 859000,
+      "category": "Gadget",
+      "subcategory": "Smartwatch",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8V5366WFjACek"
+    },
+    {
+      "id": "s20-leather-cover-brown",
+      "name": "S20 Leather Cover - Brown",
+      "price": 999000,
+      "category": "Gadget",
+      "subcategory": "Accessories",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/4Aw3w8QoruCek"
+    },
+    {
+      "id": "gift-samsung-galaxy-tab-s9-smart-book-cover-white",
+      "name": "[GIFT] Samsung Galaxy Tab S9+ Smart Book Cover - White",
+      "price": 1199000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3VgN8u0YLaCek"
+    },
+    {
+      "id": "samsung-galaxy-a07-4-64gb-green",
+      "name": "Samsung Galaxy A07 4/64GB - Green",
+      "price": 1599000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9ztqspbjNgCek"
+    },
+    {
+      "id": "samsung-galaxy-a07-4-64gb-light-violet",
+      "name": "Samsung Galaxy A07 4/64GB - Light Violet",
+      "price": 1599000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/W2lZMseEYCek"
+    },
+    {
+      "id": "samsung-galaxy-a07-4-64gb-black",
+      "name": "Samsung Galaxy A07 4/64GB - Black",
+      "price": 1599000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/LjLN3T5eNCek"
+    },
+    {
+      "id": "special-bundling-case-ta-samsung-galaxy-a07-4-64gb",
+      "name": "[Special Bundling Case + TA] Samsung Galaxy A07 4/64GB - Light Violet",
+      "price": 1699000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9paQgUvFlCCek"
+    },
+    {
+      "id": "samsung-galaxy-a07-4-128gb-black",
+      "name": "Samsung Galaxy A07 4/128GB - Black",
+      "price": 1899000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5Aob7uoxRzCek"
+    },
+    {
+      "id": "samsung-galaxy-tab-a11-wifi-4-64gb-gray",
+      "name": "Samsung Galaxy Tab A11 WiFi 4/64GB - Gray",
+      "price": 2159000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/1VvIlAeVnfCek"
+    },
+    {
+      "id": "samsung-galaxy-a07-6-128gb-green",
+      "name": "Samsung Galaxy A07 6/128GB - Green",
+      "price": 2199000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2BAzYO9Vt0Cek"
+    },
+    {
+      "id": "samsung-galaxy-a07-6-128gb-black",
+      "name": "Samsung Galaxy A07 6/128GB - Black",
+      "price": 2199000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5L81KChvCECek"
+    },
+    {
+      "id": "samsung-galaxy-tab-a11-wifi-kids-pack-4-64-gb-gray",
+      "name": "Samsung Galaxy Tab A11 WiFi Kids Pack 4/64 GB - Gray",
+      "price": 2499000,
+      "category": "Gadget",
+      "subcategory": "Tablet",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/1BISMWenlKCek"
+    },
+    {
+      "id": "special-bundling-case-ta-samsung-galaxy-a07-8-256g",
+      "name": "[Special Bundling Case + TA] Samsung Galaxy A07 8/256GB - Black",
+      "price": 2599000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/1LbsYp2Hw4Cek"
+    },
+    {
+      "id": "samsung-galaxy-a07-5g-6-128gb-black",
+      "name": "Samsung Galaxy A07 5G 6/128GB - Black",
+      "price": 2749000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7VCVu8qhFJCek"
+    },
+    {
+      "id": "samsung-galaxy-a16-8-128gb-black",
+      "name": "Samsung Galaxy A16 8/128GB - Black",
+      "price": 2759000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/W2lZGvD0tCek"
+    },
+    {
+      "id": "samsung-galaxy-a07-5g-6-128gb-light-violet",
+      "name": "Samsung Galaxy A07 5G 6/128GB - Light Violet",
+      "price": 2799000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7Kt5hp93iyCek"
+    },
+    {
+      "id": "samsung-galaxy-a17-8-256gb-black",
+      "name": "Samsung Galaxy A17 8/256GB - Black",
+      "price": 3498000,
+      "category": "Gadget",
+      "subcategory": "Smartphone",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/8V535wjR33Cek"
     }
   ]
 }

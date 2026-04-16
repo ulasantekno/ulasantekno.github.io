@@ -1,8 +1,7 @@
 {
   "_meta": {
     "category": "Audio",
-    "count": 18,
-    "source": "affiliate-links.json"
+    "count": 27
   },
   "products": [
     {
@@ -166,6 +165,87 @@
       "subcategory": "TWS",
       "platform": "shopee",
       "link": "https://s.shopee.co.id/qfaNrI5AW"
+    },
+    {
+      "id": "samsung-galaxy-buds-core-black",
+      "name": "Samsung Galaxy Buds Core - Black",
+      "price": 799000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5q4HvDUj5OCek"
+    },
+    {
+      "id": "samsung-soundbar-hw-t420-2-1-ch-150-w-2020",
+      "name": "Samsung Soundbar HW-T420 2.1 Ch, 150 W 2020",
+      "price": 1467300,
+      "category": "Audio",
+      "subcategory": "Soundbar",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/AKWhHRwfOHCek"
+    },
+    {
+      "id": "samsung-galaxy-buds3-fe-gray",
+      "name": "Samsung Galaxy Buds3 FE - Gray",
+      "price": 1699000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/808mV8jxFwCek"
+    },
+    {
+      "id": "samsung-galaxy-buds3-fe-black",
+      "name": "Samsung Galaxy Buds3 FE - Black",
+      "price": 1699000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/808mV8M6GOCek"
+    },
+    {
+      "id": "gift-samsung-galaxy-buds-live-mystic-black",
+      "name": "[Gift] Samsung Galaxy Buds Live - Mystic Black",
+      "price": 2399000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/5q4Hv79IP1Cek"
+    },
+    {
+      "id": "samsung-galaxy-buds4-white-ambient-mode-multi-ai-a",
+      "name": "Samsung Galaxy Buds4 - White | Ambient Mode | Multi AI Agent | ANC",
+      "price": 2726100,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/3LMwwUSYdQCek"
+    },
+    {
+      "id": "samsung-galaxy-buds4-black-ambient-mode-multi-ai-a",
+      "name": "Samsung Galaxy Buds4 - Black | Ambient Mode | Multi AI Agent | ANC",
+      "price": 2999000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7AZfVVXx6DCek"
+    },
+    {
+      "id": "samsung-galaxy-buds4-pro-white-24-bit-hi-fi-multi-",
+      "name": "Samsung Galaxy Buds4 Pro - White | 24 bit Hi-Fi | Multi AI Agent | Premium Metal Finish | ANC",
+      "price": 3816900,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/7ppMIhDBBaCek"
+    },
+    {
+      "id": "samsung-galaxy-buds4-pro-black-24-bit-hi-fi-multi-",
+      "name": "Samsung Galaxy Buds4 Pro - Black | 24 bit Hi-Fi | Multi AI Agent | Premium Metal Finish | ANC",
+      "price": 3816900,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9AKjt8j9IF"
     }
   ]
 }
