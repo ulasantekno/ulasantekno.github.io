@@ -1,7 +1,7 @@
 {
   "_meta": {
     "category": "Beauty Tech",
-    "count": 1
+    "count": 2
   },
   "products": [
     {
@@ -12,6 +12,15 @@
       "subcategory": "Hair Dryer",
       "platform": "shopee",
       "link": "https://s.shopee.co.id/9paP5SjBjj"
+    },
+    {
+      "id": "infinix-hair-dryer-pengering-rambut-64db-ultra-sil",
+      "name": "Infinix Hair Dryer | Pengering Rambut - 64db Ultra Silence - High Speed Drying - Smart Temperature Control - Magnetic Nozzle - Dust Proof",
+      "price": 329000,
+      "category": "Beauty Tech",
+      "subcategory": "Hair Dryer",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/2g7GArsUJECek"
     }
   ]
 }

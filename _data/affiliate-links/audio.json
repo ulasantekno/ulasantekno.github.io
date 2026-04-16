@@ -1,7 +1,7 @@
 {
   "_meta": {
     "category": "Audio",
-    "count": 27
+    "count": 29
   },
   "products": [
     {
@@ -246,6 +246,24 @@
       "subcategory": "TWS",
       "platform": "shopee",
       "link": "https://s.shopee.co.id/9AKjt8j9IF"
+    },
+    {
+      "id": "infinix-tws-xe04-zclip-23-hour-music-play-time-300",
+      "name": "Infinix TWS XE04 - ZCLIP - 23 Hour Music Play Time - 300 mAh - Open Ear Immersion - IP54",
+      "price": 299000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/9AKjupEDOtCek"
+    },
+    {
+      "id": "infinix-zloop-3-30-hours-playtime-premium-sound-qu",
+      "name": "Infinix Zloop 3 - 30 Hours Playtime - Premium Sound Quality - AI Noise-Canceling Mic",
+      "price": 299000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/1LbsaQJUfICek"
     }
   ]
 }
