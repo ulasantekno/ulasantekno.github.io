@@ -1,7 +1,7 @@
 {
   "_meta": {
     "category": "Audio",
-    "count": 29
+    "count": 31
   },
   "products": [
     {
@@ -264,6 +264,24 @@
       "subcategory": "TWS",
       "platform": "shopee",
       "link": "https://s.shopee.co.id/1LbsaQJUfICek"
+    },
+    {
+      "id": "oppo-enco-air4-32db-active-noise-cancellation-dual",
+      "name": "OPPO Enco Air4 [32dB Active Noise Cancellation, Dual-Mic AI Clear Call, Hyper Durable Battery - Up to 43 Hours of Playback]",
+      "price": 799000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/901KME1XKOCek"
+    },
+    {
+      "id": "oppo-enco-buds3-pro-true-wireless-earbuds-up-to-54",
+      "name": "OPPO Enco Buds3 Pro True Wireless Earbuds [up to 54 hours Playback, IP55 Certification]",
+      "price": 349000,
+      "category": "Audio",
+      "subcategory": "TWS",
+      "platform": "shopee",
+      "link": "https://s.shopee.co.id/AADHkFeTSO"
     }
   ]
 }
