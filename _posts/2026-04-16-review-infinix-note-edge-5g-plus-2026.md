@@ -162,6 +162,7 @@ Lengkap untuk HP Rp3 jutaan.
 Rekomen ambil yang 256GB — selisih 200rb doang, storage double!
 
 🛒 [**Beli 8/128GB di Shopee →**](https://s.shopee.co.id/6fdOw7S4Xb)
+
 🛒 [**Beli 8/256GB di Shopee →**](https://s.shopee.co.id/3fznMWFWkC)
 
 ---

@@ -119,6 +119,7 @@ Budget Rp1,5 jutaan tapi bingung pilih HP mana? Dua kandidat kuat di kelas ini: 
 Selisih cuma Rp100.000, tapi POCO dapat storage 2x lipat!
 
 🛒 [**Beli Infinix Smart 20 di Shopee →**](https://s.shopee.co.id/30k6ZSY1wa)
+
 🛒 [**Beli POCO C71 di Shopee →**](https://s.shopee.co.id/6pwnX2Hw1Y)
 
 ---
