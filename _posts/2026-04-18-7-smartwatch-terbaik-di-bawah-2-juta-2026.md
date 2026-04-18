@@ -3,7 +3,7 @@ date: 2026-04-18 19:40:00 +0700
 layout: post
 title: "7 Smartwatch Terbaik di Bawah 2 Juta 2026"
 description: "Rekomendasi 7 smartwatch terbaik dengan harga di bawah Rp2 juta. Dari Xiaomi, Samsung, hingga Infinix — semua ada fitur kesehatan lengkap."
-image: /assets/images/posts/7-smartwatch-terbaik-di-bawah-2-juta-2026.png
+image: /assets/images/posts/7-smartwatch-terbaik-di-bawah-2-juta-2026-banner.jpg
 category: "Gadget"
 ---
 
