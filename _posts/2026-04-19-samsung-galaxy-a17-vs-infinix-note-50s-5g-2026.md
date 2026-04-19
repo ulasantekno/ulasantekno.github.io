@@ -1,5 +1,5 @@
 ---
-date: 2026-04-19 06:00:00 +0700
+date: 2026-04-19 08:00:00 +0700
 layout: post
 title: "Samsung Galaxy A17 5G vs Infinix Note 50S 5G+: Mana yang Lebih Worth It?"
 description: "Perbandingan lengkap Samsung Galaxy A17 5G vs Infinix Note 50S 5G+ dari performa, layar, kamera, baterai, dan harga di kisaran 3 jutaan."
@@ -150,5 +150,3 @@ Secara spesifikasi, Infinix Note 50S 5G+ menang di banyak aspek. Tapi Samsung pu
 ---
 
 [Kembali ke Beranda](/)
-
-<!-- force rebuild -->

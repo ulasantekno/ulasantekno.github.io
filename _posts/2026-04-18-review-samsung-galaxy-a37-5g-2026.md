@@ -1,5 +1,5 @@
 ---
-date: 2026-04-18 01:00:00 +0700
+date: 2026-04-18 08:00:00 +0700
 layout: post
 title: "Review Samsung Galaxy A37 5G — Mid-Range Terbaik dengan AI & IP68!"
 description: "Review lengkap Samsung Galaxy A37 5G: layar Super AMOLED, kamera 50MP OIS, IP68, Galaxy AI, dan baterai 5000mAh. Worth it di harga Rp5,9 jutaan?"
