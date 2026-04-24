@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Auto-generate blog posts from affiliate data.
+"""Auto-generate blog posts from affiliate data.
 Runs every 5 hours via cron.
 """
 
@@ -8,6 +7,8 @@ import json
 import random
 import os
 import subprocess
+import urllib.request
+import urllib.parse
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -113,6 +114,45 @@ def load_products():
         except Exception as e:
             print(f"Error loading {category_file}: {e}")
     return products
+
+def send_telegram_notification(message):
+    """Send notification to Telegram if bot token is configured."""
+    token = os.environ.get('TELEGRAM_BOT_TOKEN')
+    chat_id = os.environ.get('TELEGRAM_CHAT_ID', '1785346764')
+    
+    if not token:
+        # Try loading from .env file
+        env_file = REPO_PATH / ".env"
+        if env_file.exists():
+            with open(env_file) as f:
+                for line in f:
+                    if line.startswith('TELEGRAM_BOT_TOKEN='):
+                        token = line.strip().split('=', 1)[1].strip().strip('"').strip("'")
+                    elif line.startswith('TELEGRAM_CHAT_ID='):
+                        chat_id = line.strip().split('=', 1)[1].strip().strip('"').strip("'")
+    
+    if not token:
+        print("ℹ️ No Telegram bot token configured, skipping notification")
+        return False
+    
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    payload = {
+        "chat_id": chat_id,
+        "text": message,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": True
+    }
+    
+    try:
+        data = urllib.parse.urlencode(payload).encode('utf-8')
+        req = urllib.request.Request(url, data=data, method='POST')
+        with urllib.request.urlopen(req, timeout=10) as response:
+            if response.status == 200:
+                print("✅ Telegram notification sent")
+                return True
+    except Exception as e:
+        print(f"⚠️ Failed to send Telegram notification: {e}")
+    return False
 
 def get_existing_slugs():
     """Get list of existing post slugs to avoid duplicates."""
@@ -333,4 +373,17 @@ def generate_post():
 if __name__ == "__main__":
     print(f"🚀 Auto-generate started at {datetime.now()}")
     success = generate_post()
+    
+    if success:
+        send_telegram_notification(
+            f"✅ <b>Auto-blog sukses!</b>\n\n"
+            f"Artikel baru sudah di-generate dan di-push ke GitHub.\n"
+            f"Cek di: https://ulasanteknoid.my.id"
+        )
+    else:
+        send_telegram_notification(
+            f"❌ <b>Auto-blog gagal</b>\n\n"
+            f"Cronjob generate artikel gagal. Cek log di server ya."
+        )
+    
     exit(0 if success else 1)
