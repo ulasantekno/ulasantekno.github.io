@@ -12,9 +12,11 @@ Di artikel ini, kami merangkum **5 smartwatch terbaik under 2 juta 2026** yang p
 
 ---
 
-## 1. Xiaomi Watch S4 — Rp 1.999.000
+## 1. Xiaomi Watch S4
 
-![Xiaomi Watch S4](/assets/images/posts/xiaomi-watch-s4-2026.jpg)
+- **Harga:** Rp 1.999.000
+- Panel layar premium dengan warna tajam
+- Baterai tahan lama
 
 Smartwatch premium dari Xiaomi dengan **layar AMOLED** dan desain yang elegan. Cocok untuk kamu yang ingin tampilan profesional tanpa menguras dompet.
 
@@ -22,9 +24,11 @@ Smartwatch premium dari Xiaomi dengan **layar AMOLED** dan desain yang elegan. C
 
 ---
 
-## 2. Xiaomi Redmi Watch 5 — Rp 1.099.000
+## 2. Xiaomi Redmi Watch 5
 
-![Xiaomi Redmi Watch 5](/assets/images/posts/redmi-watch-5-2026.jpg)
+- **Harga:** Rp 1.099.000
+- Panel layar premium dengan warna tajam
+- Baterai tahan lama
 
 Smartwatch terbaik di kelas 1 jutaan! Dengan **layar AMOLED 2.07 inci** dan **baterai hingga 24 hari**, Redmi Watch 5 adalah pilihan paling hemat tapi tetap kaya fitur.
 
@@ -32,9 +36,11 @@ Smartwatch terbaik di kelas 1 jutaan! Dengan **layar AMOLED 2.07 inci** dan **ba
 
 ---
 
-## 3. Samsung Galaxy Fit 3 — Rp 859.000
+## 3. Samsung Galaxy Fit 3
 
-![Samsung Galaxy Fit 3](/assets/images/posts/samsung-galaxy-fit-3-2026.jpg)
+- **Harga:** Rp 859.000
+- Baterai tahan lama
+- Build quality terbaik di kelasnya
 
 Fitness tracker andalan dari Samsung dengan **desain ramping dan ringan**. Dilengkapi **sleep tracking, heart rate monitor, dan water resistant 5ATM**. Sempurna untuk kamu yang aktif berolahraga!
 
@@ -42,9 +48,11 @@ Fitness tracker andalan dari Samsung dengan **desain ramping dan ringan**. Dilen
 
 ---
 
-## 4. Samsung Galaxy Fit 3 (Gray) — Rp 859.000
+## 4. Samsung Galaxy Fit 3 (Gray)
 
-![Samsung Galaxy Fit 3 Gray](/assets/images/posts/samsung-galaxy-fit-3-gray-2026.jpg)
+- **Harga:** Rp 859.000
+- Baterai tahan lama
+- Build quality terbaik di kelasnya
 
 Varian warna **Gray** yang lebih netral dan cocok untuk semua gender. Fitur sama lengkapnya dengan varian Pink Gold — **sleep tracking, SpO2, dan baterai hingga 13 hari**.
 
@@ -52,9 +60,11 @@ Varian warna **Gray** yang lebih netral dan cocok untuk semua gender. Fitur sama
 
 ---
 
-## 5. Xiaomi Redmi Watch 5 Lite — Rp 699.000
+## 5. Xiaomi Redmi Watch 5 Lite
 
-![Xiaomi Redmi Watch 5 Lite](/assets/images/posts/redmi-watch-5-lite-2026.jpg)
+- **Harga:** Rp 699.000
+- Panel layar premium dengan warna tajam
+- GPS built-in untuk tracking akurat
 
 Pilihan paling terjangkau dengan **layar AMOLED 1.96 inci**, **GPS built-in**, dan **baterai 18 hari**! Di harga 600 ribuan, ini adalah smartwatch dengan value terbaik di 2026.
 

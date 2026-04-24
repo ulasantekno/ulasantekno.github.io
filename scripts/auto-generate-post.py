@@ -36,9 +36,10 @@ category: {category}
 
 ---
 
-## 1. {p1_name} — {p1_price}
+## 1. {p1_name}
 
-{p1_image}
+- **Harga:** {p1_price}
+- {p1_specs}
 
 {p1_desc}
 
@@ -46,9 +47,10 @@ category: {category}
 
 ---
 
-## 2. {p2_name} — {p2_price}
+## 2. {p2_name}
 
-{p2_image}
+- **Harga:** {p2_price}
+- {p2_specs}
 
 {p2_desc}
 
@@ -56,9 +58,10 @@ category: {category}
 
 ---
 
-## 3. {p3_name} — {p3_price}
+## 3. {p3_name}
 
-{p3_image}
+- **Harga:** {p3_price}
+- {p3_specs}
 
 {p3_desc}
 
@@ -66,9 +69,10 @@ category: {category}
 
 ---
 
-## 4. {p4_name} — {p4_price}
+## 4. {p4_name}
 
-{p4_image}
+- **Harga:** {p4_price}
+- {p4_specs}
 
 {p4_desc}
 
@@ -76,9 +80,10 @@ category: {category}
 
 ---
 
-## 5. {p5_name} — {p5_price}
+## 5. {p5_name}
 
-{p5_image}
+- **Harga:** {p5_price}
+- {p5_specs}
 
 {p5_desc}
 
@@ -163,10 +168,45 @@ def generate_product_desc(product, index):
     ]
     return random.choice(templates)
 
+def generate_specs(product):
+    """Generate specs list from product name or fallback."""
+    name = product['name']
+    specs = []
+    
+    # Extract common specs from name
+    if 'GB' in name or 'TB' in name:
+        specs.append('Storage besar untuk kebutuhan harian')
+    if '5G' in name:
+        specs.append('Jaringan 5G super cepat')
+    if 'AMOLED' in name or 'QLED' in name or 'OLED' in name:
+        specs.append('Panel layar premium dengan warna tajam')
+    if 'Hz' in name:
+        import re
+        hz = re.search(r'(\d+)Hz', name)
+        if hz:
+            specs.append(f'Refresh rate {hz.group(1)}Hz untuk tampilan mulus')
+    if '4K' in name:
+        specs.append('Resolusi 4K Ultra HD')
+    if 'Wireless' in name or 'TWS' in name or 'Bluetooth' in name:
+        specs.append('Konektivitas wireless tanpa kabel')
+    if 'Battery' in name or 'Days' in name or 'Hari' in name:
+        specs.append('Baterai tahan lama')
+    if 'W' in name and ('charger' in name.lower() or 'charging' in name.lower()):
+        specs.append('Fast charging untuk pengisian cepat')
+    if 'Smart' in name:
+        specs.append('Fitur smart dengan kontrol aplikasi')
+    if 'Gaming' in name:
+        specs.append('Optimasi gaming untuk performa maksimal')
+    
+    if not specs:
+        specs.append('Build quality terbaik di kelasnya')
+        specs.append('Performa handal untuk penggunaan sehari-hari')
+    
+    return '\n- '.join(specs[:2])
+
 def generate_image_placeholder(product):
-    """Generate image placeholder."""
-    slug = generate_slug(product['name'])
-    return f"![{product['name']}](/assets/images/posts/{slug}-2026.jpg)"
+    """Generate image placeholder - DISABLED (no images)."""
+    return ""
 
 def select_products_by_subcategory(products):
     """Select a random subcategory with at least 5 products."""
@@ -253,7 +293,7 @@ def generate_post():
         template_vars[f"p{i}_price"] = format_price(p["price"])
         template_vars[f"p{i}_link"] = p["link"]
         template_vars[f"p{i}_desc"] = generate_product_desc(p, i)
-        template_vars[f"p{i}_image"] = generate_image_placeholder(p)
+        template_vars[f"p{i}_specs"] = generate_specs(p)
     
     # Generate post content
     content = TEMPLATES_5.format(**template_vars)
