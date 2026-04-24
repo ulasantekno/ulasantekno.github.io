@@ -2,7 +2,7 @@
 date: 2026-04-24 01:10:00 +0700
 title: "5 Smart TV Terbaik 2026 — Update Harga Terbaru!"
 description: "Rekomendasi Smart TV terbaik tahun 2026: Samsung, Coocaa, Sharp dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/5-smart-tv-terbaik-2026---update-harga-terbaru.png"
+image: "/assets/images/posts/5-smart-tv-terbaik-2026---update-harga-terbaru-banner.jpg"
 category: Gadget
 ---
 

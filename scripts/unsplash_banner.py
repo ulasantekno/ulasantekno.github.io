@@ -7,7 +7,7 @@ from io import BytesIO
 
 ACCESS_KEY = "Jv9Yi0kWHA9MFfbywqwZQ3r4qTm697qUUHglctoBunk"
 W, H = 1200, 675
-OUT = "/home/ubuntu/.openclaw/workspace/ulasantekno.github.io/assets/images/posts"
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets/images/posts")
 
 KEYWORDS = {
     "Gadget": {"Smartphone": "smartphone", "Tablet": "tablet", "default": "gadget"},

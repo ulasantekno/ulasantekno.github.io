@@ -2,7 +2,7 @@
 date: 2026-04-24 01:00:00 +0700
 title: "5 Smartwatch Terbaik Under 2 Juta 2026 (Mulai 600 Ribuan!)"
 description: "Rekomendasi smartwatch terbaik dengan harga di bawah 2 juta rupiah di tahun 2026. Fitur lengkap, baterai awet, dan harga terjangkau!"
-image: "/assets/images/posts/smartwatch-under-2-juta-2026.png"
+image: "/assets/images/posts/smartwatch-under-2-juta-2026-banner.jpg"
 category: Gadget
 ---
 

@@ -2,7 +2,7 @@
 date: 2026-04-24 01:06:49 +0700
 title: "5 Smartwatch Terbaik 2026 — Update Harga Terbaru!"
 description: "Rekomendasi Smartwatch terbaik tahun 2026: OPPO, [NEW], Xiaomi dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/5-smartwatch-terbaik-2026-—-update-harga-terbaru!.png"
+image: "/assets/images/posts/5-smartwatch-terbaik-2026-—-update-harga-terbaru!-banner.jpg"
 category: Gadget
 ---
 

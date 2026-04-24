@@ -28,7 +28,7 @@ TEMPLATES_5 = """---
 date: {date}
 title: "{title}"
 description: "{description}"
-image: "/assets/images/posts/{image_slug}.png"
+image: "/assets/images/posts/{image_slug}.jpg"
 category: {category}
 ---
 
@@ -301,6 +301,22 @@ def generate_post():
     # Write file
     filename.write_text(content, encoding="utf-8")
     print(f"Generated post: {filename}")
+    
+    # Generate banner image
+    try:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        banner_script = os.path.join(script_dir, "unsplash_banner.py")
+        if os.path.exists(banner_script):
+            result = subprocess.run(
+                ["python3", banner_script, image_slug, f"5 {subcategory} Terbaik 2026"],
+                capture_output=True, text=True, timeout=30
+            )
+            if result.returncode == 0:
+                print(f"✅ Generated banner: {image_slug}.jpg")
+            else:
+                print(f"⚠️ Banner generation failed: {result.stderr}")
+    except Exception as e:
+        print(f"⚠️ Could not generate banner: {e}")
     
     # Git commit and push
     try:
