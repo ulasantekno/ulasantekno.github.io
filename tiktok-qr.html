@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Login QR</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 10px; }
+        p { color: #888; margin-bottom: 30px; font-size: 0.9rem; }
+        .qr-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .qr-container img {
+            width: 280px;
+            height: 280px;
+            display: block;
+        }
+        .timer {
+            color: #ff0050;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .note {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #666;
+            max-width: 300px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Log in to TikTok</h1>
+    <p>Scan QR code dengan TikTok app di HP</p>
+    
+    <div class="qr-container">
+        <img src="assets/tiktok-qr.png" alt="TikTok QR Code" id="qr-img">
+    </div>
+    
+    <div class="timer" id="timer">⏳ Refresh dalam 180 detik</div>
+    
+    <div class="note">
+        1. Buka TikTok app → Profile → ☰ Menu → Settings → QR Code / Scan<br>
+        2. Arahkan kamera ke QR code di atas<br>
+        3. Tap "Confirm" di HP untuk login
+    </div>
+
+    <script>
+        let seconds = 180;
+        const timerEl = document.getElementById('timer');
+        const interval = setInterval(() => {
+            seconds--;
+            timerEl.textContent = `⏳ Refresh dalam ${seconds} detik`;
+            if (seconds <= 0) {
+                clearInterval(interval);
+                timerEl.textContent = '❌ QR expired — refresh halaman untuk QR baru';
+                timerEl.style.color = '#ff4444';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
