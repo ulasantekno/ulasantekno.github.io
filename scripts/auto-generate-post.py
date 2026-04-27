@@ -29,7 +29,7 @@ TEMPLATES_5 = """---
 date: {date}
 title: "{title}"
 description: "{description}"
-image: "/assets/images/posts/{image_slug}.jpg"
+image: "/assets/images/posts/{image_slug}-banner.jpg"
 category: {category}
 ---
 
@@ -171,7 +171,12 @@ def format_price(price):
 
 def generate_slug(name):
     """Generate URL-friendly slug from product name."""
-    return name.lower().replace(" ", "-").replace("/", "-").replace("'", "").replace('"', "")[:50]
+    import re
+    slug = name.lower()
+    slug = re.sub(r'[!?—–\"\'()]+', '', slug)
+    slug = slug.replace(" ", "-").replace("/", "-").replace("'", "").replace('"', "")
+    slug = re.sub(r'-+', '-', slug)
+    return slug.strip('-')[:50]
 
 def generate_description(products, topic):
     """Generate SEO description."""
@@ -348,7 +353,7 @@ def generate_post():
         banner_script = os.path.join(script_dir, "unsplash_banner.py")
         if os.path.exists(banner_script):
             result = subprocess.run(
-                ["python3", banner_script, image_slug, f"5 {subcategory} Terbaik 2026"],
+                ["/usr/bin/python3.12", banner_script, image_slug, f"5 {subcategory} Terbaik 2026"],
                 capture_output=True, text=True, timeout=30
             )
             if result.returncode == 0:
@@ -362,6 +367,10 @@ def generate_post():
     try:
         os.chdir(REPO_PATH)
         subprocess.run(["git", "add", str(filename)], check=True)
+        # Also add generated banner image if exists
+        banner_path = REPO_PATH / "assets" / "images" / "posts" / f"{image_slug}-banner.jpg"
+        if banner_path.exists():
+            subprocess.run(["git", "add", str(banner_path)], check=True)
         subprocess.run(["git", "commit", "-m", f"🤖 Auto-generate: {title}"], check=True)
         subprocess.run(["git", "push", "origin", "main"], check=True)
         print(f"✅ Successfully pushed: {title}")
