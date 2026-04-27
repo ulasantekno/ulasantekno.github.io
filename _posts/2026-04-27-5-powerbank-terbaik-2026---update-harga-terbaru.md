@@ -2,7 +2,7 @@
 date: 2026-04-27 09:17:41 +0700
 title: "5 Powerbank Terbaik 2026 — Update Harga Terbaru!"
 description: "Rekomendasi Powerbank terbaik tahun 2026: Xiaomi, Xiaomi, Xiaomi dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/5-powerbank-terbaik-2026-—-update-harga-terbaru!.jpg"
+image: "/assets/images/posts/5-powerbank-terbaik-2026-—-update-harga-terbaru!-banner.jpg"
 category: Gadget
 ---
 
