@@ -360,11 +360,21 @@ def generate_post():
     ]
     title = random.choice(titles)
     
-    # Generate slug and filename
+    # Generate slug and filename (support multiple posts per day)
     date_str = datetime.now().strftime("%Y-%m-%d")
-    post_slug = title.lower().replace(" ", "-").replace("/", "-").replace("—", "-").replace("(", "").replace(")", "").replace("!", "").replace("?", "")[:80]
-    slug = f"{date_str}-{post_slug}"
+    base_slug = title.lower().replace(" ", "-").replace("/", "-").replace("—", "-").replace("(", "").replace(")", "").replace("!", "").replace("?", "")[:75]
+    slug = f"{date_str}-{base_slug}"
+    counter = 1
+    while (POSTS_DIR / f"{slug}.md").exists():
+        slug = f"{date_str}-{base_slug}-{counter}"
+        counter += 1
     filename = POSTS_DIR / f"{slug}.md"
+    
+    # Post slug for URL (without date prefix)
+    if counter == 1:
+        post_slug = base_slug
+    else:
+        post_slug = f"{base_slug}-{counter-1}"
     
     # Check if post already exists for today
     if filename.exists():
