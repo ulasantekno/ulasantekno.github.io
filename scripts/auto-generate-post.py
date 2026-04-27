@@ -92,6 +92,24 @@ category: {category}
 
 ---
 
+## 📊 Perbandingan Cepat
+
+{comparison}
+
+---
+
+## 🛒 Tips Memilih {topic} Terbaik
+
+{buying_tips}
+
+---
+
+## ❓ Pertanyaan yang Sering Diajukan
+
+{faq}
+
+---
+
 ## Kesimpulan
 
 {conclusion}
@@ -196,13 +214,49 @@ def generate_conclusion(products, topic):
     """Generate conclusion paragraph."""
     best = products[0]
     value = min(products, key=lambda x: x["price"])
+    premium = max(products, key=lambda x: x["price"])
     
     conclusions = [
         f"Dari kelima {topic} di atas, pilihan terbaik untuk performa adalah **{best['name']}** dengan harga {format_price(best['price'])}. Tapi kalau budget terbatas, **{value['name']}** di harga {format_price(value['price'])} sudah sangat worth it!",
         f"Kesimpulannya, **{best['name']}** menawarkan value terbaik di kelasnya. Namun jika mencari yang paling terjangkau, **{value['name']}** adalah pilihan yang tidak kalah bagus.",
         f"Semua {topic} di atas sudah kami seleksi berdasarkan harga, fitur, dan ulasan pengguna. Pilihan terbaik jatuh pada **{best['name']}**, tapi **{value['name']}** adalah alternatif terbaik untuk budget minim.",
+        f"Buat kamu yang cari {topic} premium, **{premium['name']}** adalah jawabannya. Tapi kalau mau yang paling hemat, langsung ambil **{value['name']}** aja.",
     ]
     return random.choice(conclusions)
+
+def generate_comparison(products, topic):
+    """Generate comparison table / list."""
+    lines = ["| No | Produk | Harga | Best For |", "|---|---|---|---|"]
+    best = products[0]
+    value = min(products, key=lambda x: x["price"])
+    for i, p in enumerate(products, 1):
+        label = "🏆 Best Overall" if p == best else ("💰 Best Value" if p == value else "⭐ Recommended")
+        lines.append(f"| {i} | {p['name'][:40]}... | {format_price(p['price'])} | {label} |")
+    return "\n".join(lines)
+
+def generate_buying_tips(topic):
+    """Generate buying tips section."""
+    tips = [
+        f"**Cek Ulasan Pembeli Real** — Jangan cuma lihat rating bintang, baca komentar pembeli yang sudah pakai {topic} tersebut.",
+        f"**Bandingkan Harga dari Beberapa Toko** — Harga di Shopee bisa beda antar seller. Cek juga apakah ada diskon atau voucher gratis ongkir.",
+        f"**Pastikan Garansi Resmi** — Beli dari official store atau seller dengan reputasi tinggi untuk menghindari barang palsu.",
+        f"**Sesuaikan dengan Kebutuhan** — Pilih {topic} berdasarkan budget dan fitur yang benar-benar kamu butuhkan, bukan yang paling mahal.",
+        f"**Perhatikan Spesifikasi Detail** — Bandingkan RAM, storage, daya tahan baterai, atau fitur lain yang penting untuk penggunaan harianmu.",
+    ]
+    return "\n\n".join(random.sample(tips, 3))
+
+def generate_faq(products, topic):
+    """Generate FAQ section."""
+    value = min(products, key=lambda x: x["price"])
+    best = products[0]
+    faqs = [
+        (f"Apakah {topic} murah bagus?", f"Ya, seperti **{value['name']}** yang harganya {format_price(value['price'])} sudah cukup untuk kebutuhan harian. Yang penting sesuaikan dengan kebutuhanmu."),
+        (f"{topic} terbaik tahun 2026?", f"Berdasarkan seleksi kami, **{best['name']}** menawarkan kombinasi fitur dan harga terbaik saat ini."),
+        (f"Apakah link di sini aman?", "Semua link menuju ke Shopee official store atau seller terpercaya. Kami hanya mendapat komisi kecil jika kamu membeli, tanpa biaya tambahan untukmu."),
+        (f"Bagaimana cara klaim garansi?", "Garansi tergantung seller masing-masing. Pastikan kamu membaca deskripsi produk di halaman Shopee sebelum checkout."),
+        (f"Apakah harga bisa berubah?", "Ya, harga di Shopee bisa berubah sewaktu-waktu tergantung promo dan diskon dari seller."),
+    ]
+    return "\n\n".join([f"**Q: {q}**\n\nA: {a}" for q, a in random.sample(faqs, 3)])
 
 def generate_product_desc(product, index):
     """Generate product description."""
@@ -330,6 +384,9 @@ def generate_post():
         "category": selected[0]["category"],
         "intro": intro,
         "conclusion": conclusion,
+        "comparison": generate_comparison(selected, subcategory),
+        "buying_tips": generate_buying_tips(subcategory),
+        "faq": generate_faq(selected, subcategory),
     }
     
     # Add product variables

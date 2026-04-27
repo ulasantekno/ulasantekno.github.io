@@ -1,0 +1,86 @@
+name: Auto IndexNow + Sitemap Update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_posts/**'
+      - 'sitemap.xml'
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Get changed URLs
+        id: urls
+        run: |
+          git diff --name-only HEAD~1 HEAD | grep '^_posts/' | while read f; do
+            slug=$(basename "$f" .md)
+            date_part=$(echo "$slug" | cut -d'-' -f1-3)
+            title_part=$(echo "$slug" | cut -d'-' -f4-)
+            echo "https://ulasanteknoid.my.id/${date_part}/${title_part}.html"
+          done > changed_urls.txt || true
+          cat changed_urls.txt
+
+      - name: Submit to IndexNow
+        run: |
+          python3 << 'PY'
+          import urllib.request, json, sys
+
+          DOMAIN = "ulasanteknoid.my.id"
+          KEY = "f2ccbe069779b3857192fac9c7bd9c98d74d0893c396767d22535bd0984552d4"
+
+          try:
+            with open("changed_urls.txt") as f:
+              urls = [l.strip() for l in f if l.strip()]
+          except:
+            urls = []
+
+          if not urls:
+            # fallback: read all from sitemap
+            import xml.etree.ElementTree as ET
+            r = urllib.request.urlopen(f"https://{DOMAIN}/sitemap.xml", timeout=15)
+            root = ET.fromstring(r.read())
+            ns = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+            urls = [loc.text for loc in root.findall('.//ns:loc', ns)]
+            print(f"No changed files detected. Submitting all {len(urls)} URLs from sitemap.")
+
+          print(f"Submitting {len(urls)} URLs to IndexNow...")
+
+          payload = {
+            "host": DOMAIN,
+            "key": KEY,
+            "urlList": urls[:100]
+          }
+
+          req = urllib.request.Request(
+            "https://api.indexnow.org/IndexNow",
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json"},
+            method="POST"
+          )
+
+          try:
+            r = urllib.request.urlopen(req, timeout=30)
+            print(f"IndexNow: {r.status} - {r.read().decode()}")
+          except urllib.error.HTTPError as e:
+            print(f"IndexNow HTTP {e.code}: {e.read().decode()}")
+          except Exception as e:
+            print(f"IndexNow Error: {e}")
+          PY
+
+      - name: Ping RSS aggregators
+        run: |
+          curl -s "https://www.bing.com/webmaster/api.svc/json/SubmitUrlbatch?apikey=${{ secrets.BING_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{"siteUrl":"https://ulasanteknoid.my.id","urlList":[]}' || true
+          echo "Ping done"
