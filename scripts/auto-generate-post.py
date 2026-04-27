@@ -382,6 +382,7 @@ def generate_post():
         "description": description,
         "image_slug": image_slug,
         "category": selected[0]["category"],
+        "topic": subcategory,
         "intro": intro,
         "conclusion": conclusion,
         "comparison": generate_comparison(selected, subcategory),
