@@ -362,13 +362,14 @@ def generate_post():
     
     # Generate slug and filename
     date_str = datetime.now().strftime("%Y-%m-%d")
-    slug = f"{date_str}-" + title.lower().replace(" ", "-").replace("/", "-").replace("—", "-").replace("(", "").replace(")", "").replace("!", "").replace("?", "")[:80]
+    post_slug = title.lower().replace(" ", "-").replace("/", "-").replace("—", "-").replace("(", "").replace(")", "").replace("!", "").replace("?", "")[:80]
+    slug = f"{date_str}-{post_slug}"
     filename = POSTS_DIR / f"{slug}.md"
     
     # Check if post already exists for today
     if filename.exists():
         print(f"Post already exists: {filename}")
-        return False
+        return {"success": False, "reason": "exists"}
     
     # Prepare template variables
     image_slug = generate_slug(title)
@@ -432,25 +433,39 @@ def generate_post():
         subprocess.run(["git", "commit", "-m", f"🤖 Auto-generate: {title}"], check=True)
         subprocess.run(["git", "push", "origin", "main"], check=True)
         print(f"✅ Successfully pushed: {title}")
-        return True
+        
+        # Build article URL
+        now = datetime.now()
+        article_url = f"https://ulasanteknoid.my.id/{now.year}/{now.month:02d}/{now.day:02d}/{post_slug}.html"
+        return {
+            "success": True,
+            "title": title,
+            "url": article_url,
+            "slug": post_slug,
+            "date": date_str
+        }
     except subprocess.CalledProcessError as e:
         print(f"❌ Git error: {e}")
-        return False
+        return {"success": False, "reason": "git_error", "error": str(e)}
 
 if __name__ == "__main__":
     print(f"🚀 Auto-generate started at {datetime.now()}")
-    success = generate_post()
+    result = generate_post()
     
-    if success:
+    if result and result.get("success"):
         send_telegram_notification(
-            f"✅ <b>Auto-blog sukses!</b>\n\n"
-            f"Artikel baru sudah di-generate dan di-push ke GitHub.\n"
-            f"Cek di: https://ulasanteknoid.my.id"
+            f"✅ <b>Artikel Baru Terbit!</b>\n\n"
+            f"📌 <b>{result['title']}</b>\n\n"
+            f"🔗 {result['url']}\n\n"
+            f"GitHub sudah di-push, tunggu 1-2 menit untuk build Jekyll."
         )
+    elif result and result.get("reason") == "exists":
+        print("⏭️ Artikel hari ini sudah ada, skip.")
+        # Tidak kirim notif biar gak spam
     else:
         send_telegram_notification(
             f"❌ <b>Auto-blog gagal</b>\n\n"
             f"Cronjob generate artikel gagal. Cek log di server ya."
         )
     
-    exit(0 if success else 1)
+    exit(0 if (result and result.get("success")) else 1)
