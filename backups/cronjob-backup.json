@@ -1,0 +1,29 @@
+{
+  "backup_version": "1.0",
+  "backup_date": "2026-04-29",
+  "description": "Backup konfigurasi cronjob UlasTekno Auto-Generate",
+  "jobs": [
+    {
+      "job_id": "9e39dc815c37",
+      "name": "UlasTekno Auto-Generate Article",
+      "schedule": "every 180m",
+      "repeat": "forever",
+      "deliver": "origin",
+      "enabled": true,
+      "workdir": "/home/ubuntu/ulasantekno-repo",
+      "skills": [],
+      "model": null,
+      "provider": null,
+      "prompt_summary": "Bot otomasi UlasTekno: sync repo, load GH_TOKEN, jalankan auto-generate-post.py, baca hasil JSON, kirim notifikasi Telegram dengan judul, link, dan caption X/Threads."
+    }
+  ],
+  "restore_instructions": {
+    "step_1": "Buat cronjob baru dengan command: cronjob create",
+    "step_2": "Isi name: UlasTekno Auto-Generate Article",
+    "step_3": "Isi schedule: every 180m (atau sesuai kebutuhan)",
+    "step_4": "Isi workdir: /home/ubuntu/ulasantekno-repo",
+    "step_5": "Isi deliver: origin (kirim ke chat Telegram asal)",
+    "step_6": "Paste prompt dari file settings-prompt.md",
+    "step_7": "Pastikan .env sudah dibuat dengan GH_TOKEN yang valid"
+  }
+}
