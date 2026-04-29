@@ -10,11 +10,98 @@ W, H = 1200, 675
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets/images/posts")
 
 KEYWORDS = {
-    "Gadget": {"Smartphone": "smartphone", "Tablet": "tablet", "default": "gadget"},
-    "Audio": {"TWS": "wireless earbuds", "default": "headphones"},
-    "Smart Home": {"Smart TV": "smart tv", "default": "smart home"},
+    "Gadget": {
+        "Smartphone": "smartphone",
+        "HP": "smartphone",
+        "Tablet": "tablet ipad",
+        "Laptop": "laptop computer",
+        "Charger": "charger cable",
+        "Powerbank": "power bank battery",
+        "Smartwatch": "smart watch wearable",
+        "Accessories": "gadget accessories tech",
+        "default": "gadget technology"
+    },
+    "Audio": {
+        "TWS": "wireless earbuds",
+        "Earphone": "earphones",
+        "Headset": "headphones",
+        "Speaker": "bluetooth speaker",
+        "default": "headphones audio"
+    },
+    "Smart Home": {
+        "Smart TV": "smart tv television",
+        "TV": "television screen",
+        "Fridge": "refrigerator kitchen",
+        "Kulkas": "refrigerator",
+        "AC": "air conditioner",
+        "Vacuum": "robot vacuum cleaner",
+        "default": "smart home device"
+    },
+    "Lifestyle": {
+        "Tripod": "camera tripod",
+        "Keyboard": "mechanical keyboard",
+        "Mouse": "wireless mouse",
+        "default": "lifestyle gadget"
+    },
+    "Beauty Tech": {
+        "Hair Dryer": "hair dryer",
+        "Skincare": "skincare device",
+        "default": "beauty technology"
+    },
+    "Gaming": {
+        "Controller": "game controller",
+        "Mouse": "gaming mouse",
+        "Keyboard": "gaming keyboard",
+        "default": "gaming setup"
+    },
     "default": "technology"
 }
+
+def extract_keyword_from_title(title, subcategory, category):
+    """Extract best Unsplash search keyword from title."""
+    title_lower = title.lower()
+    
+    # Priority: exact subcategory match
+    cat_map = KEYWORDS.get(category, KEYWORDS["default"])
+    if isinstance(cat_map, dict):
+        for key, val in cat_map.items():
+            if key != "default" and key.lower() in title_lower:
+                return val
+        # Fallback to subcategory if provided
+        if subcategory and subcategory != "default":
+            for key, val in cat_map.items():
+                if key.lower() in subcategory.lower():
+                    return val
+        return cat_map.get("default", "technology")
+    return cat_map
+
+def extract_keyword_from_title_legacy(title):
+    """Legacy fallback: extract keyword directly from title words."""
+    keyword_map = {
+        "powerbank": "power bank battery",
+        "charger": "charger cable usb",
+        "smartphone": "smartphone mobile",
+        "hp": "smartphone mobile",
+        "laptop": "laptop computer",
+        "tablet": "tablet ipad device",
+        "tws": "wireless earbuds",
+        "earphone": "earphones audio",
+        "headset": "headphones",
+        "smartwatch": "smart watch wearable",
+        "smart tv": "smart tv television",
+        "fridge": "refrigerator kitchen",
+        "microphone": "microphone podcast",
+        "keyboard": "mechanical keyboard",
+        "mouse": "wireless mouse",
+        "speaker": "bluetooth speaker",
+        "tripod": "camera tripod",
+        "accessories": "gadget accessories",
+    }
+    title_lower = title.lower()
+    for key, val in keyword_map.items():
+        if key in title_lower:
+            return val
+    return "technology"
 
 def search(q, n=3):
     r = requests.get("https://api.unsplash.com/search/photos", 
@@ -80,9 +167,18 @@ if __name__ == "__main__":
     cat = sys.argv[3] if len(sys.argv) > 3 else "Gadget"
     sub = sys.argv[4] if len(sys.argv) > 4 else "default"
     
-    kw = KEYWORDS.get(cat, {}).get(sub, KEYWORDS.get(cat, {}).get("default", "technology"))
+    # Extract keyword based on title, subcategory, and category
+    kw = extract_keyword_from_title(name, sub, cat)
+    print(f"🔍 Unsplash search keyword: {kw}", file=sys.stderr)
+    
     results = search(kw)
     if not results:
+        # Try legacy fallback
+        kw2 = extract_keyword_from_title_legacy(name)
+        print(f"🔍 Fallback keyword: {kw2}", file=sys.stderr)
+        results = search(kw2)
+    if not results:
+        # Last resort: category + technology
         results = search(f"{cat} technology")
     if results:
         img = dl(results[0]["urls"]["regular"])
