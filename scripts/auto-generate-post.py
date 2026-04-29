@@ -172,6 +172,31 @@ def send_telegram_notification(message):
         print(f"⚠️ Failed to send Telegram notification: {e}")
     return False
 
+def generate_x_caption(title, url, subcategory, products, price_range):
+    """Generate catchy caption for X/Twitter and Threads."""
+    hashtags = "#UlasTekno #Rekomendasi #ShopeeID #Review"
+    
+    if subcategory.lower() in ['smartphone', 'hp']:
+        hashtags += " #Smartphone #GadgetIndonesia"
+    elif subcategory.lower() in ['tws', 'earphone', 'headset']:
+        hashtags += " #Audio #TWS #Earphone"
+    elif subcategory.lower() in ['laptop']:
+        hashtags += " #Laptop #WFH #Kuliah"
+    elif subcategory.lower() in ['smartwatch', 'jam tangan']:
+        hashtags += " #Smartwatch #Wearable"
+    elif subcategory.lower() in ['charger', 'powerbank']:
+        hashtags += " #Charger #Powerbank #FastCharging"
+    else:
+        hashtags += " #Gadget #Teknologi"
+    
+    captions = [
+        f"🛒 {title}\n\nLagi cari {subcategory} terbaik? Ini rekomendasi lengkap dengan harga & link Shopee!\n\n🔗 {url}\n\n{hashtags}",
+        f"📢 BARU: {title}\n\nReview lengkap + perbandingan harga. Langsung cek link di bawah! 👇\n\n🔗 {url}\n\n{hashtags}",
+        f"✨ Rekomendasi {subcategory} Terbaik 2026!\n\n{title}\n\nCek detail & harga terbaru di sini 👇\n\n🔗 {url}\n\n{hashtags}",
+    ]
+    
+    return random.choice(captions)
+
 def get_existing_slugs():
     """Get list of existing post slugs to avoid duplicates."""
     slugs = set()
@@ -503,7 +528,11 @@ def generate_post():
             "title": title,
             "url": article_url,
             "slug": post_slug,
-            "date": date_str
+            "date": date_str,
+            "subcategory": subcategory,
+            "products": selected,
+            "price_range": price_range,
+            "image_slug": image_slug
         }
     except subprocess.CalledProcessError as e:
         print(f"❌ Git error: {e}")
@@ -514,19 +543,53 @@ if __name__ == "__main__":
     result = generate_post()
     
     if result and result.get("success"):
-        send_telegram_notification(
+        # Generate X/Threads caption
+        x_caption = generate_x_caption(
+            result['title'],
+            result['url'],
+            result['subcategory'],
+            result['products'],
+            result['price_range']
+        )
+        result['x_caption'] = x_caption
+        
+        # Save result to JSON for external tools
+        result_file = REPO_PATH / ".last_generate_result.json"
+        with open(result_file, 'w', encoding='utf-8') as f:
+            # Remove non-serializable data
+            json_result = {k: v for k, v in result.items() if k != 'products'}
+            json.dump(json_result, f, indent=2, ensure_ascii=False)
+        
+        # Telegram notification
+        tg_message = (
             f"✅ <b>Artikel Baru Terbit!</b>\n\n"
             f"📌 <b>{result['title']}</b>\n\n"
             f"🔗 {result['url']}\n\n"
+            f"<b>📝 Caption X/Threads:</b>\n"
+            f"<pre>{x_caption}</pre>\n\n"
             f"GitHub sudah di-push, tunggu 1-2 menit untuk build Jekyll."
         )
+        send_telegram_notification(tg_message)
+        
+        # Also print to stdout for cronjob capture
+        print("\n" + "="*50)
+        print("📝 CAPTION X/THREADS:")
+        print("="*50)
+        print(x_caption)
+        print("="*50)
+        
     elif result and result.get("reason") == "exists":
         print("⏭️ Artikel hari ini sudah ada, skip.")
-        # Tidak kirim notif biar gak spam
+        # Save skip status
+        result_file = REPO_PATH / ".last_generate_result.json"
+        with open(result_file, 'w', encoding='utf-8') as f:
+            json.dump({"success": False, "reason": "exists", "date": datetime.now().strftime("%Y-%m-%d")}, f)
     else:
+        error_msg = result.get('error', 'Unknown error') if result else 'No result'
         send_telegram_notification(
             f"❌ <b>Auto-blog gagal</b>\n\n"
-            f"Cronjob generate artikel gagal. Cek log di server ya."
+            f"Error: {error_msg}\n\n"
+            f"Cek log di server ya."
         )
     
     exit(0 if (result and result.get("success")) else 1)
