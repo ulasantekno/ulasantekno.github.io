@@ -2,7 +2,7 @@
 date: 2026-04-27 05:00:01 +0700
 title: "Rekomendasi 5 Tablet Terbaik 2026 (di bawah Rp 6.999.000)"
 description: "Rekomendasi Tablet terbaik tahun 2026: OPPO, Samsung, Infinix dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/rekomendasi-5-tablet-terbaik-2026-(di-bawah-rp-6.9.jpg"
+image: "/assets/images/posts/7-tablet-terbaik-shopee-2026.png"
 category: Gadget
 ---
 
