@@ -520,9 +520,11 @@ def generate_post():
         
         print(f"✅ Successfully pushed: {title}")
         
-        # Build article URL
+        # Build article URL (match Jekyll permalink format)
+        # Jekyll converts multiple dashes to single dash and uses UTC date
         now = datetime.now()
-        article_url = f"https://ulasanteknoid.my.id/{now.year}/{now.month:02d}/{now.day:02d}/{post_slug}.html"
+        jekyll_slug = base_slug.replace('---', '-').replace('--', '-')
+        article_url = f"https://ulasanteknoid.my.id/{now.year}/{now.month:02d}/{now.day:02d}/{jekyll_slug}.html"
         return {
             "success": True,
             "title": title,
