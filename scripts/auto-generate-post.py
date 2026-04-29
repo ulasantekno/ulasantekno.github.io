@@ -223,6 +223,16 @@ def generate_slug(name):
     slug = re.sub(r'-+', '-', slug)
     return slug.strip('-')[:50]
 
+def clean_product_name(name):
+    """Clean product name to just Brand + Model/Type, removing embellishments."""
+    # List of separators that usually indicate the start of extra specs
+    separators = [' - ', ' | ', ' [', ' (', ' / ']
+    cleaned = name
+    for sep in separators:
+        if sep in cleaned:
+            cleaned = cleaned.split(sep)[0]
+    return cleaned.strip()
+
 def generate_description(products, topic):
     """Generate SEO description."""
     names = ", ".join([p["name"].split()[0] for p in products[:3]])
@@ -252,7 +262,7 @@ def generate_intro(topic, count, price_range):
 
 def generate_product_desc(product, index, topic):
     """Generate natural product description."""
-    name = product['name']
+    name = clean_product_name(product['name'])
     price = format_price(product['price'])
     
     # Extract features from name for more specific descriptions
@@ -655,7 +665,7 @@ def generate_post():
     
     # Add product variables
     for i, p in enumerate(selected, 1):
-        template_vars[f"p{i}_name"] = p["name"]
+        template_vars[f"p{i}_name"] = clean_product_name(p["name"])
         template_vars[f"p{i}_price"] = format_price(p["price"])
         template_vars[f"p{i}_link"] = p["link"]
         template_vars[f"p{i}_desc"] = generate_product_desc(p, i, subcategory)
