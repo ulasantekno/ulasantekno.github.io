@@ -39,82 +39,84 @@ category: {category}
 
 ## 1. {p1_name}
 
-- **Harga:** {p1_price}
-- {p1_specs}
+**Harga: {p1_price}**
 
 {p1_desc}
 
-**Link Shopee:** [{p1_name}]({p1_link}){{:target="_blank"}}
+**Spesifikasi:**
+{p1_specs}
+
+**Cocok untuk:** {p1_target}
+
+🛒 [**Beli Sekarang di Shopee →**]({p1_link})
 
 ---
 
 ## 2. {p2_name}
 
-- **Harga:** {p2_price}
-- {p2_specs}
+**Harga: {p2_price}**
 
 {p2_desc}
 
-**Link Shopee:** [{p2_name}]({p2_link}){{:target="_blank"}}
+**Spesifikasi:**
+{p2_specs}
+
+**Cocok untuk:** {p2_target}
+
+🛒 [**Beli Sekarang di Shopee →**]({p2_link})
 
 ---
 
 ## 3. {p3_name}
 
-- **Harga:** {p3_price}
-- {p3_specs}
+**Harga: {p3_price}**
 
 {p3_desc}
 
-**Link Shopee:** [{p3_name}]({p3_link}){{:target="_blank"}}
+**Spesifikasi:**
+{p3_specs}
+
+**Cocok untuk:** {p3_target}
+
+🛒 [**Beli Sekarang di Shopee →**]({p3_link})
 
 ---
 
 ## 4. {p4_name}
 
-- **Harga:** {p4_price}
-- {p4_specs}
+**Harga: {p4_price}**
 
 {p4_desc}
 
-**Link Shopee:** [{p4_name}]({p4_link}){{:target="_blank"}}
+**Spesifikasi:**
+{p4_specs}
+
+**Cocok untuk:** {p4_target}
+
+🛒 [**Beli Sekarang di Shopee →**]({p4_link})
 
 ---
 
 ## 5. {p5_name}
 
-- **Harga:** {p5_price}
-- {p5_specs}
+**Harga: {p5_price}**
 
 {p5_desc}
 
-**Link Shopee:** [{p5_name}]({p5_link}){{:target="_blank"}}
+**Spesifikasi:**
+{p5_specs}
+
+**Cocok untuk:** {p5_target}
+
+🛒 [**Beli Sekarang di Shopee →**]({p5_link})
 
 ---
-
-## 📊 Perbandingan Cepat
-
-{comparison}
-
----
-
-## 🛒 Tips Memilih {topic} Terbaik
 
 {buying_tips}
 
 ---
 
-## ❓ Pertanyaan yang Sering Diajukan
-
-{faq}
-
----
-
-## Kesimpulan
-
-{conclusion}
-
-Semua link di atas adalah **link affiliate Shopee**. Jika kamu membeli melalui link tersebut, kami mendapat komisi kecil tanpa biaya tambahan untukmu. Terima kasih sudah mendukung Ulasan Tekno! 🙏
+Semoga rekomendasi ini membantu kamu menemukan {topic} yang tepat! Jangan lupa cek review di Shopee sebelum beli ya. {closing_emoji}
 """
 
 def load_products():
@@ -227,106 +229,334 @@ def generate_description(products, topic):
     return f"Rekomendasi {topic} terbaik tahun 2026: {names} dengan harga terjangkau. Update harga dan link Shopee terbaru!"
 
 def generate_intro(topic, count, price_range):
-    """Generate introduction paragraph."""
-    intros = [
-        f"Tahun 2026, {topic} menjadi salah satu produk paling dicari di pasaran. Dengan berbagai pilihan dari brand ternama, menemukan {topic} terbaik dengan harga terjangkau bukan lagi hal sulit.",
-        f"Bingung memilih {topic} yang tepat? Jangan khawatir! Kami telah merangkum {count} rekomendasi {topic} terbaik {price_range} yang paling worth it untuk tahun 2026.",
-        f"Di artikel ini, kami akan membahas {count} {topic} terbaik dengan harga {price_range}. Dari fitur, spesifikasi, hingga link pembelian — semua lengkap di sini!",
-    ]
-    return random.choice(intros) + f"\n\nLangsung aja simak daftar {topic} terbaik berikut ini!"
-
-def generate_conclusion(products, topic):
-    """Generate conclusion paragraph."""
-    best = products[0]
-    value = min(products, key=lambda x: x["price"])
-    premium = max(products, key=lambda x: x["price"])
+    """Generate introduction paragraph with hook."""
+    hooks = {
+        "Smartphone": "Lagi cari smartphone yang worth it di tahun 2026? Dengan banyaknya pilihan di pasaran, memilih yang tepat bisa bikin bingung.",
+        "TWS": "Mau upgrade pengalaman mendengarkan musik atau podcast? TWS (True Wireless Stereo) adalah pilihan paling praktis tanpa kabel yang berantakan.",
+        "Laptop": "Butuh laptop baru untuk kerja, kuliah, atau gaming? Tahun 2026, banyak laptop powerful dengan harga makin terjangkau.",
+        "Smartwatch": "Pengen mulai hidup sehat atau butuh notifikasi di pergelangan tangan? Smartwatch bisa jadi asisten harian yang nggak boleh dilewatkan.",
+        "Charger": "HP sering lowbat di saat genting? Charger fast charging bisa jadi penyelamat harimu dengan pengisian cepat dalam hitungan menit.",
+        "Powerbank": "Sering keluar rumah dan khawatir HP mati? Powerbank portable adalah solusi paling praktis untuk tetap terhubung seharian.",
+        "Smart TV": "Pengen pengalaman nonton yang lebih seru di rumah? Smart TV dengan resolusi tinggi bisa mengubah ruang tamu jadi mini bioskop.",
+        "Tablet": "Butuh perangkat yang lebih besar dari HP tapi lebih praktis dari laptop? Tablet adalah pilihan tepat untuk kerja dan hiburan.",
+        "Mic": "Mau mulai streaming, podcast, atau sekadar suara jernih di meeting? Mic USB kondensor adalah solusi paling praktis — tinggal colok langsung pakai.",
+        "Keyboard": "Ngetik lama bikin pegal? Mechanical keyboard dengan switch yang nyaman bisa meningkatkan produktivitas dan pengalaman gaming.",
+        "Mouse": "Butuh mouse yang presisi dan nyaman untuk kerja atau gaming? Pilihan mouse wireless modern sudah sangat responsif tanpa delay.",
+        "default": f"Tahun 2026, {topic} menjadi salah satu produk paling dicari. Dengan banyaknya pilihan brand dan fitur, menemukan yang paling worth it butuh referensi tepat.",
+    }
+    hook = hooks.get(topic, hooks["default"])
     
-    conclusions = [
-        f"Dari kelima {topic} di atas, pilihan terbaik untuk performa adalah **{best['name']}** dengan harga {format_price(best['price'])}. Tapi kalau budget terbatas, **{value['name']}** di harga {format_price(value['price'])} sudah sangat worth it!",
-        f"Kesimpulannya, **{best['name']}** menawarkan value terbaik di kelasnya. Namun jika mencari yang paling terjangkau, **{value['name']}** adalah pilihan yang tidak kalah bagus.",
-        f"Semua {topic} di atas sudah kami seleksi berdasarkan harga, fitur, dan ulasan pengguna. Pilihan terbaik jatuh pada **{best['name']}**, tapi **{value['name']}** adalah alternatif terbaik untuk budget minim.",
-        f"Buat kamu yang cari {topic} premium, **{premium['name']}** adalah jawabannya. Tapi kalau mau yang paling hemat, langsung ambil **{value['name']}** aja.",
-    ]
-    return random.choice(conclusions)
+    cta = f"Berikut **{count} rekomendasi {topic} terbaik {price_range}** yang bisa kamu dapatkan di Shopee dengan harga terjangkau!"
+    
+    return hook + "\n\n" + cta + f"\n\nLangsung aja simak daftar {topic} terbaik berikut ini!"
 
-def generate_comparison(products, topic):
-    """Generate comparison table / list."""
-    lines = ["| No | Produk | Harga | Best For |", "|---|---|---|---|"]
-    best = products[0]
-    value = min(products, key=lambda x: x["price"])
-    for i, p in enumerate(products, 1):
-        label = "🏆 Best Overall" if p == best else ("💰 Best Value" if p == value else "⭐ Recommended")
-        lines.append(f"| {i} | {p['name'][:40]}... | {format_price(p['price'])} | {label} |")
-    return "\n".join(lines)
-
-def generate_buying_tips(topic):
-    """Generate buying tips section."""
-    tips = [
-        f"**Cek Ulasan Pembeli Real** — Jangan cuma lihat rating bintang, baca komentar pembeli yang sudah pakai {topic} tersebut.",
-        f"**Bandingkan Harga dari Beberapa Toko** — Harga di Shopee bisa beda antar seller. Cek juga apakah ada diskon atau voucher gratis ongkir.",
-        f"**Pastikan Garansi Resmi** — Beli dari official store atau seller dengan reputasi tinggi untuk menghindari barang palsu.",
-        f"**Sesuaikan dengan Kebutuhan** — Pilih {topic} berdasarkan budget dan fitur yang benar-benar kamu butuhkan, bukan yang paling mahal.",
-        f"**Perhatikan Spesifikasi Detail** — Bandingkan RAM, storage, daya tahan baterai, atau fitur lain yang penting untuk penggunaan harianmu.",
-    ]
-    return "\n\n".join(random.sample(tips, 3))
-
-def generate_faq(products, topic):
-    """Generate FAQ section."""
-    value = min(products, key=lambda x: x["price"])
-    best = products[0]
-    faqs = [
-        (f"Apakah {topic} murah bagus?", f"Ya, seperti **{value['name']}** yang harganya {format_price(value['price'])} sudah cukup untuk kebutuhan harian. Yang penting sesuaikan dengan kebutuhanmu."),
-        (f"{topic} terbaik tahun 2026?", f"Berdasarkan seleksi kami, **{best['name']}** menawarkan kombinasi fitur dan harga terbaik saat ini."),
-        (f"Apakah link di sini aman?", "Semua link menuju ke Shopee official store atau seller terpercaya. Kami hanya mendapat komisi kecil jika kamu membeli, tanpa biaya tambahan untukmu."),
-        (f"Bagaimana cara klaim garansi?", "Garansi tergantung seller masing-masing. Pastikan kamu membaca deskripsi produk di halaman Shopee sebelum checkout."),
-        (f"Apakah harga bisa berubah?", "Ya, harga di Shopee bisa berubah sewaktu-waktu tergantung promo dan diskon dari seller."),
-    ]
-    return "\n\n".join([f"**Q: {q}**\n\nA: {a}" for q, a in random.sample(faqs, 3)])
-
-def generate_product_desc(product, index):
-    """Generate product description."""
+def generate_product_desc(product, index, topic):
+    """Generate natural product description."""
+    name = product['name']
+    price = format_price(product['price'])
+    
+    # Extract features from name for more specific descriptions
+    features = []
+    if any(x in name for x in ['RGB', 'LED']):
+        features.append("dengan lampu RGB yang bikin setup makin aesthetic")
+    if any(x in name for x in ['Wireless', 'Bluetooth', 'TWS']):
+        features.append("tanpa kabel yang bikin gerak lebih leluasa")
+    if any(x in name for x in ['Fast Charging', 'PD', 'Quick Charge']):
+        features.append("dengan teknologi fast charging yang hemat waktu")
+    if any(x in name for x in ['Noise Cancelling', 'ANC', 'DSP']):
+        features.append("dengan teknologi peredam bising aktif")
+    if any(x in name for x in ['Gaming', 'Esports']):
+        features.append("yang dioptimasi khusus untuk performa gaming")
+    if any(x in name for x in ['4K', 'UHD', 'HDR']):
+        features.append("dengan kualitas gambar tajam dan warna hidup")
+    
+    feature_str = ", ".join(features) if features else "dengan fitur lengkap"
+    
     templates = [
-        f"Produk #{index} dengan harga {format_price(product['price'])}. {product['name']} menawarkan fitur lengkap dengan harga yang sangat kompetitif.",
-        f"Dengan harga {format_price(product['price'])}, {product['name']} adalah pilihan yang sangat worth it untuk budget kamu.",
-        f"{product['name']} hadir dengan harga {format_price(product['price'])}. Produk ini menjadi favorit banyak pengguna berkat kualitas dan harganya yang bersahabat.",
+        f"{name} {feature_str}. Hadir dengan harga {price}, produk ini menawarkan kualitas terbaik di kelasnya.",
+        f"Dengan harga {price}, {name} {feature_str}. Pilihan yang sangat worth it untuk budget kamu tanpa mengorbankan kualitas.",
+        f"{name} adalah solusi praktis {feature_str}. Dengan harga {price}, produk ini jadi favorit banyak pengguna berkat performa dan daya tahannya.",
+        f"{feature_str.capitalize()}, {name} hadir dengan harga {price}. Produk ini cocok buat kamu yang cari kualitas terbaik tanpa keluar budget terlalu besar.",
     ]
     return random.choice(templates)
 
 def generate_specs(product):
-    """Generate specs list from product name or fallback."""
+    """Generate detailed specs list from product name."""
     name = product['name']
     specs = []
     
-    # Extract common specs from name
-    if 'GB' in name or 'TB' in name:
-        specs.append('Storage besar untuk kebutuhan harian')
-    if '5G' in name:
-        specs.append('Jaringan 5G super cepat')
-    if 'AMOLED' in name or 'QLED' in name or 'OLED' in name:
-        specs.append('Panel layar premium dengan warna tajam')
-    if 'Hz' in name:
-        import re
-        hz = re.search(r'(\d+)Hz', name)
-        if hz:
-            specs.append(f'Refresh rate {hz.group(1)}Hz untuk tampilan mulus')
-    if '4K' in name:
-        specs.append('Resolusi 4K Ultra HD')
-    if 'Wireless' in name or 'TWS' in name or 'Bluetooth' in name:
-        specs.append('Konektivitas wireless tanpa kabel')
-    if 'Battery' in name or 'Days' in name or 'Hari' in name:
-        specs.append('Baterai tahan lama')
-    if 'W' in name and ('charger' in name.lower() or 'charging' in name.lower()):
-        specs.append('Fast charging untuk pengisian cepat')
-    if 'Smart' in name:
-        specs.append('Fitur smart dengan kontrol aplikasi')
-    if 'Gaming' in name:
-        specs.append('Optimasi gaming untuk performa maksimal')
+    # Extract specs from product name keywords
+    spec_patterns = {
+        'Tipe': [
+            (['Kondensor', 'Condenser'], 'Kondensor'),
+            (['Dynamic', 'Dinamik'], 'Dynamic'),
+            (['Omnidirectional'], 'Omnidirectional'),
+            (['Cardioid'], 'Cardioid'),
+            (['USB', 'Type-C'], 'USB'),
+            (['Wireless', 'Bluetooth'], 'Wireless'),
+            (['Mechanical'], 'Mechanical'),
+            (['Optical'], 'Optical'),
+            (['Gaming'], 'Gaming'),
+        ],
+        'Koneksi': [
+            (['USB-C', 'Type-C'], 'USB Type-C'),
+            (['USB', 'USB A'], 'USB'),
+            (['Bluetooth', 'BT'], 'Bluetooth'),
+            (['Wireless', '2.4G'], 'Wireless 2.4GHz'),
+            (['XLR'], 'XLR + USB'),
+        ],
+        'Fitur': [
+            (['RGB', 'LED'], 'RGB Lighting'),
+            (['Noise Cancelling', 'ANC', 'DSP'], 'AI Noise Cancelling'),
+            (['Fast Charging', 'PD', 'Quick Charge'], 'Fast Charging'),
+            (['Wireless Charging', 'Qi'], 'Wireless Charging'),
+            (['Touch Screen', 'Touchscreen'], 'Layar Sentuh'),
+            (['Fingerprint', 'Face ID'], 'Sensor Biometrik'),
+            (['Waterproof', 'IP67', 'IP68'], 'Tahan Air & Debu'),
+            (['Magnetic', 'MagSafe'], 'Magnetic Attachment'),
+        ],
+        'Baterai': [
+            (['mAh'], 'Kapasitas baterai besar'),
+            (['Hours', 'Jam', 'Hari', 'Days'], 'Baterai tahan lama'),
+        ],
+        'Kompatibel': [
+            (['PC', 'Laptop', 'Mac'], 'Windows, Mac, Linux'),
+            (['iOS', 'iPhone', 'iPad'], 'iOS & iPadOS'),
+            (['Android'], 'Android'),
+            (['PS5', 'PlayStation', 'Xbox', 'Switch'], 'PC, Console, Mobile'),
+        ],
+    }
     
-    if not specs:
-        specs.append('Build quality terbaik di kelasnya')
-        specs.append('Performa handal untuk penggunaan sehari-hari')
+    # Check patterns
+    found_cats = set()
+    for category, patterns in spec_patterns.items():
+        for keywords, label in patterns:
+            if any(kw.lower() in name.lower() for kw in keywords):
+                if category not in found_cats:
+                    specs.append(f"- {category}: {label}")
+                    found_cats.add(category)
+                break
     
-    return '\n- '.join(specs[:2])
+    # Fallback generic specs
+    if len(specs) < 3:
+        fallback = [
+            "- Desain ergonomis dan nyaman dipakai seharian",
+            "- Build quality premium dengan material berkualitas",
+            "- Performa handal untuk penggunaan sehari-hari",
+            "- Garansi resmi untuk ketenangan pikiran",
+        ]
+        for f in fallback:
+            if len(specs) < 4:
+                specs.append(f)
+    
+    return "\n".join(specs[:5])
+
+def generate_target_audience(product, topic):
+    """Generate 'Cocok untuk:' target audience."""
+    name = product['name']
+    price = product['price']
+    
+    audiences = {
+        "Smartphone": [
+            "Pengguna harian yang butuh HP andal untuk kerja dan sosial media",
+            "Content creator yang butuh kamera dan performa tinggi",
+            "Gamer mobile yang cari HP dengan refresh rate tinggi",
+        ],
+        "TWS": [
+            "Pengguna aktif yang butuh audio nirkabel untuk olahraga dan commute",
+            "Remote worker yang sering meeting online dan butuh mic jernih",
+            "Music enthusiast yang cari kualitas suara premium tanpa kabel",
+        ],
+        "Laptop": [
+            "Mahasiswa dan profesional yang butuh laptop ringan untuk mobilitas tinggi",
+            "Gamer yang cari performa tinggi dengan harga terjangkau",
+            "Content creator yang butuh layar akurat dan prosesor cepat",
+        ],
+        "Smartwatch": [
+            "Pengguna aktif yang ingin tracking fitness dan kesehatan harian",
+            "Profesional sibuk yang butuh notifikasi tanpa harus buka HP terus",
+            "Fashion-conscious user yang cari wearable yang stylish",
+        ],
+        "Charger": [
+            "Pengguna yang HP-nya sering lowbat dan butuh pengisian cepat",
+            "Traveler yang butuh charger portable dan multi-port",
+            "Pengguna multi-device yang punya HP, tablet, dan TWS",
+        ],
+        "Powerbank": [
+            "Pengguna mobile yang sering keluar rumah seharian",
+            "Traveler dan commuter yang butuh daya cadangan",
+            "Content creator yang sering shooting outdoor tanpa stop kontak",
+        ],
+        "Smart TV": [
+            "Keluarga yang pengen pengalaman nonton sinematik di rumah",
+            "Gamer yang butuh layar besar dengan input lag rendah",
+            "Binge-watcher yang suka marathon serial Netflix seharian",
+        ],
+        "Mic": [
+            "Streamer dan podcaster pemula yang butuh mic plug & play",
+            "Gamer yang butuh komunikasi jernih saat multiplayer",
+            "Content creator yang mulai serius dengan kualitas audio",
+        ],
+        "Keyboard": [
+            "Programmer dan writer yang ngetik lama butuh kenyamanan",
+            "Gamer yang cari responsivitas tinggi dan anti-ghosting",
+            "Remote worker yang mau setup kerja yang ergonomis",
+        ],
+        "Mouse": [
+            "Profesional yang butuh presisi tinggi untuk desain dan editing",
+            "Gamer FPS yang butuh tracking akurat dan responsif",
+            "Pengguna harian yang cari mouse nyaman untuk kerja seharian",
+        ],
+        "default": [
+            "Pengguna yang cari kualitas terbaik di kelas harganya",
+            "Pemula yang baru mulai explore produk dalam kategori ini",
+            "Budget-conscious user yang nggak mau kompromi kualitas",
+        ],
+    }
+    
+    topic_audiences = audiences.get(topic, audiences["default"])
+    
+    # Price-based selection
+    if price < 300000:
+        return f"Pemula dan budget hunter yang butuh solusi terjangkau tanpa mengorbankan kualitas dasar."
+    elif price < 800000:
+        return random.choice(topic_audiences[:2])
+    else:
+        return random.choice(topic_audiences) + " yang siap investasi lebih untuk kualitas premium."
+
+def generate_buying_tips(topic):
+    """Generate buying tips section with emoji categories."""
+    
+    tip_categories = {
+        "Smartphone": {
+            "icon": "📱",
+            "title": "Sesuaikan dengan kebutuhan harian",
+            "items": [
+                "**Casual user** → Fokus ke baterai besar dan layar nyaman",
+                "**Gamer** → Cari refresh rate tinggi dan chipset gaming",
+                "**Fotografer** → Prioritaskan kamera utama dan stabilisasi video",
+                "**Professional** → RAM besar dan multitasking lancar",
+            ]
+        },
+        "TWS": {
+            "icon": "🎧",
+            "title": "Perhatikan fitur audio dan kenyamanan",
+            "items": [
+                "**Active commuting** → Noise cancelling + fitur ambient mode",
+                "**Workout** → IP rating tinggi dan ear hooks yang aman",
+                "**Meeting sering** → Mic berkualitas dan battery life panjang",
+                "**Audiophile** → Driver besar dan codec aptX/LDAC support",
+            ]
+        },
+        "Laptop": {
+            "icon": "💻",
+            "title": "Pilih berdasarkan penggunaan utama",
+            "items": [
+                "**Pelajar/kerja** → Laptop ringan dengan baterai tahan 8+ jam",
+                "**Gaming** → GPU dedicated dan cooling system bagus",
+                "**Design/edit** → Layar color-accurate dan RAM minimal 16GB",
+                "**Budget tight** → Chromebook atau laptop dengan SSD yang cepat",
+            ]
+        },
+        "Smartwatch": {
+            "icon": "⌚",
+            "title": "Pertimbangkan ekosistem dan fitur kesehatan",
+            "items": [
+                "**iPhone user** → Apple Watch untuk integrasi terbaik",
+                "**Android user** → Galaxy Watch atau Wear OS lainnya",
+                "**Fitness enthusiast** → Cari GPS akurat dan heart rate monitor",
+                "**Fashion first** → Prioritaskan desain dan strap yang bisa diganti",
+            ]
+        },
+        "Charger": {
+            "icon": "⚡",
+            "title": "Cek kompatibilitas dan power output",
+            "items": [
+                "**HP saja** → Charger single port 20W-30W sudah cukup",
+                "**Multi-device** → Cari charger dengan 2-3 port berbeda",
+                "**Traveler** → GaN charger yang ringan dan tidak panas",
+                "**Power user** → 65W+ untuk ngecas laptop juga",
+            ]
+        },
+        "Powerbank": {
+            "icon": "🔋",
+            "title": "Pilih kapasitas dan port sesuai kebutuhan",
+            "items": [
+                "**Daily carry** → 10000mAh cukup untuk 2-3x charge HP",
+                "**Travel/jalan-jalan** → 20000mAh+ untuk seharian outdoor",
+                "**Fast charging** → Pastikan support PD atau Quick Charge",
+                "**Wireless fan** → Pilih yang ada Qi wireless charging",
+            ]
+        },
+        "Smart TV": {
+            "icon": "📺",
+            "title": "Perhatikan ukuran ruangan dan resolusi",
+            "items": [
+                "**Kamar (2-3m)** → 32-43 inch sudah cukup nyaman",
+                "**Ruang tamu (3-4m)** → 50-55 inch untuk immersive experience",
+                "**Home theater** → 65 inch+ dengan Dolby Vision/Atmos",
+                "**Gaming** → Cari low input lag dan HDMI 2.1",
+            ]
+        },
+        "Mic": {
+            "icon": "🎤",
+            "title": "Pilih berdasarkan polar pattern dan koneksi",
+            "items": [
+                "**Solo streaming** → Cardioid untuk fokus ke suara kamu saja",
+                "**Podcast ramai** → Omnidirectional untuk tangkap semua arah",
+                "**Musik/recording** → Condenser untuk detail frekuensi tinggi",
+                "**Gaming casual** → USB plug & play tanpa setup ribet",
+            ]
+        },
+        "default": {
+            "icon": "🛒",
+            "title": "Tips memilih produk terbaik",
+            "items": [
+                "**Cek ulasan real** → Baca komentar pembeli yang sudah pakai",
+                "**Bandingkan harga** → Harga bisa beda antar seller di Shopee",
+                "**Pastikan garansi** → Beli dari official store atau seller terpercaya",
+                "**Sesuaikan budget** → Pilih fitur yang benar-benar kamu butuhkan",
+            ]
+        },
+    }
+    
+    cat = tip_categories.get(topic, tip_categories["default"])
+    
+    lines = [
+        f"## {cat['icon']} Tips Memilih {topic} Terbaik",
+        "",
+        f"**{cat['icon']} {cat['title']}:**",
+    ]
+    for item in cat["items"]:
+        lines.append(item)
+    
+    lines.extend([
+        "",
+        "**💡 Tips tambahan:**",
+        "- Selalu cek rating dan review terbaru sebelum checkout",
+        "- Manfaatkan voucher dan gratis ongkir di Shopee",
+        "- Beli dari seller dengan respons chat cepat untuk after-sales",
+    ])
+    
+    return "\n".join(lines)
+
+def generate_closing_emoji(topic):
+    """Generate closing emoji based on topic."""
+    emojis = {
+        "Smartphone": "📱✨",
+        "TWS": "🎧🔥",
+        "Laptop": "💻🚀",
+        "Smartwatch": "⌚💪",
+        "Charger": "⚡🔋",
+        "Powerbank": "🔋🎯",
+        "Smart TV": "📺🍿",
+        "Tablet": "📱💻",
+        "Mic": "🎙️✨",
+        "Keyboard": "⌨️✨",
+        "Mouse": "🖱️🎯",
+        "default": "🛍️✨",
+    }
+    return emojis.get(topic, emojis["default"])
 
 def generate_image_placeholder(product):
     """Generate image placeholder - DISABLED (no images)."""
@@ -410,7 +640,6 @@ def generate_post():
     image_slug = generate_slug(title)
     description = generate_description(selected, subcategory)
     intro = generate_intro(subcategory, 5, price_range)
-    conclusion = generate_conclusion(selected, subcategory)
     
     template_vars = {
         "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
@@ -420,10 +649,8 @@ def generate_post():
         "category": selected[0]["category"],
         "topic": subcategory,
         "intro": intro,
-        "conclusion": conclusion,
-        "comparison": generate_comparison(selected, subcategory),
         "buying_tips": generate_buying_tips(subcategory),
-        "faq": generate_faq(selected, subcategory),
+        "closing_emoji": generate_closing_emoji(subcategory),
     }
     
     # Add product variables
@@ -431,8 +658,9 @@ def generate_post():
         template_vars[f"p{i}_name"] = p["name"]
         template_vars[f"p{i}_price"] = format_price(p["price"])
         template_vars[f"p{i}_link"] = p["link"]
-        template_vars[f"p{i}_desc"] = generate_product_desc(p, i)
+        template_vars[f"p{i}_desc"] = generate_product_desc(p, i, subcategory)
         template_vars[f"p{i}_specs"] = generate_specs(p)
+        template_vars[f"p{i}_target"] = generate_target_audience(p, subcategory)
     
     # Generate post content
     content = TEMPLATES_5.format(**template_vars)
