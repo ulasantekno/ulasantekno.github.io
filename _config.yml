@@ -8,6 +8,9 @@ github_username: "ulasantekno"
 author: "Anan Setiawan"
 keywords: "ulasan gadget, review teknologi, affiliate shopee, tws murah 2026, laptop terbaik 2026, tips tekno"
 
+# Timezone (WIB - Jakarta) supaya URL tanggal sesuai waktu lokal
+timezone: Asia/Jakarta
+
 # Permalink (tanpa category biar URL konsisten)
 permalink: /:year/:month/:day/:title.html
 
