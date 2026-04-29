@@ -682,7 +682,7 @@ def generate_post():
         banner_script = os.path.join(script_dir, "unsplash_banner.py")
         if os.path.exists(banner_script):
             result = subprocess.run(
-                ["/usr/bin/python3.12", banner_script, image_slug, title, category, subcategory],
+                ["/usr/bin/python3.12", banner_script, image_slug, title, selected[0]["category"], subcategory],
                 capture_output=True, text=True, timeout=30
             )
             print(result.stderr)  # Print search keyword info
