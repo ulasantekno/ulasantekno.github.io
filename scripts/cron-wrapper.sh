@@ -2,6 +2,9 @@
 # Cron wrapper for UlasanTekno auto-blog
 # Runs every 5 hours
 
+export HOME=/home/ubuntu
+export PATH=/usr/local/bin:/usr/bin:/bin
+
 REPO="/home/ubuntu/ulasantekno-repo"
 LOG="/tmp/ulasantekno-cron.log"
 PYTHON="/usr/bin/python3.12"

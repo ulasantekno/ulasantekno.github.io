@@ -414,9 +414,16 @@ def generate_post():
     
     # Write file
     filename.write_text(content, encoding="utf-8")
-    print(f"Generated post: {filename}")
+    file_size = filename.stat().st_size
+    print(f"Generated post: {filename} ({file_size} bytes)")
+    
+    if file_size == 0:
+        print("❌ Generated file is empty (0 bytes), aborting.")
+        filename.unlink()
+        return {"success": False, "reason": "empty_file"}
     
     # Generate banner image
+    banner_generated = False
     try:
         script_dir = os.path.dirname(os.path.abspath(__file__))
         banner_script = os.path.join(script_dir, "unsplash_banner.py")
@@ -427,21 +434,65 @@ def generate_post():
             )
             if result.returncode == 0:
                 print(f"✅ Generated banner: {image_slug}.jpg")
+                banner_generated = True
             else:
                 print(f"⚠️ Banner generation failed: {result.stderr}")
     except Exception as e:
         print(f"⚠️ Could not generate banner: {e}")
     
+    # Fallback image if banner was not generated
+    if not banner_generated:
+        fallback_banner = REPO_PATH / "assets" / "hero-banner.jpg"
+        target_banner = REPO_PATH / "assets" / "images" / "posts" / f"{image_slug}-banner.jpg"
+        if fallback_banner.exists() and not target_banner.exists():
+            import shutil
+            shutil.copy(str(fallback_banner), str(target_banner))
+            print(f"🖼️ Using fallback banner: {target_banner}")
+        # Update image reference in the post to use hero-banner if still missing
+        if not target_banner.exists():
+            # Replace image path in content to hero-banner
+            content = content.replace(
+                f'/assets/images/posts/{image_slug}-banner.jpg',
+                '/assets/hero-banner.jpg'
+            )
+            filename.write_text(content, encoding="utf-8")
+            print("📝 Updated image reference to fallback hero-banner.jpg")
+    
     # Git commit and push
     try:
+        # Load GH_TOKEN from .env
+        env_path = REPO_PATH / ".env"
+        gh_token = None
+        if env_path.exists():
+            with open(env_path, "r") as f:
+                for line in f:
+                    if line.startswith("GH_TOKEN="):
+                        gh_token = line.strip().split("=", 1)[1]
+                        break
+        
         os.chdir(REPO_PATH)
         subprocess.run(["git", "add", str(filename)], check=True)
-        # Also add generated banner image if exists
+        
+        # Only add banner image if it actually exists
         banner_path = REPO_PATH / "assets" / "images" / "posts" / f"{image_slug}-banner.jpg"
-        if banner_path.exists():
+        if banner_path.exists() and banner_path.stat().st_size > 0:
             subprocess.run(["git", "add", str(banner_path)], check=True)
+            print(f"✅ Banner image added: {banner_path}")
+        else:
+            print(f"⚠️ Banner image not found or empty, skipping: {banner_path}")
+        
         subprocess.run(["git", "commit", "-m", f"🤖 Auto-generate: {title}"], check=True)
-        subprocess.run(["git", "push", "origin", "main"], check=True)
+        
+        # Push with token if available
+        if gh_token:
+            push_url = f"https://{gh_token}@github.com/ulasantekno/ulasantekno.github.io.git"
+            subprocess.run(["git", "push", push_url, "main"], check=True)
+            # Clean token from remote URL in git config (security)
+            subprocess.run(["git", "remote", "set-url", "origin", "https://github.com/ulasantekno/ulasantekno.github.io.git"], check=False)
+        else:
+            subprocess.run(["git", "push", "origin", "main"], check=True)
+            print("⚠️ Pushed without token (GH_TOKEN not found in .env)")
+        
         print(f"✅ Successfully pushed: {title}")
         
         # Build article URL
