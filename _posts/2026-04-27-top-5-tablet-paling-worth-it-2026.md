@@ -2,7 +2,7 @@
 date: 2026-04-27 02:45:05 +0700
 title: "Top 5 Tablet Paling Worth It 2026"
 description: "Rekomendasi Tablet terbaik tahun 2026: Xiaomi, OPPO, Infinix dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/top-5-tablet-paling-worth-it-2026.jpg"
+image: "/assets/images/posts/7-tablet-terbaik-shopee-2026.png"
 category: Gadget
 ---
 

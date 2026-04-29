@@ -2,7 +2,7 @@
 date: 2026-04-27 02:55:02 +0700
 title: "Rekomendasi 5 TWS Terbaik 2026 (di bawah Rp 3.816.900)"
 description: "Rekomendasi TWS terbaik tahun 2026: Samsung, Xiaomi, [Gift] dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/rekomendasi-5-tws-terbaik-2026-(di-bawah-rp-3.816..jpg"
+image: "/assets/images/posts/rekomendasi-5-tws-terbaik-2026-di-bawah-rp-2.999.0-banner.jpg"
 category: Audio
 ---
 

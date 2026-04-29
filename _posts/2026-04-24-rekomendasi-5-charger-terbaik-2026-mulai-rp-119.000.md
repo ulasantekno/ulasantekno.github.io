@@ -2,7 +2,7 @@
 date: 2026-04-24 05:00:01 +0700
 title: "Rekomendasi 5 Charger Terbaik 2026 (mulai Rp 119.000)"
 description: "Rekomendasi Charger terbaik tahun 2026: Power, Power, Xiaomi dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/rekomendasi-5-charger-terbaik-2026-(mulai-rp-119.0.jpg"
+image: "/assets/images/posts/rekomendasi-5-charger-terbaik-2026-(mulai-rp-119.0-banner.jpg"
 category: Gadget
 ---
 

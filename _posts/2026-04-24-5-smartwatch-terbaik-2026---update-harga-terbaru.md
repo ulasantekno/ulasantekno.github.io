@@ -2,7 +2,7 @@
 date: 2026-04-24 15:00:01 +0700
 title: "5 Smartwatch Terbaik 2026 — Update Harga Terbaru!"
 description: "Rekomendasi Smartwatch terbaik tahun 2026: Samsung, Samsung, [NEW] dengan harga terjangkau. Update harga dan link Shopee terbaru!"
-image: "/assets/images/posts/5-smartwatch-terbaik-2026-—-update-harga-terbaru!.jpg"
+image: "/assets/images/posts/5-smartwatch-terbaik-2026-—-update-harga-terbaru!-banner.jpg"
 category: Gadget
 ---
 
