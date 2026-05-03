@@ -77,7 +77,7 @@ def format_price(price):
 
 def generate_slug(name):
     slug = name.lower()
-    slug = re.sub(r'[!?—–\"\'()]+', '', slug)
+    slug = re.sub(r'[!?—–\"\'():]+', '', slug)
     slug = slug.replace(" ", "-").replace("/", "-").replace("'", "").replace('"', "").replace("&", "dan")
     slug = re.sub(r'-+', '-', slug)
     return slug.strip('-')[:50]
@@ -555,6 +555,7 @@ def _top5_buying_tips(subcat):
 
 
 def generate_top5(products):
+    emojis = {"Smartphone":"📱✨","TWS":"🎧🔥","Earphone":"🎧✨","Laptop":"💻🚀","Smartwatch":"⌚💪","Charger":"⚡🔋","Powerbank":"🔋🎯","Smart TV":"📺🍿","Tablet":"📱💻","Microphone":"🎙️✨","Soundbar":"🔊🍿","Keyboard":"⌨️✨","Mouse":"🖱️🎯"}
     by_subcat = {}
     for p in products:
         sc = p.get("subcategory", "Lainnya")
@@ -611,7 +612,7 @@ def generate_top5(products):
         "title": title, "description": desc, "image_slug": image_slug,
         "category": cat, "intro": intro,
         "buying_tips": _top5_buying_tips(sc),
-        "closing": f"Semoga rekomendasi ini membantu kamu menemukan {sc} yang tepat! Jangan lupa cek review di Shopee sebelum beli ya. {random.choice(['📱✨','🎧🔥','💻🚀','⌚💪','⚡🔋','🔋🎯','📺🍿','🎙️✨'])}"
+        "closing": f"Semoga rekomendasi ini membantu kamu menemukan {sc} yang tepat! Jangan lupa cek review di Shopee sebelum beli ya. {emojis.get(sc, '🛍️✨')}",
     }
     for i, p in enumerate(selected, 1):
         tvars[f"p{i}_name"] = clean_product_name(p["name"])
