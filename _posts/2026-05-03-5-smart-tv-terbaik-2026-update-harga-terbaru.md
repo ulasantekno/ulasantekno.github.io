@@ -1,7 +1,7 @@
 ---
 date: 2026-05-03 12:55:31 +0700
 title: "5 Smart TV Terbaik 2026 — Update Harga Terbaru!"
-description: "Rekomendasi Smart TV terbaik tahun 2026: Samsung 65" Crystal UHD 4K UE100F 4K Smart TV, Xiaomi TV A Pro 65 2026 4K QLED 120Hz HDR10+ dan lainnya. Update harga dan link Shopee terbaru!"
+description: "Rekomendasi Smart TV terbaik tahun 2026: Samsung 65 inch Crystal UHD 4K UE100F 4K Smart TV, Xiaomi TV A Pro 65 2026 4K QLED 120Hz HDR10+ dan lainnya. Update harga dan link Shopee terbaru!"
 image: "/assets/images/posts/5-smart-tv-terbaik-2026-update-harga-terbaru-banner.jpg"
 category: Smart Home
 ---

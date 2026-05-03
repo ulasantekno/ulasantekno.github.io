@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Unsplash Banner Generator for UlasanTekno Blog."""
 
-import requests, os, sys
+import requests, os, sys, random
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 
@@ -103,11 +103,17 @@ def extract_keyword_from_title_legacy(title):
             return val
     return "technology"
 
-def search(q, n=3):
+def search(q, n=10):
     r = requests.get("https://api.unsplash.com/search/photos", 
                      params={"query": q, "per_page": n, "orientation": "landscape"},
                      headers={"Authorization": f"Client-ID {ACCESS_KEY}"}, timeout=10)
     return r.json().get("results", []) if r.ok else []
+
+def pick_random_result(results):
+    """Randomly pick one result, preferring different images."""
+    if not results:
+        return None
+    return random.choice(results)
 
 def dl(url):
     r = requests.get(url, timeout=15)
@@ -181,8 +187,10 @@ if __name__ == "__main__":
         # Last resort: category + technology
         results = search(f"{cat} technology")
     if results:
-        img = dl(results[0]["urls"]["regular"])
-        if img:
-            os.makedirs(OUT, exist_ok=True)
-            path = os.path.join(OUT, f"{pid}-banner.jpg")
-            print(make(img, name, cat, path))
+        chosen = pick_random_result(results)
+        if chosen:
+            img = dl(chosen["urls"]["regular"])
+            if img:
+                os.makedirs(OUT, exist_ok=True)
+                path = os.path.join(OUT, f"{pid}-banner.jpg")
+                print(make(img, name, cat, path))

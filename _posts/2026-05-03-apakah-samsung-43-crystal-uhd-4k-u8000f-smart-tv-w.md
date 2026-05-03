@@ -1,7 +1,7 @@
 ---
 date: 2026-05-03 12:55:59 +0700
-title: "Apakah Samsung 43" Crystal UHD 4K U8000F Smart TV Worth It? Review Jujur 2026"
-description: "Review lengkap Samsung 43" Crystal UHD 4K U8000F Smart TV 2026: kelebihan, kekurangan, spesifikasi, dan harga terbaru Rp 3.679.000. Cek sebelum beli!"
+title: "Apakah Samsung 43 inch Crystal UHD 4K U8000F Smart TV Worth It? Review Jujur 2026"
+description: "Review lengkap Samsung 43 inch Crystal UHD 4K U8000F Smart TV 2026: kelebihan, kekurangan, spesifikasi, dan harga terbaru Rp 3.679.000. Cek sebelum beli!"
 image: "/assets/images/posts/apakah-samsung-43-crystal-uhd-4k-u8000f-smart-tv-w-banner.jpg"
 category: Smart Home
 ---

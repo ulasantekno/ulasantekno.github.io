@@ -1,7 +1,7 @@
 ---
 date: 2026-05-03 12:55:46 +0700
-title: "Xiaomi TV A Pro 43 2026 4K QLED HDR10+ atau Samsung 43" Crystal UHD 4K U8000F Smart TV? Review Perbandingan Detail 2026"
-description: "Perbandingan lengkap Xiaomi TV A Pro 43 2026 4K QLED HDR10+ vs Samsung 43" Crystal UHD 4K U8000F Smart TV 2026: beda harga Rp 80.000, kelebihan, kekurangan, dan rekomendasi. Cek sebelum beli!"
+title: "Xiaomi TV A Pro 43 2026 4K QLED HDR10+ atau Samsung 43 inch Crystal UHD 4K U8000F Smart TV? Review Perbandingan Detail 2026"
+description: "Perbandingan lengkap Xiaomi TV A Pro 43 2026 4K QLED HDR10+ vs Samsung 43 inch Crystal UHD 4K U8000F Smart TV 2026: beda harga Rp 80.000, kelebihan, kekurangan, dan rekomendasi. Cek sebelum beli!"
 image: "/assets/images/posts/xiaomi-tv-a-pro-43-2026-4k-qled-hdr10+-atau-samsun-banner.jpg"
 category: Smart Home
 ---

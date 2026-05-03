@@ -1,7 +1,7 @@
 ---
 date: 2026-05-03 12:55:48 +0700
-title: "Xiaomi Smart Band 10 1.72" AMOLED 150 Sports 21 Days vs Xiaomi Smart Band 9 Pro 1.74" 150 Sports: Pilih yang Mana untuk Budgetmu?"
-description: "Perbandingan lengkap Xiaomi Smart Band 10 1.72" AMOLED 150 Sports 21 Days vs Xiaomi Smart Band 9 Pro 1.74" 150 Sports 2026: beda harga Rp 430.000, kelebihan, kekurangan, dan rekomendasi. Cek sebelum beli!"
+title: "Xiaomi Smart Band 10 1.72 AMOLED 150 Sports 21 Days vs Xiaomi Smart Band 9 Pro 1.74 150 Sports: Pilih yang Mana untuk Budgetmu?"
+description: "Perbandingan lengkap Xiaomi Smart Band 10 1.72 AMOLED 150 Sports 21 Days vs Xiaomi Smart Band 9 Pro 1.74 150 Sports 2026: beda harga Rp 430.000, kelebihan, kekurangan, dan rekomendasi. Cek sebelum beli!"
 image: "/assets/images/posts/xiaomi-smart-band-10-1.72-amoled-150-sports-21-day-banner.jpg"
 category: Gadget
 ---
