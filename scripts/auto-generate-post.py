@@ -75,6 +75,11 @@ def format_price(price):
     return f"Rp {price:,.0f}".replace(",", ".")
 
 
+def sanitize_title_for_yaml(title):
+    """Remove characters that break YAML double-quoted strings."""
+    return title.replace('"', '').replace('\\', '')
+
+
 def generate_slug(name):
     slug = name.lower()
     slug = re.sub(r'[!?—–\"\'():]+', '', slug)
@@ -130,7 +135,7 @@ def generate_specs_bullets(name):
     return "\n".join([f"- {f}" for f in feats[:8]])
 
 
-def git_commit_and_push(title, filename, image_slug, base_slug):
+def git_commit_and_push(title, filename, image_slug, base_slug, counter=1):
     """Shared git workflow. Returns article_url or None on failure."""
     env_path = REPO_PATH / ".env"
     gh_token = None
@@ -155,6 +160,8 @@ def git_commit_and_push(title, filename, image_slug, base_slug):
         subprocess.run(["git", "push", "origin", "main"], check=True)
     now = datetime.now()
     jekyll_slug = base_slug.replace('---', '-').replace('--', '-')
+    if counter > 1:
+        jekyll_slug = f"{jekyll_slug}-{counter - 1}"
     return f"https://ulasanteknoid.my.id/{now.year}/{now.month:02d}/{now.day:02d}/{jekyll_slug}.html"
 
 
@@ -378,7 +385,7 @@ def generate_single(products):
 
     content = SINGLE_TEMPLATE.format(
         date=datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
-        title=title, description=description, image_slug=image_slug,
+        title=sanitize_title_for_yaml(title), description=description, image_slug=image_slug,
         category=cat, intro=intro, specs=generate_specs_bullets(product['name']),
         price=price, pros=pros, cons=cons, target=target,
         alternatives=alts, conclusion=conclusion, link=product["link"],
@@ -391,7 +398,7 @@ def generate_single(products):
         return {"success": False, "reason": "empty_file"}
 
     generate_banner(image_slug, title, cat, subcat)
-    url = git_commit_and_push(title, filename, image_slug, base_slug)
+    url = git_commit_and_push(title, filename, image_slug, base_slug, counter)
     if not url:
         return {"success": False, "reason": "git_error"}
 
@@ -609,7 +616,7 @@ def generate_top5(products):
     # Build template vars
     tvars = {
         "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
-        "title": title, "description": desc, "image_slug": image_slug,
+        "title": sanitize_title_for_yaml(title), "description": desc, "image_slug": image_slug,
         "category": cat, "intro": intro,
         "buying_tips": _top5_buying_tips(sc),
         "closing": f"Semoga rekomendasi ini membantu kamu menemukan {sc} yang tepat! Jangan lupa cek review di Shopee sebelum beli ya. {emojis.get(sc, '🛍️✨')}",
@@ -629,7 +636,7 @@ def generate_top5(products):
         return {"success": False, "reason": "empty_file"}
 
     generate_banner(image_slug, title, cat, sc)
-    url = git_commit_and_push(title, filename, image_slug, base_slug)
+    url = git_commit_and_push(title, filename, image_slug, base_slug, counter)
     if not url:
         return {"success": False, "reason": "git_error"}
 
@@ -893,7 +900,7 @@ def generate_compare(products):
 
     content = COMPARE_TEMPLATE.format(
         date=datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
-        title=title, description=description, image_slug=image_slug,
+        title=sanitize_title_for_yaml(title), description=description, image_slug=image_slug,
         category=cat, intro=intro,
         name_a=name_a, name_b=name_b,
         specs_a=generate_specs_bullets(a['name']),
@@ -912,7 +919,7 @@ def generate_compare(products):
         return {"success": False, "reason": "empty_file"}
 
     generate_banner(image_slug, title, cat, sc)
-    url = git_commit_and_push(title, filename, image_slug, base_slug)
+    url = git_commit_and_push(title, filename, image_slug, base_slug, counter)
     if not url:
         return {"success": False, "reason": "git_error"}
 
