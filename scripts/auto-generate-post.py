@@ -89,10 +89,37 @@ def generate_slug(name):
 
 
 def clean_product_name(name):
-    for sep in [' - ', ' | ', ' [', ' (', ' / ']:
+    """Remove marketing fluff from product names. Keep only product name + model."""
+    import re
+    # Remove bracketed content: [BARU], [ONLINE EXCLUSIVE], [specs...]
+    name = re.sub(r'\[.*?\]', '', name)
+    # Remove parenthetical marketing fluff
+    name = re.sub(r'\(.*?\)', '', name)
+    # Remove common marketing keywords (case-insensitive)
+    marketing_words = [
+        r'\bONLINE EXCLUSIVE\b', r'\bOFFICIAL\b', r'\bGARANSI\b',
+        r'\bDISKON\b', r'\bPROMO\b', r'\bBEST SELLER\b',
+        r'\bTERLARIS\b', r'\bHEMAT\b', r'\bDIJAMIN\b',
+        r'\bTERMURAH\b', r'\bORIGINAL\b', r'\bRESMI\b',
+        r'\bREADY STOCK\b', r'\bGRATIS\b', r'\bBONUS\b',
+    ]
+    for word in marketing_words:
+        name = re.sub(word, '', name, flags=re.IGNORECASE)
+    # Remove leftover separators that might fragment the name
+    for sep in [' - ', ' | ', ' / ']:
         if sep in name:
-            return name.split(sep)[0].strip()
-    return name.strip()
+            parts = name.split(sep)
+            # Keep the shortest reasonable part that looks like a product name
+            # (not empty, not just specs)
+            for part in parts:
+                part = part.strip()
+                if len(part) > 3 and not re.match(r'^[\d,\.\s]+$', part):
+                    name = part
+                    break
+            break
+    # Clean up extra spaces
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
 
 
 def extract_features_from_name(name):
