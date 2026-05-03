@@ -1,7 +1,7 @@
 # UlasTekno Auto-Blog Settings Backup
 
-> **Backup Version:** 1.0  
-> **Backup Date:** 2026-04-29  
+> **Backup Version:** 2.0  
+> **Backup Date:** 2026-05-03  
 > **Purpose:** Dokumentasi lengkap semua konfigurasi supaya kalau ganti API/token tidak perlu setup dari nol.
 
 ---
@@ -14,14 +14,15 @@
 ├── _data/affiliate-links/     # Data produk affiliate
 ├── assets/images/posts/       # Banner artikel
 ├── scripts/
-│   ├── auto-generate-post.py  # Script utama generate artikel
+│   ├── auto-generate-post.py  # Script utama generate artikel (MULTI-MODE)
+│   ├── auto-generate-post-top5.py  # Backup script lama (top 5 only)
 │   ├── unsplash_banner.py     # Generate banner image dari Unsplash
-│   ├── cron-wrapper.sh        # Wrapper untuk cron lokal (opsional)
-│   └── cross-post.py          # Cross-post ke platform lain (opsional)
+│   └── git-push.sh            # Wrapper push aman dengan token
 ├── .env                       # Token & secret (DI-IGNORE GIT!)
 ├── .env.example               # Template .env (boleh di-commit)
 ├── _config.yml                # Konfigurasi Jekyll
 └── backups/                   # File backup ini
+    ├── SETTINGS.md
     ├── cronjob-backup.json
     └── settings-prompt.md
 ```
@@ -140,7 +141,11 @@ Kamu adalah bot otomasi UlasTekno. Tugasmu menjalankan auto-generate artikel blo
 
 | Fitur | Status | File |
 |---|---|---|
-| Generate artikel otomatis | ✅ | `scripts/auto-generate-post.py` |
+| Generate artikel otomatis (MULTI-MODE) | ✅ | `scripts/auto-generate-post.py` |
+| Mode: Review 1 produk | ✅ | `scripts/auto-generate-post.py` |
+| Mode: Top 5 rekomendasi | ✅ | `scripts/auto-generate-post.py` |
+| Mode: Perbandingan 2 produk | ✅ | `scripts/auto-generate-post.py` |
+| Random mode selector tiap run | ✅ | `scripts/auto-generate-post.py` |
 | Banner image dari Unsplash | ✅ | `scripts/unsplash_banner.py` |
 | Fallback banner (hero-banner.jpg) | ✅ | `scripts/auto-generate-post.py` |
 | Validasi file > 0 byte | ✅ | `scripts/auto-generate-post.py` |

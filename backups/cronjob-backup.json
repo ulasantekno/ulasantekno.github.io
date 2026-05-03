@@ -1,7 +1,7 @@
 {
-  "backup_version": "1.0",
-  "backup_date": "2026-04-29",
-  "description": "Backup konfigurasi cronjob UlasTekno Auto-Generate",
+  "backup_version": "2.0",
+  "backup_date": "2026-05-03",
+  "description": "Backup konfigurasi cronjob UlasTekno Multi-Mode Auto-Generate",
   "jobs": [
     {
       "job_id": "9e39dc815c37",
@@ -14,7 +14,7 @@
       "skills": [],
       "model": null,
       "provider": null,
-      "prompt_summary": "Bot otomasi UlasTekno: sync repo, load GH_TOKEN, jalankan auto-generate-post.py, baca hasil JSON, kirim notifikasi Telegram dengan judul, link, dan caption X/Threads."
+      "prompt_summary": "Bot otomasi UlasTekno (multi-mode: single review / top 5 / compare 2 products). Sync repo, load GH_TOKEN, jalankan auto-generate-post.py, baca hasil JSON, kirim notifikasi Telegram dengan judul, link, mode label, dan caption X/Threads."
     }
   ],
   "restore_instructions": {
