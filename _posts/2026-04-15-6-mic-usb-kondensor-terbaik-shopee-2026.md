@@ -3,6 +3,7 @@ date: 2026-04-15 08:00:00 +0700
 layout: post
 title: "6 Mic USB Kondensor Terbaik 2026: Untuk Streaming, Podcast & Gaming"
 description: "Rekomendasi mic USB kondensor terbaik 2026 untuk podcaster, gamer, dan streamer. Harga mulai Rp200 ribuan di Shopee!"
+category: Audio
 image: /assets/images/posts/mic-wireless-murah-2026.png
 ---
 

@@ -3,6 +3,7 @@ date: 2026-04-15 16:00:00 +0700
 layout: post
 title: "Review POCO F7 Ultra: Snapdragon 8 Elite + Kamera Telefoto, Worth Rp9,6 Juta?"
 description: "Review lengkap POCO F7 Ultra 2026. Snapdragon 8 Elite, 2K AMOLED, 120W+50W wireless, triple camera 50MP telefoto. Harga Rp9,6 juta di Shopee."
+category: Gadget
 image: /assets/images/posts/gadget-produktivitas-2026.png
 ---
 

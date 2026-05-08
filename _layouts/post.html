@@ -11,8 +11,11 @@ layout: default
       <span class="post-author">by {{ page.author }}</span>
       {% endif %}
     </div>
-    {% if page.categories %}
+    {% if page.category or page.categories %}
     <div class="post-categories">
+      {% if page.category %}
+      <span class="category-tag">{{ page.category }}</span>
+      {% endif %}
       {% for category in page.categories %}
       <span class="category-tag">{{ category }}</span>
       {% endfor %}
@@ -22,7 +25,7 @@ layout: default
 
   {% if page.image %}
   <div class="post-image">
-    <img src="{{ page.image }}" alt="{{ page.title }}">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" loading="lazy">
   </div>
   {% endif %}
 

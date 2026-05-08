@@ -13,22 +13,25 @@ permalink: /archive.html
   <h3>Filter by Kategori:</h3>
   <div class="category-tags">
     <a href="/archive.html" class="category-tag">Semua</a>
-    <a href="/archive.html#productivity" class="category-tag">Productivity</a>
-    <a href="/archive.html#ai-tools" class="category-tag">AI Tools</a>
-    <a href="/archive.html#review" class="category-tag">Review</a>
-    <a href="/archive.html#comparison" class="category-tag">Comparison</a>
-    <a href="/archive.html#tutorial" class="category-tag">Tutorial</a>
+    <a href="/kategori/gadget.html" class="category-tag">📱 Gadget</a>
+    <a href="/kategori/audio.html" class="category-tag">🎵 Audio</a>
+    <a href="/kategori/gaming.html" class="category-tag">🎮 Gaming</a>
+    <a href="/kategori/smart-home.html" class="category-tag">🏠 Smart Home</a>
+    <a href="/kategori/beauty-tech.html" class="category-tag">💇 Beauty Tech</a>
+    <a href="/kategori/lifestyle.html" class="category-tag">✨ Lifestyle</a>
   </div>
 </div>
 
 <div class="archive-list">
   {% for post in site.posts %}
   <div class="archive-item">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     <div class="archive-meta">
       <span class="archive-date">{{ post.date | date: "%d %B %Y" }}</span>
       <span class="archive-category">
-        {% if post.categories %}
+        {% if post.category %}
+          {{ post.category }}
+        {% elsif post.categories %}
           {{ post.categories | join: ", " }}
         {% endif %}
       </span>

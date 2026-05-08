@@ -1,7 +1,7 @@
 ---
 date: 2026-05-04 17:16:36 +0700
 title: "Head-to-Head: Xiaomi 4K Monitor A27Ui IPS USB-C 90W vs Xiaomi Curved Gaming Monitor G34WQi 34 UWQHD 180Hz — Review Lengkap"
-description: "Perbandingan lengkap Xiaomi 4K Monitor A27Ui IPS USB-C 90W vs Xiaomi Curved Gaming Monitor G34WQi 34" UWQHD 180Hz 2026: beda harga Rp 500.000, kelebihan, kekurangan, dan rekomendasi. Cek sebelum beli!"
+description: "Perbandingan lengkap Xiaomi 4K Monitor A27Ui IPS USB-C 90W vs Xiaomi Curved Gaming Monitor G34WQi 34 inch UWQHD 180Hz 2026: beda harga Rp 500.000, kelebihan, kekurangan, dan rekomendasi. Cek sebelum beli!"
 image: "/assets/images/posts/head-to-head-xiaomi-4k-monitor-a27ui-ips-usb-c-90w-banner.jpg"
 category: Gadget
 ---

@@ -71,6 +71,11 @@ def send_telegram_notification(message):
     return False
 
 
+def yaml_quote(value):
+    """Return a safe double-quoted YAML scalar."""
+    text = str(value).replace('\\', '\\\\').replace('"', '\\"')
+    return f'"{text}"'
+
 def format_price(price):
     return f"Rp {price:,.0f}".replace(",", ".")
 
@@ -231,8 +236,8 @@ def check_duplicate(date_str, base_slug):
 
 SINGLE_TEMPLATE = """---
 date: {date}
-title: "{title}"
-description: "{description}"
+title: {title}
+description: {description}
 image: "/assets/images/posts/{image_slug}-banner.jpg"
 category: {category}
 ---
@@ -412,7 +417,7 @@ def generate_single(products):
 
     content = SINGLE_TEMPLATE.format(
         date=datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
-        title=sanitize_title_for_yaml(title), description=description, image_slug=image_slug,
+        title=yaml_quote(sanitize_title_for_yaml(title)), description=yaml_quote(description), image_slug=image_slug,
         category=cat, intro=intro, specs=generate_specs_bullets(product['name']),
         price=price, pros=pros, cons=cons, target=target,
         alternatives=alts, conclusion=conclusion, link=product["link"],
@@ -440,8 +445,8 @@ def generate_single(products):
 
 TOP5_TEMPLATE = """---
 date: {date}
-title: "{title}"
-description: "{description}"
+title: {title}
+description: {description}
 image: "/assets/images/posts/{image_slug}-banner.jpg"
 category: {category}
 ---
@@ -643,7 +648,7 @@ def generate_top5(products):
     # Build template vars
     tvars = {
         "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
-        "title": sanitize_title_for_yaml(title), "description": desc, "image_slug": image_slug,
+        "title": yaml_quote(sanitize_title_for_yaml(title)), "description": yaml_quote(desc), "image_slug": image_slug,
         "category": cat, "intro": intro,
         "buying_tips": _top5_buying_tips(sc),
         "closing": f"Semoga rekomendasi ini membantu kamu menemukan {sc} yang tepat! Jangan lupa cek review di Shopee sebelum beli ya. {emojis.get(sc, '🛍️✨')}",
@@ -678,8 +683,8 @@ def generate_top5(products):
 
 COMPARE_TEMPLATE = """---
 date: {date}
-title: "{title}"
-description: "{description}"
+title: {title}
+description: {description}
 image: "/assets/images/posts/{image_slug}-banner.jpg"
 category: {category}
 ---
@@ -927,7 +932,7 @@ def generate_compare(products):
 
     content = COMPARE_TEMPLATE.format(
         date=datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
-        title=sanitize_title_for_yaml(title), description=description, image_slug=image_slug,
+        title=yaml_quote(sanitize_title_for_yaml(title)), description=yaml_quote(description), image_slug=image_slug,
         category=cat, intro=intro,
         name_a=name_a, name_b=name_b,
         specs_a=generate_specs_bullets(a['name']),

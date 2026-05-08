@@ -3,6 +3,7 @@ date: 2026-04-20 10:00:00 +0700
 layout: post
 title: "Review HUAWEI Mate 80 Pro: Flagship dengan Kamera True-to-Colour 2.0 & 100W Charging"
 description: "Review lengkap HUAWEI Mate 80 Pro 16/512GB — Kirin 9030 Pro, kamera triple 50MP, baterai 5750mAh 100W, layar LTPO OLED 120Hz, dan Kunlun Glass 2."
+category: Gadget
 image: /assets/images/posts/huawei-mate-80-pro-banner.png
 ---
 

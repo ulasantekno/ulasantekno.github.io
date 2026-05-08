@@ -27,8 +27,8 @@ CATEGORIES = {
 # Templates for different product counts
 TEMPLATES_5 = """---
 date: {date}
-title: "{title}"
-description: "{description}"
+title: {title}
+description: {description}
 image: "/assets/images/posts/{image_slug}-banner.jpg"
 category: {category}
 ---
@@ -209,6 +209,11 @@ def get_existing_slugs():
             if line.startswith("category:"):
                 slugs.add(line.strip())
     return slugs
+
+def yaml_quote(value):
+    """Return a safe double-quoted YAML scalar."""
+    text = str(value).replace('\\', '\\\\').replace('"', '\\"')
+    return f'"{text}"'
 
 def format_price(price):
     """Format price in Indonesian Rupiah."""
@@ -653,8 +658,8 @@ def generate_post():
     
     template_vars = {
         "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S +0700"),
-        "title": title,
-        "description": description,
+        "title": yaml_quote(title),
+        "description": yaml_quote(description),
         "image_slug": image_slug,
         "category": selected[0]["category"],
         "topic": subcategory,

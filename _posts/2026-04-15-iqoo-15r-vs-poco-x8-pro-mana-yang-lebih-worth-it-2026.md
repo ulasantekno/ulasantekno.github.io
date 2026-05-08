@@ -3,6 +3,7 @@ date: 2026-04-15 12:00:00 +0700
 layout: post
 title: "iQOO 15R vs POCO X8 Pro Max: Duel Flagship Killer 2026!"
 description: "Perbandingan lengkap vivo iQOO 15R vs POCO X8 Pro Max. Snapdragon 8 Gen 5 vs Dimensity 9500s, mana yang lebih worth it?"
+category: Gadget
 image: /assets/images/posts/gadget-produktivitas-2026.png
 ---
 

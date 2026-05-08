@@ -3,6 +3,7 @@ date: 2026-04-15 14:00:00 +0700
 layout: post
 title: "Review vivo iQOO 15R: Snapdragon 8 Gen 5 + Baterai 7600mAh, Worth It?"
 description: "Review lengkap vivo iQOO 15R 2026. Snapdragon 8 Gen 5, IP68+IP69, 7600mAh, 144Hz AMOLED 5000 nits. Harga Rp7,3 juta di Shopee."
+category: Gadget
 image: /assets/images/posts/gadget-produktivitas-2026.png
 ---
 

@@ -4,7 +4,7 @@
   <div class="article-card">
     <div class="article-image-wrapper">
     {% if post.image %}
-    <img src="{{ post.image }}" alt="{{ post.title }}" class="article-image">
+    <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" class="article-image" loading="lazy">
     {% else %}
     <div class="article-image" style="display: flex; align-items: center; justify-content: center; color: white; font-size: 2em;">
       🤖
@@ -13,7 +13,7 @@
     </div>
     
     <div class="article-content">
-      <h3 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="article-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="article-excerpt">
         {% if post.excerpt %}
           {{ post.excerpt | strip_html | truncate: 120 }}
@@ -25,7 +25,9 @@
       <div class="article-meta">
         <span class="article-date">{{ post.date | date: "%d %b %Y" }}</span>
         <span class="article-category">
-          {% if post.categories %}
+          {% if post.category %}
+            {{ post.category }}
+          {% elsif post.categories %}
             {{ post.categories | first }}
           {% else %}
             Review
@@ -33,7 +35,7 @@
         </span>
       </div>
       
-      <a href="{{ post.url }}" class="read-more" style="margin-top: 10px;">
+      <a href="{{ post.url | relative_url }}" class="read-more" style="margin-top: 10px;">
         Baca Selengkapnya →
       </a>
     </div>
