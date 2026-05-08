@@ -11,6 +11,7 @@ import subprocess
 import urllib.request
 import urllib.parse
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -25,6 +26,10 @@ CATEGORIES = {
     "lifestyle": "Lifestyle",
     "beauty-tech": "Beauty Tech"
 }
+STATE_FILE = REPO_PATH / ".auto-generate-state.json"
+DRY_RUN = "--dry-run" in sys.argv or os.environ.get("DRY_RUN") == "1"
+NO_PUSH = "--no-push" in sys.argv or os.environ.get("NO_PUSH") == "1"
+FORCED_MODE = next((arg.split("=", 1)[1] for arg in sys.argv if arg.startswith("--mode=")), None)
 
 # ─── SHARED UTILITIES ────────────────────────────────────────────────
 
@@ -37,11 +42,88 @@ def load_products():
             with open(category_file) as f:
                 data = json.load(f)
                 for p in data.get("products", []):
-                    p["category"] = CATEGORIES.get(category_file.stem, "Gadget")
+                    p = dict(p)  # avoid mutating source data
+                    p["category"] = CATEGORIES.get(category_file.stem, p.get("category", "Gadget"))
+                    p["source_file"] = category_file.name
                     products.append(p)
         except Exception as e:
             print(f"Error loading {category_file}: {e}")
     return products
+
+def load_state():
+    if not STATE_FILE.exists():
+        return {"used_single_ids": [], "used_compare_pairs": [], "used_top5_sets": []}
+    try:
+        state = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"⚠️ State unreadable, resetting: {e}")
+        return {"used_single_ids": [], "used_compare_pairs": [], "used_top5_sets": []}
+    state.setdefault("used_single_ids", [])
+    state.setdefault("used_compare_pairs", [])
+    state.setdefault("used_top5_sets", [])
+    return state
+
+def save_state(state):
+    STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
+
+def product_key(product):
+    return product.get("id") or generate_slug(product.get("name", "unknown"))
+
+def compare_pair_key(a, b):
+    return "|".join(sorted([product_key(a), product_key(b)]))
+
+def existing_posts_text():
+    chunks = []
+    for post in POSTS_DIR.glob("*.md"):
+        try:
+            chunks.append(post.read_text(encoding="utf-8"))
+        except UnicodeDecodeError:
+            chunks.append(post.read_text(errors="ignore"))
+    return "\n".join(chunks)
+
+def is_product_already_covered(product, haystack=None):
+    haystack = existing_posts_text() if haystack is None else haystack
+    key = product_key(product)
+    name = clean_product_name(product.get("name", ""))
+    raw_name = product.get("name", "")
+    tokens = [t for t in {key, name, raw_name} if t and len(t) >= 8]
+    return any(t in haystack for t in tokens)
+
+def select_fresh_single(products):
+    state = load_state()
+    used = set(state.get("used_single_ids", []))
+    haystack = existing_posts_text()
+    fresh = [p for p in products if product_key(p) not in used and not is_product_already_covered(p, haystack)]
+    if not fresh:
+        # All/most products have been covered; recycle safely without same-product spam in the state cycle.
+        state["used_single_ids"] = []
+        save_state(state)
+        fresh = [p for p in products if not is_product_already_covered(p, haystack)] or products
+    return random.choice(fresh)
+
+def mark_single_used(product):
+    state = load_state()
+    used = state.setdefault("used_single_ids", [])
+    key = product_key(product)
+    if key not in used:
+        used.append(key)
+    save_state(state)
+
+def mark_compare_used(a, b):
+    state = load_state()
+    pairs = state.setdefault("used_compare_pairs", [])
+    key = compare_pair_key(a, b)
+    if key not in pairs:
+        pairs.append(key)
+    save_state(state)
+
+def mark_top5_used(selected):
+    state = load_state()
+    sets = state.setdefault("used_top5_sets", [])
+    key = "|".join(sorted(product_key(p) for p in selected))
+    if key not in sets:
+        sets.append(key)
+    save_state(state)
 
 
 def send_telegram_notification(message):
@@ -178,11 +260,32 @@ def git_commit_and_push(title, filename, image_slug, base_slug, counter=1):
                     gh_token = line.strip().split("=", 1)[1]
                     break
     os.chdir(REPO_PATH)
-    subprocess.run(["git", "add", str(filename)], check=True)
     banner_path = REPO_PATH / "assets" / "images" / "posts" / f"{image_slug}-banner.jpg"
+    now = datetime.now()
+    jekyll_slug = base_slug.replace('---', '-').replace('--', '-')
+    if counter > 1:
+        jekyll_slug = f"{jekyll_slug}-{counter - 1}"
+    article_url = f"https://ulasanteknoid.my.id/{now.year}/{now.month:02d}/{now.day:02d}/{jekyll_slug}.html"
+
+    if DRY_RUN:
+        print(f"🧪 DRY RUN: generated {filename.name}; skip git add/commit/push")
+        try:
+            filename.unlink()
+        except FileNotFoundError:
+            pass
+        return article_url
+
+    subprocess.run(["git", "add", str(filename)], check=True)
+    if STATE_FILE.exists():
+        subprocess.run(["git", "add", str(STATE_FILE)], check=True)
     if banner_path.exists() and banner_path.stat().st_size > 0:
         subprocess.run(["git", "add", str(banner_path)], check=True)
     subprocess.run(["git", "commit", "-m", f"🤖 Auto: {title[:60]}"], check=True)
+
+    if NO_PUSH:
+        print("🧪 NO_PUSH enabled: commit created, push skipped")
+        return article_url
+
     if gh_token:
         push_url = f"https://{gh_token}@github.com/ulasantekno/ulasantekno.github.io.git"
         subprocess.run(["git", "push", push_url, "main"], check=True)
@@ -190,11 +293,7 @@ def git_commit_and_push(title, filename, image_slug, base_slug, counter=1):
                         "https://github.com/ulasantekno/ulasantekno.github.io.git"], check=False)
     else:
         subprocess.run(["git", "push", "origin", "main"], check=True)
-    now = datetime.now()
-    jekyll_slug = base_slug.replace('---', '-').replace('--', '-')
-    if counter > 1:
-        jekyll_slug = f"{jekyll_slug}-{counter - 1}"
-    return f"https://ulasanteknoid.my.id/{now.year}/{now.month:02d}/{now.day:02d}/{jekyll_slug}.html"
+    return article_url
 
 
 def generate_banner(image_slug, title, category, subcategory):
@@ -294,7 +393,7 @@ category: {category}
 
 
 def generate_single(products):
-    product = random.choice(products)
+    product = select_fresh_single(products)
     subcat = product.get("subcategory", "Produk")
     cat = product.get("category", "Gadget")
     name = clean_product_name(product['name'])
@@ -429,7 +528,11 @@ def generate_single(products):
         filename.unlink()
         return {"success": False, "reason": "empty_file"}
 
-    generate_banner(image_slug, title, cat, subcat)
+    if not DRY_RUN:
+        mark_single_used(product)
+        generate_banner(image_slug, title, cat, subcat)
+    else:
+        print("🧪 DRY RUN: skip banner generation")
     url = git_commit_and_push(title, filename, image_slug, base_slug, counter)
     if not url:
         return {"success": False, "reason": "git_error"}
@@ -595,6 +698,8 @@ def _top5_buying_tips(subcat):
 
 def generate_top5(products):
     emojis = {"Smartphone":"📱✨","TWS":"🎧🔥","Earphone":"🎧✨","Laptop":"💻🚀","Smartwatch":"⌚💪","Charger":"⚡🔋","Powerbank":"🔋🎯","Smart TV":"📺🍿","Tablet":"📱💻","Microphone":"🎙️✨","Soundbar":"🔊🍿","Keyboard":"⌨️✨","Mouse":"🖱️🎯"}
+    state = load_state()
+    used_sets = set(state.get("used_top5_sets", []))
     by_subcat = {}
     for p in products:
         sc = p.get("subcategory", "Lainnya")
@@ -604,8 +709,26 @@ def generate_top5(products):
         sc = max(by_subcat.keys(), key=lambda k: len(by_subcat[k]))
         selected = by_subcat[sc][:5]
     else:
-        sc = random.choice(list(valid.keys()))
-        selected = random.sample(valid[sc], 5)
+        subcats = list(valid.keys())
+        random.shuffle(subcats)
+        selected = None
+        sc = subcats[0]
+        for candidate_sc in subcats:
+            pool = valid[candidate_sc]
+            for _ in range(25):
+                candidate = random.sample(pool, 5)
+                key = "|".join(sorted(product_key(p) for p in candidate))
+                if key not in used_sets:
+                    sc = candidate_sc
+                    selected = candidate
+                    break
+            if selected:
+                break
+        if selected is None:
+            state["used_top5_sets"] = []
+            save_state(state)
+            sc = random.choice(list(valid.keys()))
+            selected = random.sample(valid[sc], 5)
     selected.sort(key=lambda x: x["price"], reverse=True)
 
     prices = [p["price"] for p in selected]
@@ -667,7 +790,11 @@ def generate_top5(products):
         filename.unlink()
         return {"success": False, "reason": "empty_file"}
 
-    generate_banner(image_slug, title, cat, sc)
+    if not DRY_RUN:
+        mark_top5_used(selected)
+        generate_banner(image_slug, title, cat, sc)
+    else:
+        print("🧪 DRY RUN: skip banner generation")
     url = git_commit_and_push(title, filename, image_slug, base_slug, counter)
     if not url:
         return {"success": False, "reason": "git_error"}
@@ -844,6 +971,8 @@ def _compare_cons(product, is_cheaper):
 
 
 def generate_compare(products):
+    state = load_state()
+    used_pairs = set(state.get("used_compare_pairs", []))
     by_subcat = {}
     for p in products:
         sc = p.get("subcategory", "Lainnya")
@@ -854,8 +983,25 @@ def generate_compare(products):
     if not valid:
         return {"success": False, "reason": "no_compare_pair"}
 
+    pair = None
     sc = random.choice(list(valid.keys()))
-    pair = random.sample(valid[sc], 2)
+    subcats = list(valid.keys())
+    random.shuffle(subcats)
+    for candidate_sc in subcats:
+        pool = valid[candidate_sc]
+        for _ in range(35):
+            candidate = random.sample(pool, 2)
+            if compare_pair_key(candidate[0], candidate[1]) not in used_pairs:
+                sc = candidate_sc
+                pair = candidate
+                break
+        if pair:
+            break
+    if pair is None:
+        state["used_compare_pairs"] = []
+        save_state(state)
+        sc = random.choice(list(valid.keys()))
+        pair = random.sample(valid[sc], 2)
     pair.sort(key=lambda x: x["price"])
     a, b = pair
 
@@ -950,7 +1096,11 @@ def generate_compare(products):
         filename.unlink()
         return {"success": False, "reason": "empty_file"}
 
-    generate_banner(image_slug, title, cat, sc)
+    if not DRY_RUN:
+        mark_compare_used(a, b)
+        generate_banner(image_slug, title, cat, sc)
+    else:
+        print("🧪 DRY RUN: skip banner generation")
     url = git_commit_and_push(title, filename, image_slug, base_slug, counter)
     if not url:
         return {"success": False, "reason": "git_error"}
@@ -1007,13 +1157,21 @@ def generate_x_caption(result):
 
 def main():
     print(f"🚀 Auto-generate started at {datetime.now()}")
+    if DRY_RUN:
+        print("🧪 DRY RUN mode active: no commit, no push, no Telegram notification")
     products = load_products()
     if len(products) < 2:
         print("Not enough products")
         return {"success": False, "reason": "no_products"}
 
-    # Randomly pick mode (weighted: single 40%, top5 35%, compare 25%)
-    mode = random.choices(["single", "top5", "compare"], weights=[40, 35, 25])[0]
+    # Randomly pick mode (weighted: single 45%, top5 30%, compare 25%).
+    # Single review gets a little more weight because it targets long-tail product SEO best.
+    if FORCED_MODE:
+        if FORCED_MODE not in {"single", "top5", "compare"}:
+            return {"success": False, "reason": f"invalid_mode:{FORCED_MODE}"}
+        mode = FORCED_MODE
+    else:
+        mode = random.choices(["single", "top5", "compare"], weights=[45, 30, 25])[0]
     print(f"🎲 Selected mode: {mode.upper()}")
 
     if mode == "single":
@@ -1032,23 +1190,25 @@ def main():
         result['x_caption'] = x_cap
 
         # Save result JSON
-        result_file = REPO_PATH / ".last_generate_result.json"
-        with open(result_file, 'w', encoding='utf-8') as f:
-            clean = {k: v for k, v in result.items() if k not in ('products', 'product')}
-            json.dump(clean, f, indent=2, ensure_ascii=False)
+        if not DRY_RUN:
+            result_file = REPO_PATH / ".last_generate_result.json"
+            with open(result_file, 'w', encoding='utf-8') as f:
+                clean = {k: v for k, v in result.items() if k not in ('products', 'product')}
+                json.dump(clean, f, indent=2, ensure_ascii=False)
 
         # Telegram
-        mode_labels = {"single": "📖 Review Produk", "top5": "📋 Top 5 Rekomendasi", "compare": "⚖️ Perbandingan"}
-        label = mode_labels.get(result.get("mode", "single"), "🤖 Artikel Baru")
-        tg = (
-            f"✅ <b>{label} Terbit!</b>\n\n"
-            f"📌 <b>{result['title']}</b>\n\n"
-            f"🔗 {result['url']}\n\n"
-            f"<b>📝 Caption X/Threads:</b>\n"
-            f"<pre>{x_cap}</pre>\n\n"
-            f"GitHub sudah di-push, tunggu 1-2 menit untuk build Jekyll."
-        )
-        send_telegram_notification(tg)
+        if not DRY_RUN:
+            mode_labels = {"single": "📖 Review Produk", "top5": "📋 Top 5 Rekomendasi", "compare": "⚖️ Perbandingan"}
+            label = mode_labels.get(result.get("mode", "single"), "🤖 Artikel Baru")
+            tg = (
+                f"✅ <b>{label} Terbit!</b>\n\n"
+                f"📌 <b>{result['title']}</b>\n\n"
+                f"🔗 {result['url']}\n\n"
+                f"<b>📝 Caption X/Threads:</b>\n"
+                f"<pre>{x_cap}</pre>\n\n"
+                f"GitHub sudah di-push, tunggu 1-2 menit untuk build Jekyll."
+            )
+            send_telegram_notification(tg)
 
         print("\n" + "="*50)
         print("📝 CAPTION X/THREADS:")

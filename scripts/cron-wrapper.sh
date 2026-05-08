@@ -1,19 +1,26 @@
 #!/bin/bash
 # Cron wrapper for UlasanTekno auto-blog
-# Runs every 5 hours
+# Recommended cadence: 1-2 posts/day, not every few hours.
 
 export HOME=/home/ubuntu
 export PATH=/usr/local/bin:/usr/bin:/bin
 
-REPO="/home/ubuntu/ulasantekno-repo"
-LOG="/tmp/ulasantekno-cron.log"
+REPO="/home/ubuntu/.openclaw/workspace/ulasantekno.github.io"
+LOG="$REPO/logs/auto-generate.log"
 PYTHON="/usr/bin/python3.12"
+
+mkdir -p "$(dirname "$LOG")"
 
 echo "========================================" >> "$LOG"
 echo "🚀 Cron started: $(date)" >> "$LOG"
 echo "========================================" >> "$LOG"
 
-cd "$REPO" || { echo "❌ Failed to cd $REPO"; exit 1; }
+cd "$REPO" || { echo "❌ Failed to cd $REPO" >> "$LOG"; exit 1; }
+
+git pull --ff-only origin main >> "$LOG" 2>&1 || {
+    echo "❌ git pull failed; aborting to avoid conflicts: $(date)" >> "$LOG"
+    exit 1
+}
 
 # Run auto-generate script
 $PYTHON scripts/auto-generate-post.py >> "$LOG" 2>&1
