@@ -3,6 +3,8 @@
     "xiaomi-rice-cooker",
     "poco-m7-pro-5g"
   ],
-  "used_compare_pairs": [],
+  "used_compare_pairs": [
+    "redmi-pad-2-series|xiaomi-pad-8-series"
+  ],
   "used_top5_sets": []
 }
