@@ -38,6 +38,9 @@ KEYWORDS = {
         "default": "smart home device"
     },
     "Lifestyle": {
+        "Kitchen": "rice cooker",
+        "Rice Cooker": "rice cooker",
+        "Cooker": "rice cooker",
         "Tripod": "camera tripod",
         "Keyboard": "mechanical keyboard",
         "Mouse": "wireless mouse",
@@ -95,6 +98,10 @@ def extract_keyword_from_title_legacy(title):
         "mouse": "wireless mouse",
         "speaker": "bluetooth speaker",
         "tripod": "camera tripod",
+        "rice cooker": "rice cooker",
+        "cooker": "rice cooker",
+        "dapur": "rice cooker kitchen",
+        "kitchen": "rice cooker kitchen",
         "accessories": "gadget accessories",
     }
     title_lower = title.lower()
@@ -109,10 +116,23 @@ def search(q, n=10):
                      headers={"Authorization": f"Client-ID {ACCESS_KEY}"}, timeout=10)
     return r.json().get("results", []) if r.ok else []
 
-def pick_random_result(results):
-    """Randomly pick one result, preferring different images."""
+def pick_random_result(results, preferred_terms=None):
+    """Pick a relevant Unsplash result first, then random fallback.
+
+    Unsplash search can return loosely related lifestyle photos. Prefer images whose
+    alt/description explicitly mentions the target object, e.g. "rice cooker".
+    """
     if not results:
         return None
+    preferred_terms = [t.lower() for t in (preferred_terms or []) if t]
+    if preferred_terms:
+        for item in results:
+            text = " ".join([
+                item.get("alt_description") or "",
+                item.get("description") or "",
+            ]).lower()
+            if any(term in text for term in preferred_terms):
+                return item
     return random.choice(results)
 
 def dl(url):
@@ -187,7 +207,10 @@ if __name__ == "__main__":
         # Last resort: category + technology
         results = search(f"{cat} technology")
     if results:
-        chosen = pick_random_result(results)
+        preferred_terms = []
+        if "rice cooker" in kw.lower():
+            preferred_terms = ["rice cooker"]
+        chosen = pick_random_result(results, preferred_terms)
         if chosen:
             img = dl(chosen["urls"]["regular"])
             if img:
